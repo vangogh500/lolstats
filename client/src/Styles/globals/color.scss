@@ -3,21 +3,71 @@
  *
  * TABLE OF CONTENT:
  *  - variables
+ *  - functions
+ *  - mixins
  *  - text
  *  - background
  */
 // --------------- VARIABLES --------------- //
-$prm-color-dark: #306BAC;
-$prm-color-light: #98B9F2;
+$primary: #306BAC;
+
+// --------------- FUNCTIONS --------------- //
+@function get-bg-hover-color($color) {
+  @if (lightness($color) < 50) {
+    @return lighten($color, 10%);
+  } @else {
+    @return darken($color, 10%);
+  }
+}
+@function get-bg-active-color($color) {
+  @if (lightness($color) < 50) {
+    @return lighten($color, 30%);
+  } @else {
+    @return darken($color, 30%);
+  }
+}
+// --------------- MIXINS --------------- //
+@mixin bg-color($color) {
+  background-color: $color;
+}
+@mixin bg-btn-color($color) {
+  background-color: $color;
+  border-color: $color;
+  &:hover {
+    background-color: get-bg-hover-color($color);
+    border-color: get-bg-hover-color($color);
+  }
+  &:not(:disabled):not(.disabled):active {
+    background-color: get-bg-active-color($color);
+    border-color: get-bg-active-color($color);
+  }
+}
+@mixin bg-lighten-darken-i($name, $color, $num) {
+  @for $i from 1 through $num {
+    .bg-#{$name}-lighten-#{$i} {
+      @include bg-color(lighten($color, $i * 1%));
+    }
+    .btn.bg-#{$name}-lighten-#{$i} {
+      @include bg-btn-color(lighten($color, $i * 1%));
+    }
+    .bg-#{$name}-darken-#{$i} {
+      @include bg-color(darken($color, $i * 1%));
+    }
+    .btn.bg-#{$name}-darken-#{$i} {
+      @include bg-btn-color(darken($color, $i * 1%));
+    }
+  }
+}
+
 
 // --------------- TEXT --------------- //
 
 
 // --------------- BACKGROUND --------------- //
-.bg-prm-color-dark {
-  background-color: $prm-color-dark;
+.bg-primary {
+  @include bg-color($primary);
 }
-
-.bg-prm-color-light {
-  background-color: $prm-color-light;
+.btn.bg-primary {
+  @include bg-btn-color($primary);
 }
+@include bg-lighten-darken-i("primary", $primary, 5);

@@ -8,13 +8,152 @@
  *
  * TABLE OF CONTENT:
  *  - variables
+ *  - functions
+ *  - mixins
  *  - text
  *  - background
  */
-.bg-prm-color-dark {
+.bg-primary {
   background-color: #306BAC; }
 
-.bg-prm-color-light {
-  background-color: #98B9F2; }
+.btn.bg-primary {
+  background-color: #306BAC;
+  border-color: #306BAC; }
+  .btn.bg-primary:hover {
+    background-color: #4484cb;
+    border-color: #4484cb; }
+  .btn.bg-primary:not(:disabled):not(.disabled):active {
+    background-color: #94b9e1;
+    border-color: #94b9e1; }
+
+.bg-primary-lighten-1 {
+  background-color: #316db0; }
+
+.btn.bg-primary-lighten-1 {
+  background-color: #316db0;
+  border-color: #316db0; }
+  .btn.bg-primary-lighten-1:hover {
+    background-color: #4887cc;
+    border-color: #4887cc; }
+  .btn.bg-primary-lighten-1:not(:disabled):not(.disabled):active {
+    background-color: #98bbe2;
+    border-color: #98bbe2; }
+
+.bg-primary-darken-1 {
+  background-color: #2f69a8; }
+
+.btn.bg-primary-darken-1 {
+  background-color: #2f69a8;
+  border-color: #2f69a8; }
+  .btn.bg-primary-darken-1:hover {
+    background-color: #4082ca;
+    border-color: #4082ca; }
+  .btn.bg-primary-darken-1:not(:disabled):not(.disabled):active {
+    background-color: #90b6e0;
+    border-color: #90b6e0; }
+
+.bg-primary-lighten-2 {
+  background-color: #3270b4; }
+
+.btn.bg-primary-lighten-2 {
+  background-color: #3270b4;
+  border-color: #3270b4; }
+  .btn.bg-primary-lighten-2:hover {
+    background-color: #4c89cd;
+    border-color: #4c89cd; }
+  .btn.bg-primary-lighten-2:not(:disabled):not(.disabled):active {
+    background-color: #9cbee3;
+    border-color: #9cbee3; }
+
+.bg-primary-darken-2 {
+  background-color: #2e66a4; }
+
+.btn.bg-primary-darken-2 {
+  background-color: #2e66a4;
+  border-color: #2e66a4; }
+  .btn.bg-primary-darken-2:hover {
+    background-color: #3c7fc9;
+    border-color: #3c7fc9; }
+  .btn.bg-primary-darken-2:not(:disabled):not(.disabled):active {
+    background-color: #8cb3df;
+    border-color: #8cb3df; }
+
+.bg-primary-lighten-3 {
+  background-color: #3372b8; }
+
+.btn.bg-primary-lighten-3 {
+  background-color: #3372b8;
+  border-color: #3372b8; }
+  .btn.bg-primary-lighten-3:hover {
+    background-color: #508cce;
+    border-color: #508cce; }
+  .btn.bg-primary-lighten-3:not(:disabled):not(.disabled):active {
+    background-color: #a0c0e4;
+    border-color: #a0c0e4; }
+
+.bg-primary-darken-3 {
+  background-color: #2d64a0; }
+
+.btn.bg-primary-darken-3 {
+  background-color: #2d64a0;
+  border-color: #2d64a0; }
+  .btn.bg-primary-darken-3:hover {
+    background-color: #387cc8;
+    border-color: #387cc8; }
+  .btn.bg-primary-darken-3:not(:disabled):not(.disabled):active {
+    background-color: #88b1de;
+    border-color: #88b1de; }
+
+.bg-primary-lighten-4 {
+  background-color: #3475bc; }
+
+.btn.bg-primary-lighten-4 {
+  background-color: #3475bc;
+  border-color: #3475bc; }
+  .btn.bg-primary-lighten-4:hover {
+    background-color: #548fcf;
+    border-color: #548fcf; }
+  .btn.bg-primary-lighten-4:not(:disabled):not(.disabled):active {
+    background-color: #a4c3e6;
+    border-color: #a4c3e6; }
+
+.bg-primary-darken-4 {
+  background-color: #2c619c; }
+
+.btn.bg-primary-darken-4 {
+  background-color: #2c619c;
+  border-color: #2c619c; }
+  .btn.bg-primary-darken-4:hover {
+    background-color: #377ac4;
+    border-color: #377ac4; }
+  .btn.bg-primary-darken-4:not(:disabled):not(.disabled):active {
+    background-color: #84aedd;
+    border-color: #84aedd; }
+
+.bg-primary-lighten-5 {
+  background-color: #3677c0; }
+
+.btn.bg-primary-lighten-5 {
+  background-color: #3677c0;
+  border-color: #3677c0; }
+  .btn.bg-primary-lighten-5:hover {
+    background-color: #5891d0;
+    border-color: #5891d0; }
+  .btn.bg-primary-lighten-5:not(:disabled):not(.disabled):active {
+    background-color: #a8c6e7;
+    border-color: #a8c6e7; }
+
+.bg-primary-darken-5 {
+  background-color: #2a5f98; }
+
+.btn.bg-primary-darken-5 {
+  background-color: #2a5f98;
+  border-color: #2a5f98; }
+  .btn.bg-primary-darken-5:hover {
+    background-color: #3677c0;
+    border-color: #3677c0; }
+  .btn.bg-primary-darken-5:not(:disabled):not(.disabled):active {
+    background-color: #80acdc;
+    border-color: #80acdc; }
 
 /*# sourceMappingURL=index.css.map */

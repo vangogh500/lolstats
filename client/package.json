@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack && sass ./src/Styles/index.scss ./dist/css/index.css"
   },
   "author": "vangogh500",
   "license": "ISC",
