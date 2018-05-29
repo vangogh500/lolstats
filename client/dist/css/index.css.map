@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;GAIG;ACJH;;;;;;;GAOG;AASH,kBAAmB;EACjB,gBAAgB,EARD,OAAO;;AAWxB,mBAAoB;EAClB,gBAAgB,EAXA,OAAO",
+"sources": ["../../src/Styles/index.scss","../../src/Styles/globals/color.scss"],
+"names": [],
+"file": "index.css"
+}

@@ -1,0 +1,23 @@
+/**
+ * Global styles for color - text and background
+ *
+ * TABLE OF CONTENT:
+ *  - variables
+ *  - text
+ *  - background
+ */
+// --------------- VARIABLES --------------- //
+$prm-color-dark: #306BAC;
+$prm-color-light: #98B9F2;
+
+// --------------- TEXT --------------- //
+
+
+// --------------- BACKGROUND --------------- //
+.bg-prm-color-dark {
+  background-color: $prm-color-dark;
+}
+
+.bg-prm-color-light {
+  background-color: $prm-color-light;
+}
