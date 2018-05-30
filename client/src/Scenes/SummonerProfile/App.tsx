@@ -3,10 +3,13 @@ import { ChildProps } from "react-apollo";
 import { SummonerBySummonerName, InputProps, Response } from '../../Services/GraphQL/hocs/SummonerBySummonerName'
 import { getProfileIconURLById } from '../../Lib/riotapi'
 
-interface StateType {
-}
+import Profile from './Components/Profile'
 
-class App extends React.Component<ChildProps<InputProps, Response>, StateType> {
+interface PropTypes extends ChildProps<InputProps, Response> {}
+
+interface StateType {}
+
+class App extends React.Component<PropTypes, StateType> {
   render() {
     const {loading, summoner, error} = this.props.data
     if(loading) {
@@ -14,9 +17,7 @@ class App extends React.Component<ChildProps<InputProps, Response>, StateType> {
     }
     else {
       return (
-        <div className="container mt-3">
-          <img src={getProfileIconURLById(summoner.profileIconId)} className="img-thumbnail p-0 w-100px h-100px rounded-circle border border-5px border-platinum" />
-        </div>
+        <Profile profile={summoner} />
       )
     }
   }

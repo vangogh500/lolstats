@@ -5,6 +5,8 @@
  *  - mixins
  *  - z-index
  *  - margins
+ *  - padding
+ *  - background
  */
 
 // --------------- MIXINS --------------- //
@@ -20,4 +22,20 @@
 // --------------- MARGINS --------------- //
 .mt--40px {
   margin-top: -40px;
+}
+.mb--40px {
+  margin-bottom: -40px;
+}
+
+// --------------- PADDING ---------------- //
+.pt-40px {
+  padding-top: 40px;
+}
+
+// --------------- BACKGROUND --------------- //
+.bg-center {
+  background-position: center;
+}
+.bg-cover {
+  background-size: cover;
 }

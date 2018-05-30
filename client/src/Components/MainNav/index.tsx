@@ -1,6 +1,20 @@
+/**
+ * @file MainNav
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
 import * as React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
+
+/**
+ * @type PropType
+ *
+ */
 interface PropType {
+  primaryClassName: string,
+  secondaryClassName: string
 }
 
 interface StateType {
@@ -8,9 +22,10 @@ interface StateType {
 
 export default class MainNav extends React.Component<PropType, StateType> {
   render() {
+    const { primaryClassName, secondaryClassName } = this.props
     return (
       <div id="main-nav" className="z-5">
-        <nav className='navbar navbar-expand-sm navbar-dark bg-primary py-3'>
+        <nav className={'navbar navbar-expand-sm navbar-dark bg-primary ' + primaryClassName}>
           <div className='container'>
             <a className='navbar-brand text-uppercase' href='#'>LoL Stats</a>
             <ul className="navbar-nav ml-auto">
@@ -20,7 +35,7 @@ export default class MainNav extends React.Component<PropType, StateType> {
             </ul>
           </div>
         </nav>
-        <div id="secondary-nav" className="bg-secondary bg-alpha-5 z-5 w-vw-100">
+        <div id="secondary-nav" className={"bg-secondary w-vw-100 " + secondaryClassName}>
           <div className="container">
             <nav className="nav">
               <a className="nav-item nav-link text-light active" href="#">Summoner</a>

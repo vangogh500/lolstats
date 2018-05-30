@@ -12,6 +12,7 @@
 // --------------- VARIABLES --------------- //
 $primary: #0D0C1D;
 $secondary: #474973;
+$ternary: #F56476;
 
 $bronze: #8C7853;
 $silver: #E6E8FA;
@@ -29,9 +30,9 @@ $diamond: #b9f2ff;
 }
 @function get-bg-active-color($color) {
   @if (lightness($color) < 50) {
-    @return lighten($color, 30%);
+    @return lighten($color, 20%);
   } @else {
-    @return darken($color, 30%);
+    @return darken($color, 20%);
   }
 }
 // --------------- MIXINS --------------- //
@@ -59,10 +60,10 @@ $diamond: #b9f2ff;
       @include bg-btn-color(lighten($color, $i * 3%));
     }
     .bg-#{$name}.darken-#{$i} {
-      @include bg-color(darken($color, $i * 1%));
+      @include bg-color(darken($color, $i * 3%));
     }
     .btn.bg-#{$name}.darken-#{$i} {
-      @include bg-btn-color(darken($color, $i * 1%));
+      @include bg-btn-color(darken($color, $i * 3%));
     }
   }
 }
@@ -96,6 +97,14 @@ $diamond: #b9f2ff;
 }
 @include bg-lighten-darken-i("primary", $secondary, 5);
 @include bg-alpha-i("secondary", $secondary, 5);
+.bg-ternary {
+  @include bg-color($ternary);
+}
+.btn.bg-ternary {
+  @include bg-btn-color($ternary);
+}
+@include bg-lighten-darken-i("ternary", $ternary, 5);
+@include bg-alpha-i("ternary", $ternary, 5);
 
 // --------------- BORDER --------------- //
 .border-bronze {
