@@ -1,3 +1,10 @@
+/**
+ * @file GraphQL provider
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
+
 import * as React from 'react'
 import ApolloClient from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'

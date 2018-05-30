@@ -1,3 +1,9 @@
+/**
+ * @file Home page
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
 import * as React from 'react'
 import SummonerSearch from './Components/SummonerSearch'
 

@@ -1,3 +1,10 @@
+/**
+ * @file Summoner profile page
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
+
 import * as React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 

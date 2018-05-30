@@ -1,5 +1,8 @@
 /**
  * @module riotapi Module for getting static content from riot api
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
  */
 
 /**

@@ -1,3 +1,10 @@
+/**
+ * @file Mock schema
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
+
 import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools'
 import mocks from './mocks'
 

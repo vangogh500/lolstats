@@ -1,3 +1,10 @@
+/**
+ * @file Mock resolver
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
+
 import { IMockOptions } from 'graphql-tools'
 
 const summoners = [

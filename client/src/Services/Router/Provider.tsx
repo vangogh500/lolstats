@@ -1,3 +1,10 @@
+/**
+ * @file Router
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
+
 import * as React from 'react'
 import { Router } from 'react-router'
 import createHashHistory from 'history/createHashHistory'
