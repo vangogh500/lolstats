@@ -5,21 +5,24 @@
  * @version 0.0.1
  */
 import * as React from 'react'
-import { Route, Switch } from 'react-router-dom'
-
 
 /**
- * @type PropType
- *
+ * @type MainNav prop types
+ * @prop {string} primaryClassName CSS class for primary nav bar
+ * @prop {string} secondaryClassName CSS class for secondary nav bar
  */
 interface PropType {
   primaryClassName: string,
   secondaryClassName: string
 }
+/**
+ * @type MainNav state types
+ */
+interface StateType {}
 
-interface StateType {
-}
-
+/**
+ * Main navigation bar
+ */
 export default class MainNav extends React.Component<PropType, StateType> {
   render() {
     const { primaryClassName, secondaryClassName } = this.props
