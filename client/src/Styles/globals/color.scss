@@ -7,9 +7,17 @@
  *  - mixins
  *  - text
  *  - background
+ *  - border
  */
 // --------------- VARIABLES --------------- //
-$primary: #306BAC;
+$primary: #0D0C1D;
+$secondary: #474973;
+
+$bronze: #8C7853;
+$silver: #E6E8FA;
+$gold: #CFB53B;
+$platinum: #A0BFB4;
+$diamond: #b9f2ff;
 
 // --------------- FUNCTIONS --------------- //
 @function get-bg-hover-color($color) {
@@ -28,33 +36,40 @@ $primary: #306BAC;
 }
 // --------------- MIXINS --------------- //
 @mixin bg-color($color) {
-  background-color: $color;
+  background-color: $color !important;
 }
 @mixin bg-btn-color($color) {
-  background-color: $color;
-  border-color: $color;
+  background-color: $color !important;
+  border-color: $color !important;
   &:hover {
-    background-color: get-bg-hover-color($color);
-    border-color: get-bg-hover-color($color);
+    background-color: get-bg-hover-color($color) !important;
+    border-color: get-bg-hover-color($color) !important;
   }
   &:not(:disabled):not(.disabled):active {
-    background-color: get-bg-active-color($color);
-    border-color: get-bg-active-color($color);
+    background-color: get-bg-active-color($color) !important;
+    border-color: get-bg-active-color($color) !important;
   }
 }
 @mixin bg-lighten-darken-i($name, $color, $num) {
   @for $i from 1 through $num {
-    .bg-#{$name}-lighten-#{$i} {
-      @include bg-color(lighten($color, $i * 1%));
+    .bg-#{$name}.lighten-#{$i} {
+      @include bg-color(lighten($color, $i * 3%));
     }
-    .btn.bg-#{$name}-lighten-#{$i} {
-      @include bg-btn-color(lighten($color, $i * 1%));
+    .btn.bg-#{$name}.lighten-#{$i} {
+      @include bg-btn-color(lighten($color, $i * 3%));
     }
-    .bg-#{$name}-darken-#{$i} {
+    .bg-#{$name}.darken-#{$i} {
       @include bg-color(darken($color, $i * 1%));
     }
-    .btn.bg-#{$name}-darken-#{$i} {
+    .btn.bg-#{$name}.darken-#{$i} {
       @include bg-btn-color(darken($color, $i * 1%));
+    }
+  }
+}
+@mixin bg-alpha-i($name, $color, $num) {
+  @for $i from 1 through $num {
+    .bg-#{$name}.bg-alpha-#{$i} {
+      background-color: rgba(red($color), green($color), blue($color), $i * 0.1) !important;
     }
   }
 }
@@ -71,3 +86,30 @@ $primary: #306BAC;
   @include bg-btn-color($primary);
 }
 @include bg-lighten-darken-i("primary", $primary, 5);
+@include bg-alpha-i("primary", $primary, 5);
+
+.bg-secondary {
+  @include bg-color($secondary);
+}
+.btn.bg-secondary {
+  @include bg-btn-color($secondary);
+}
+@include bg-lighten-darken-i("primary", $secondary, 5);
+@include bg-alpha-i("secondary", $secondary, 5);
+
+// --------------- BORDER --------------- //
+.border-bronze {
+  border-color: $bronze !important;
+}
+.border-silver {
+  border-color: $silver !important;
+}
+.border-gold {
+  border-color: $gold !important;
+}
+.border-platinum {
+  border-color: $platinum !important;
+}
+.border-diamond {
+  border-color: $diamond !important;
+}

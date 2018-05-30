@@ -1,0 +1,23 @@
+/**
+ * Global styles for color - text and background
+ *
+ * TABLE OF CONTENT:
+ *  - mixins
+ *  - z-index
+ *  - margins
+ */
+
+// --------------- MIXINS --------------- //
+@mixin z-i($num) {
+ @for $i from 1 through $num {
+   .z-#{$i} {
+     z-index: $i;
+   }
+ }
+}
+@include z-i(5);
+
+// --------------- MARGINS --------------- //
+.mt--40px {
+  margin-top: -40px;
+}

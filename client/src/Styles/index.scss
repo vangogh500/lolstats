@@ -4,3 +4,8 @@
  * @see sass ./src/Styles/index.scss ./dist/css/index.css
  */
 @import './globals/color.scss';
+@import './globals/icons.scss';
+@import './globals/sizing.scss';
+@import './globals/layout.scss';
+
+@import '../Scenes/Home/index.scss'
