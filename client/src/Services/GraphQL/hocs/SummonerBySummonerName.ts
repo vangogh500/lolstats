@@ -25,6 +25,10 @@ export type InputProps = {
   summonerName: string
 }
 
+/**
+ * @function SummonerBySummonerName
+ * 
+ */
 export const SummonerBySummonerName = graphql<InputProps, Response>(SUMMONER_QUERY, {
   options: ({ summonerName }) => ({
     variables: { summonerName }

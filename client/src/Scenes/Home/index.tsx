@@ -1,13 +1,18 @@
 import * as React from 'react'
-
 import SummonerSearch from './Components/SummonerSearch'
 
-interface PropType {
-}
+/**
+ * @type Home page prop types
+ */
+interface PropType {}
+/**
+ * @type Home page state types
+ */
+interface StateType {}
 
-interface StateType {
-}
-
+/**
+ * Home page component
+ */
 export default class HomePage extends React.Component<PropType, StateType> {
   render() {
     return (

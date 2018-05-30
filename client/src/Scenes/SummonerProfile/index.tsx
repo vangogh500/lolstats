@@ -6,11 +6,19 @@ import App from './App'
 interface RouteProps {
   summonerName: string
 }
-interface PropTypes extends RouteComponentProps<RouteProps> {
-}
+/**
+ * @type Summoner profile page prop types
+ */
+interface PropTypes extends RouteComponentProps<RouteProps> {}
 
+/**
+ * @type Summoner profile page state types
+ */
 interface StateType {}
 
+/**
+ * Summoner profile page
+ */
 export default class SummonerProfilePage extends React.Component<PropTypes, StateType> {
   render() {
     const {match} = this.props

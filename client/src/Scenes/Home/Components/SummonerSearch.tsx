@@ -1,14 +1,23 @@
 import * as React from 'react'
 import { Redirect } from 'react-router'
 
-interface PropType {
-}
-
+/**
+ * @type Summoner search bar state types
+ */
+interface PropType {}
+/**
+ * @type Summoner search bar state types
+ * @prop {string} value search value
+ * @prop {boolean} submitted whether the search has been submitted
+ */
 interface StateType {
   value: string,
   submitted: boolean
 }
-
+/**
+ * Summoner search bar
+ * @event Redirect Redirects to /summoner/:summonerName/solo
+ */
 export default class SummonerSearch extends React.Component<PropType, StateType> {
   constructor(props: PropType) {
     super(props)

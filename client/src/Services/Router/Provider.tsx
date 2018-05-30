@@ -7,9 +7,18 @@ import MainNav from '../../Components/MainNav/index'
 import HomePage from '../../Scenes/Home/index'
 import SummonerProfilePage from '../../Scenes/SummonerProfile/index'
 
+/**
+ * @type Router prop types
+ */
 interface PropTypes {}
+/**
+ * @type Router state types
+ */
 interface StateTypes {}
 
+/**
+ * Router
+ */
 export default class RouterProvider extends React.Component<PropTypes, StateTypes> {
   render() {
     return (

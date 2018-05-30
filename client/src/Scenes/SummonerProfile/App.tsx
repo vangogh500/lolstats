@@ -5,10 +5,19 @@ import { getProfileIconURLById } from '../../Lib/riotapi'
 
 import Profile from './Components/Profile'
 
+/**
+ * Summoner profile app prop types
+ */
 interface PropTypes extends ChildProps<InputProps, Response> {}
 
+/**
+ * Summoner profile app state types
+ */
 interface StateType {}
 
+/**
+ * Summoner profile app
+ */
 class App extends React.Component<PropTypes, StateType> {
   render() {
     const {loading, summoner, error} = this.props.data

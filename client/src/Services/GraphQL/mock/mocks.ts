@@ -15,8 +15,9 @@ const summoners = [
   }
 ]
 
-
-
+/**
+ * @constant {Resolver} resolver Resolver for mock db
+ */
 export default {
   Query: () => ({
     "summoner": (_: any, { summonerName }: { summonerName: string }) => summoners.find(function(summoner) {

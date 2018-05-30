@@ -2,25 +2,27 @@ import * as React from 'react'
 import ApolloClient from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
 
-import { InMemoryCache } from 'apollo-cache-inmemory';
-import { SchemaLink } from 'apollo-link-schema';
-import schema from './mock/schema'
+import mockClient from './mock/client'
 
+/**
+ * @type GraphQL Provider prop types
+ * @prop
+ */
 interface PropType {
   children?: React.ReactNode
 }
-
+/**
+ * @type GraphQL Provider state types
+ */
 interface StateType {}
 
-const client = new ApolloClient({
-  link: new SchemaLink({ schema }),
-  cache: new InMemoryCache()
-})
-
+/**
+ * GraphQL Provider
+ */
 export default class GraphQLProvider extends React.Component<PropType, StateType> {
   render() {
     return (
-      <ApolloProvider client={client}>
+      <ApolloProvider client={mockClient}>
         { this.props.children }
       </ApolloProvider>
     )
