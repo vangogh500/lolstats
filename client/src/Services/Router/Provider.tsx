@@ -10,9 +10,9 @@ import { Router } from 'react-router'
 import createHashHistory from 'history/createHashHistory'
 import { Route, Switch } from 'react-router-dom'
 
-import MainNav from '../../Components/MainNav/index'
-import HomePage from '../../Scenes/Home/index'
-import SummonerProfilePage from '../../Scenes/SummonerProfile/index'
+import MainNav from 'Components/MainNav/index'
+import HomePage from 'Scenes/Home/index'
+import SummonerProfilePage from 'Scenes/SummonerProfile/index'
 
 /**
  * @type Router prop types

@@ -5,7 +5,7 @@
  * @version 0.0.1
  */
 import * as React from 'react'
-import SummonerSearch from './Components/SummonerSearch'
+import SummonerSearch from 'Scenes/Home/Components/SummonerSearch'
 
 /**
  * @type Home page prop types

@@ -10,7 +10,7 @@ import { ChildProps } from "react-apollo";
 import { SummonerBySummonerName, InputProps, Response } from '../../Services/GraphQL/hocs/SummonerBySummonerName'
 import { getProfileIconURLById } from '../../Lib/riotapi'
 
-import Profile from './Components/Profile'
+import Profile from 'Scenes/SummonerProfile/Components/Profile'
 
 /**
  * Summoner profile app prop types

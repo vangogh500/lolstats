@@ -6,7 +6,7 @@
  */
 
 import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools'
-import mocks from './mocks'
+import mocks from 'Services/GraphQL/mock/mocks'
 
 const schemaString = `
   type Query {

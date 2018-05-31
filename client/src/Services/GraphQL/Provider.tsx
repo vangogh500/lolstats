@@ -6,10 +6,9 @@
  */
 
 import * as React from 'react'
-import ApolloClient from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
 
-import mockClient from './mock/client'
+import mockClient from 'Services/GraphQL/mock/client'
 
 /**
  * @type GraphQL Provider prop types
