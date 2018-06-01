@@ -33,10 +33,10 @@ export default class SummonerSearch extends React.Component<PropType, StateType>
       submitted: false
     }
   }
-  handleChange(e: any) {
+  handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     this.setState({ value: e.target.value })
   }
-  handleSubmit(e: any) {
+  handleSubmit(e: React.FormEvent<EventTarget>) {
     e.preventDefault();
     this.setState({ submitted: true })
   }
@@ -57,7 +57,7 @@ export default class SummonerSearch extends React.Component<PropType, StateType>
               value={this.state.value}
               onChange={(e) => this.handleChange(e)} />
             <div className='input-group-append'>
-              <button className='btn btn-dark bg-primary-darken-2' type='submit'><span className="oi oi-magnifying-glass"></span></button>
+              <button className='btn btn-dark bg-primary-darken-2' type='submit'><i className="material-icons">search</i></button>
             </div>
           </div>
         </form>

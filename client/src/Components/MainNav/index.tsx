@@ -33,7 +33,7 @@ export default class MainNav extends React.Component<PropType, StateType> {
             <a className='navbar-brand text-uppercase' href='#'>LoL Stats</a>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link"><span className="oi oi-globe iconic-md d-inline-flex align-middle"></span> <span className="d-inline-flex align-middle">NA</span></a>
+                <a className="nav-link"><i className="material-icons align-middle">place</i> <span className="align-middle">NA</span></a>
               </li>
             </ul>
           </div>

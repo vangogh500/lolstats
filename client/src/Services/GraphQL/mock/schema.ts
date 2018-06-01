@@ -11,12 +11,31 @@ import mocks from 'Services/GraphQL/mock/mocks'
 const schemaString = `
   type Query {
     summoner(summonerName: String!): Summoner
+    summonerSeasonQueueStats(summonerName: String!): [SummonerSeasonQueueStats]
+    seasons: [Season]
+    queues: [Queue]
   }
   type Summoner {
     profileIconId: String!
-    summonerName: String!
-    summonerLevel: Int!
-    summonerId: String!
+    name: String!
+    level: Int!
+    id: String!
+    accountId: String!
+  }
+  type Queue {
+    id: String!
+    name: String!
+    url: String!
+    icon: String!
+  }
+  type Season {
+    id: String!
+    name: String!
+  }
+  type SummonerSeasonQueueStats {
+    accountId: String!
+    seasonId: String!
+    queueId: String!
   }
 `
 
