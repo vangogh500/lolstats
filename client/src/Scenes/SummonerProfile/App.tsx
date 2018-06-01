@@ -12,7 +12,7 @@ import gql from 'graphql-tag'
 import { Summoner, Queue, Season, SummonerSeasonQueueStats } from 'Services/GraphQL/types'
 
 import Profile from 'Scenes/SummonerProfile/Components/Profile'
-import {QueueToggle} from 'Scenes/SummonerProfile/Components/QueueToggle'
+import QueueNav from 'Scenes/SummonerProfile/Components/QueueNav'
 import SeasonNav from 'Scenes/SummonerProfile/Components/SeasonNav'
 
 
@@ -99,7 +99,7 @@ export default class App extends React.Component<PropType, StateType> {
               return (
                 <div className="d-flex flex-column">
                   <Profile profile={summoner}>
-                    <QueueToggle className="ml-auto" queues={applicableQueueIds.map(id => queueMap[id])} />
+                    <QueueNav className="ml-auto" queues={applicableQueueIds.map(id => queueMap[id])} />
                   </Profile>
                   <div className="container">
                     <SeasonNav seasons={["Season 8", "Season 7"]} />

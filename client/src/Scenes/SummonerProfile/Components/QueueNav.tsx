@@ -12,22 +12,22 @@ import { Queue } from 'Services/GraphQL/types'
 
 
 /**
- * @type Queue toggle prop types
+ * @type Queue nav prop types
  */
 interface PropTypes {
   className?: string,
   queues: Queue[]
 }
 /**
- * @type Queue toggle state types
+ * @type Queue nav state types
  */
 interface StateType {}
 
 /**
- * Queue toggle
+ * Queue nav
  * @event Redirect if the current url does not match any of the queues provided
  */
-export class QueueToggle extends React.Component<PropTypes, StateType> {
+export default class QueueNav extends React.Component<PropTypes, StateType> {
   render() {
     const {queues, className} = this.props
     const activeClassName = "active bg-ternary darken-2"

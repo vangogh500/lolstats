@@ -1,5 +1,5 @@
 /**
- * @file Queue toggle component
+ * @file Season nav component
  * @author Kai Matsuda
  * @copyright Kai Matusuda 2018
  * @version 0.0.1
@@ -10,20 +10,20 @@ import { Link } from 'react-router-dom'
 
 
 /**
- * @type Queue toggle prop types
+ * @type Season nav prop types
  */
 interface PropTypes {
   seasons: string[]
 }
 /**
- * @type Queue toggle state types
+ * @type Season nav state types
  */
 interface StateType {}
 
 /**
- * Queue toggle
+ * Season nav
  */
-export default class QueueToggle extends React.Component<PropTypes, StateType> {
+export default class SeasonNav extends React.Component<PropTypes, StateType> {
   render() {
     const {seasons} = this.props
     return (
