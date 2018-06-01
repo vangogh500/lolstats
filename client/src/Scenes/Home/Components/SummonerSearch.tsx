@@ -44,7 +44,7 @@ export default class SummonerSearch extends React.Component<PropType, StateType>
     const {value, submitted} = this.state
     if(submitted) {
       return (
-        <Redirect to={'/summoner/' + value + '/solo'} />
+        <Redirect to={'/summoner/' + value + '/all/solo'} />
       )
     } else {
       return (

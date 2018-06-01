@@ -6,8 +6,8 @@
  */
 
 import * as React from 'react'
-import { ChildProps } from "react-apollo";
-import { Query } from "react-apollo";
+import { ChildProps } from "react-apollo"
+import { Query } from "react-apollo"
 import gql from 'graphql-tag'
 import { Summoner, Queue, Season, SummonerSeasonQueueStats } from 'Services/GraphQL/types'
 
@@ -39,6 +39,7 @@ const query = gql`
     seasons {
       id
       name
+      url
     }
   }
 `
@@ -91,18 +92,13 @@ export default class App extends React.Component<PropType, StateType> {
             }
             else {
               const {summoner, queues, seasons, summonerSeasonQueueStats} = data
-              const queueMap: { [id: string]: Queue } = queues.reduce((acc, queue) => ({ ...acc, [queue.id]: queue }), {})
-              console.log(queueMap)
-              const applicableQueueIds: string[] = Object.keys(
-                summonerSeasonQueueStats.reduce((acc, stats) => ({ ...acc, [stats.queueId]: true }), {})
-              )
               return (
                 <div className="d-flex flex-column">
                   <Profile profile={summoner}>
-                    <QueueNav className="ml-auto" queues={applicableQueueIds.map(id => queueMap[id])} />
+                    <QueueNav className="ml-auto" />
                   </Profile>
                   <div className="container">
-                    <SeasonNav seasons={["Season 8", "Season 7"]} />
+                    <SeasonNav />
                   </div>
                 </div>
               )

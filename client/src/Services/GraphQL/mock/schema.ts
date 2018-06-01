@@ -31,6 +31,7 @@ const schemaString = `
   type Season {
     id: String!
     name: String!
+    url: String!
   }
   type SummonerSeasonQueueStats {
     accountId: String!

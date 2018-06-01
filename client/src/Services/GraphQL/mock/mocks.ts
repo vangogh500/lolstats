@@ -11,13 +11,13 @@ import { Queue, Season, Summoner, SummonerSeasonQueueStats, SummonerSeasonStats 
 const queues: Queue[] = [
   { id: "1", name: "Solo", url: "solo", icon: "person" },
   { id: "2", name: "Flex", url: "flex", icon: "people" },
-  { id: "3", name: "TR", url: "tr", icon: "nature" }
+  { id: "3", name: "TT", url: "tt", icon: "nature" }
 ]
 
 const seasons: Season[] = [
-  { id: "1", name: "Season 8" },
-  { id: "2", name: "Season 7" },
-  { id: "3", name: "Season 6" }
+  { id: "1", name: "Season 8", url: "season_8" },
+  { id: "2", name: "Season 7", url: "season_7" },
+  { id: "3", name: "Season 6", url: "season_6" }
 ]
 
 const summoners: Summoner[] = [

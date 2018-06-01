@@ -37,7 +37,7 @@ export default class RouterProvider extends React.Component<PropTypes, StateType
           </Switch>
           <Switch>
             <Route exact path='/' component={HomePage} />
-            <Route path='/summoner/:summonerName/:queue' component={SummonerProfilePage} />
+            <Route path='/summoner/:summonerName/:season/:queue' component={SummonerProfilePage} />
           </Switch>
         </div>
       </Router>

@@ -22,7 +22,8 @@ export interface Queue {
 
 export interface Season {
   id: string,
-  name: string
+  name: string,
+  url: string
 }
 
 export interface SummonerSeasonStats {
