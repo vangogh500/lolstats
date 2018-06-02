@@ -85,7 +85,14 @@ export default class App extends React.Component<PropType, StateType> {
         {
           ({loading, error, data}) => {
             if(loading) {
-              return null;
+              return (
+                <div className="d-flex justify-content-center align-items-center flex-column">
+                  <div>
+                    <img src="https://streamlabs.com/images/gallery/default.gif"/>
+                  </div>
+                  <span>Contacting Riot HQ...</span>
+                </div>
+              )
             }
             else if(error) {
               console.log(error)
@@ -93,7 +100,7 @@ export default class App extends React.Component<PropType, StateType> {
             else {
               const {summoner, queues, seasons, summonerSeasonQueueStats} = data
               return (
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-grow-1 flex-column bg-grey">
                   <Profile profile={summoner}>
                     <QueueNav className="ml-auto" />
                   </Profile>
