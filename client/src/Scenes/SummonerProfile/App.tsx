@@ -107,13 +107,11 @@ export default class App extends React.Component<PropType, StateType> {
                       if(summoner) {
                         return (
                           <div id="summoner-profile-app" key="summoner-profile-app" className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
-                            <div className="animation-container">
-                              <Profile profile={summoner}>
-                                <QueueNav className="ml-auto" />
-                              </Profile>
-                              <div className="container">
-                                <SeasonNav />
-                              </div>
+                            <Profile profile={summoner}>
+                              <QueueNav className="ml-auto" />
+                            </Profile>
+                            <div className="container">
+                              <SeasonNav />
                             </div>
                           </div>
                         )
