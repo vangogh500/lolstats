@@ -7,5 +7,13 @@
 @import './globals/icons.scss';
 @import './globals/sizing.scss';
 @import './globals/layout.scss';
+@import './globals/typography.scss';
+@import './globals/animation.scss';
 
-@import '../Scenes/Home/index.scss'
+@import '../Scenes/Home/index.scss';
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}

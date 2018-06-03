@@ -53,11 +53,15 @@ const summonerSeasonQueueStats: SummonerSeasonQueueStats[] = [
 export default {
   Query: () => ({
     "summoner": (_: any, { summonerName }: { summonerName: string }) => {
-      return summoners.find(summoner => summoner.name == summonerName)
+      return summoners.find(summoner => summoner.name == summonerName) || null
     },
     "summonerSeasonQueueStats": (_: any, { summonerName }: { summonerName: string }) => {
       const summoner = summoners.find(summoner => summoner.name == summonerName)
-      return summonerSeasonQueueStats.filter(stats => stats.accountId == summoner.accountId)
+      if(summoner) {
+        return summonerSeasonQueueStats.filter(stats => stats.accountId == summoner.accountId)
+      } else {
+        return null
+      }
     },
     "seasons": (_: any) => seasons,
     "queues": (_: any) => queues

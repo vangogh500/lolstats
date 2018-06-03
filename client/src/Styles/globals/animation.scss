@@ -1,0 +1,56 @@
+/**
+ * Global styles for animations
+ *
+ * TABLE OF CONTENT:
+ *  - keyframes
+ *  - utilities
+ *  - loops
+ *  - transitions
+ */
+
+// --------------- KEYFRAMES --------------- //
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+// --------------- UTILITIES --------------- //
+.animation-delay-200 {
+  animation-delay: .2s;
+}
+.animation-delay-400 {
+  animation-delay: .4s;
+}
+.animation-delay-600 {
+  animation-delay: .6s;
+}
+
+
+// --------------- LOOPS --------------- //
+.animation-loop-blink {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both
+}
+
+// --------------- TRANSITIONS --------------- //
+.transition-slideOutTop-enter {
+  display: none !important;
+}
+.transition-slideOutTop-leave {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.transition-slideOutTop-leave-active {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 500ms ease-in, opacity 500ms ease-in;
+}
