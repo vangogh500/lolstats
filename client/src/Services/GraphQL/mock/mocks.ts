@@ -6,7 +6,7 @@
  */
 
 import { IMockOptions } from 'graphql-tools'
-import { Queue, Season, Summoner, SummonerSeasonQueueStats, SummonerSeasonStats } from 'Services/GraphQL/types'
+import { Queue, Season, Summoner, SummonerSeasonQueueStats, SummonerSeasonStats, NormalizedSummonerMatchStats } from 'Services/GraphQL/types'
 
 const queues: Queue[] = [
   { id: "1", name: "Solo", url: "solo", icon: "person" },
@@ -47,6 +47,16 @@ const summonerSeasonQueueStats: SummonerSeasonQueueStats[] = [
   { accountId: "28", seasonId: "3", queueId: "3" }
 ]
 
+const normalizedSummonerMatchStats: NormalizedSummonerMatchStats[] = [
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "1", dateTime: new Date('2018-06-04T03:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "2", dateTime: new Date('2018-06-04T04:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "3", dateTime: new Date('2018-06-04T06:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "4", dateTime: new Date('2018-06-04T10:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "5", dateTime: new Date('2018-06-04T11:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "6", dateTime: new Date('2018-06-04T12:20:30Z'), lp: 40, sp: 60 },
+  { accountId: "27", seasonId: "1", queueId: "1", matchId: "7", dateTime: new Date('2018-06-04T14:20:30Z'), lp: 40, sp: 60 }
+]
+
 /**
  * @constant {Resolver} resolver Resolver for mock db
  */
@@ -64,6 +74,14 @@ export default {
       }
     },
     "seasons": (_: any) => seasons,
-    "queues": (_: any) => queues
+    "queues": (_: any) => queues,
+    "normalizedSummonerMatchStats": (_: any, { summonerName, queueId, seasonId }: { summonerName: string, queueId: string, seasonId: string }) => {
+      const summoner = summoners.find(summoner => summoner.name == summonerName)
+      if(summoner) {
+        return normalizedSummonerMatchStats.filter(stats => (stats.accountId == summoner.accountId && stats.queueId == queueId && stats.seasonId == seasonId))
+      } else {
+        return null
+      }
+    }
   })
 }

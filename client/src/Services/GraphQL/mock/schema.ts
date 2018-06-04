@@ -7,13 +7,16 @@
 
 import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools'
 import mocks from 'Services/GraphQL/mock/mocks'
+import GraphQLDate from 'Services/GraphQL/GraphQLDate'
 
 const schemaString = `
+  scalar Date
   type Query {
     summoner(summonerName: String!): Summoner
     summonerSeasonQueueStats(summonerName: String!): [SummonerSeasonQueueStats]
     seasons: [Season]
     queues: [Queue]
+    normalizedSummonerMatchStats(summonerName: String!, queueId: String!, seasonId: String!): [NormalizedSummonerMatchStats]
   }
   type Summoner {
     profileIconId: String!
@@ -38,9 +41,18 @@ const schemaString = `
     seasonId: String!
     queueId: String!
   }
+  type NormalizedSummonerMatchStats {
+    accountId: String!
+    seasonId: String!
+    queueId: String!
+    matchId: String!
+    dateTime: Date!
+    lp: Number!
+    sp: Number!
+  }
 `
 
-const schema = makeExecutableSchema({ typeDefs: schemaString })
+const schema = makeExecutableSchema({ typeDefs: schemaString, resolvers: { Date: GraphQLDate } })
 addMockFunctionsToSchema({ schema, mocks })
 
 /**

@@ -22,8 +22,11 @@
 }
 
 // --------------- UTILITIES --------------- //
-.animation-delay-200 {
-  animation-delay: .2s;
+.animated {
+  animation-fill-mode: forwards !important;
+}
+.animation-delay-1s {
+  animation-delay: 5s;
 }
 .animation-delay-400 {
   animation-delay: .4s;
@@ -42,15 +45,3 @@
 }
 
 // --------------- TRANSITIONS --------------- //
-.transition-slideOutTop-enter {
-  display: none !important;
-}
-.transition-slideOutTop-leave {
-  transform: translateY(0%);
-  opacity: 1;
-}
-.transition-slideOutTop-leave-active {
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: transform 500ms ease-in, opacity 500ms ease-in;
-}

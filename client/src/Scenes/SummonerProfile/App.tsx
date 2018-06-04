@@ -16,7 +16,8 @@ import Profile from 'Scenes/SummonerProfile/Components/Profile'
 import QueueNav from 'Scenes/SummonerProfile/Components/QueueNav'
 import SeasonNav from 'Scenes/SummonerProfile/Components/SeasonNav'
 import LoadingFullScreen from 'Scenes/SummonerProfile/Components/LoadingFullScreen'
-
+import RemoveOnAnimationEnd from 'Components/Animations/RemoveOnAnimationEnd'
+import AddOnDelay from 'Components/Animations/AddOnDelay'
 
 /**
  * Query string
@@ -86,50 +87,46 @@ export default class App extends React.Component<PropType, StateType> {
       <SummonerProfileQuery query={query} variables={{ summonerName }}>
         {
           ({loading, error, data}) => {
+            if(error) {
+              console.log(error)
+            }
             return (
-              <ReactCSSTransitionGroup className="d-flex flex-grow-1 flex-column"
-                component="div"
-                transitionName="transition-slideOutTop"
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={0}>
-                {
-                  (() => {
-                    if(loading) {
-                      return (
-                        <div id="summoner-profile-loading" key="summoner-profile-loading" className="d-flex flex-grow-1 justify-content-center align-items-center flex-column bg-primary">
-                          <LoadingFullScreen />
-                        </div>
-                      )
-                    } else if(error) {
-                      console.log(error)
-                    } else {
-                      const {summoner, queues, seasons, summonerSeasonQueueStats} = data
-                      if(summoner) {
-                        return (
-                          <div id="summoner-profile-app" key="summoner-profile-app" className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
-                            <Profile profile={summoner}>
-                              <QueueNav className="ml-auto" />
-                            </Profile>
-                            <div className="container">
-                              <SeasonNav />
-                            </div>
-                          </div>
-                        )
+              <div className="d-flex flex-grow-1 flex-column">
+                <RemoveOnAnimationEnd className={"d-flex flex-grow-1 justify-content-center align-items-center flex-column bg-primary " + (loading ? "" : "animated fadeOutUp")}>
+                  <LoadingFullScreen />
+                </RemoveOnAnimationEnd>
+                  {
+                    (() => {
+                      if(data) {
+                        const {summoner, queues, seasons, summonerSeasonQueueStats} = data
+                        if(summoner) {
+                          return (
+                            <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
+                              <Profile profile={summoner}>
+                                <QueueNav className="ml-auto" />
+                              </Profile>
+                              <div className="container">
+                                <SeasonNav />
+                              </div>
+                            </AddOnDelay>
+                          )
+                        } else {
+                          return (
+                            <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column animated fadeInDown">
+                              <div className="h-40px bg-primary w-100"></div>
+                              <div className="d-flex flex-grow-1 justify-content-center align-items-center flex-column">
+                                <h1>404</h1>
+                                <p className="text-muted">Summoner mia</p>
+                              </div>
+                            </AddOnDelay>
+                          )
+                        }
                       } else {
-                        return (
-                          <div id="summoner-profile-error" key="summoner-profile-error" className="d-flex flex-grow-1 flex-column animated fadeInDown">
-                            <div className="h-40px bg-primary w-100"></div>
-                            <div className="d-flex flex-grow-1 justify-content-center align-items-center flex-column">
-                              <h1>404</h1>
-                              <p className="text-muted">Summoner mia</p>
-                            </div>
-                          </div>
-                        )
+                        return null
                       }
-                    }
-                  })()
-                }
-              </ReactCSSTransitionGroup>
+                    })()
+                  }
+              </div>
             )
           }
         }

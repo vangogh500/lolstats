@@ -36,3 +36,13 @@ export interface SummonerSeasonQueueStats {
   seasonId: string,
   accountId: string
 }
+
+export interface NormalizedSummonerMatchStats {
+  accountId: string,
+  seasonId: string,
+  queueId: string,
+  matchId: string,
+  dateTime: Date,
+  lp: number,
+  sp: number
+}
