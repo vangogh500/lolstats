@@ -35,6 +35,21 @@ export interface SummonerProfile {
 
 export interface NormalizedSummonerStats {
   id: string,
+  accountId: string,
   profile: SummonerProfile,
   seasonQueueTuples: SeasonQueueTuple[]
+}
+
+export interface MatchSummary {
+  id: string,
+  lp: number,
+  sp: number,
+  dateTime: Date
+}
+
+export interface SeasonQueueStats {
+  accountId: string,
+  seasonId: string,
+  queueId: string,
+  matchSummaries: MatchSummary[]
 }

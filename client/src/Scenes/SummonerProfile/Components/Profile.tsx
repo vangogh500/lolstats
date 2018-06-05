@@ -1,16 +1,31 @@
+/**
+ * @file Profile component
+ * @author Kai Matsuda
+ * @copyright Kai Matusuda 2018
+ * @version 0.0.1
+ */
 import * as React from 'react'
 import { SummonerProfile } from 'Services/GraphQL/types'
 
 import { getProfileIconURLById } from '../../../Lib/riotapi'
 
+/**
+ * @type PropTypes
+ * @prop {SummonerProfile} profile
+ * @prop {React.ReactNode} children
+ */
 interface PropTypes {
   profile: SummonerProfile,
   children?: React.ReactNode
 }
+/**
+ * @type StateTypes
+ */
+interface StateType {}
 
-interface StateType {
-}
-
+/**
+ * Summoner profile component
+ */
 export default class extends React.Component<PropTypes, StateType> {
   render() {
     const {profile, children} = this.props

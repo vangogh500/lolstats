@@ -15,6 +15,7 @@ const schemaString = `
     seasons: [Season]
     queues: [Queue]
     normalizedSummonerStats(summonerName: String!): NormalizedSummonerStats
+    seasonQueueStats(accountId: String!, seasonId: String!, queueId: String!): SeasonQueueStats
   }
   type QueueProfile {
     name: String!
@@ -44,8 +45,21 @@ const schemaString = `
   }
   type NormalizedSummonerStats {
     id: String!
+    accountId: String!
     profile: SummonerProfile!
     seasonQueueTuples: [SeasonQueueTuple]!
+  }
+  type MatchSummary {
+    id: String!
+    lp: Int!,
+    sp: Int!,
+    dateTime: Date
+  }
+  type SeasonQueueStats {
+    accountId: String!,
+    seasonId: String!,
+    queueId: String!,
+    matchSummaries: [MatchSummary]!
   }
 `
 

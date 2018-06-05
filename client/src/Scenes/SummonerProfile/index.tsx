@@ -33,7 +33,7 @@ export default class SummonerProfilePage extends React.Component<PropTypes, Stat
     const {match} = this.props
     return (
       <div className="d-flex flex-grow-1">
-        <App summonerName={match.params.summonerName} queue={match.params.queue} season={match.params.season}/>
+        <App summonerName={match.params.summonerName} queueUrl={match.params.queue} seasonUrl={match.params.season}/>
       </div>
     )
   }

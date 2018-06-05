@@ -8,11 +8,14 @@
 import * as React from 'react'
 import { Query } from "react-apollo"
 import gql from 'graphql-tag'
+import { Redirect } from 'react-router'
 import { Queue, Season, NormalizedSummonerStats } from 'Services/GraphQL/types'
 
+import { createPathSummonerProfile } from 'Services/Router/pathing'
 import Profile from 'Scenes/SummonerProfile/Components/Profile'
 import QueueNav from 'Scenes/SummonerProfile/Components/QueueNav'
 import SeasonNav from 'Scenes/SummonerProfile/Components/SeasonNav'
+import Dashboard from 'Scenes/SummonerProfile/Components/Dashboard/App'
 import LoadingFullScreen from 'Scenes/SummonerProfile/Components/LoadingFullScreen'
 import RemoveOnAnimationEnd from 'Components/Animations/RemoveOnAnimationEnd'
 import AddOnDelay from 'Components/Animations/AddOnDelay'
@@ -24,6 +27,7 @@ const query = gql`
   query summonerProfile($summonerName: String!) {
     normalizedSummonerStats(summonerName: $summonerName) {
       id
+      accountId
       profile {
         name
         profileIconId
@@ -34,13 +38,30 @@ const query = gql`
         queueId
       }
     }
+    seasons {
+      id
+      profile {
+        name
+        url
+      }
+    }
+    queues {
+      id
+      profile {
+        name
+        url
+        icon
+      }
+    }
   }
 `
 /**
  * Query response data types
  */
 interface QueryResponseData {
-  normalizedSummonerStats: NormalizedSummonerStats
+  normalizedSummonerStats: NormalizedSummonerStats,
+  queues: Queue[],
+  seasons: Season[]
 }
 /**
  * Query variable types
@@ -58,8 +79,8 @@ class SummonerProfileQuery extends Query<QueryResponseData, QueryVariables> {}
  */
 interface PropType {
   summonerName: string,
-  queue: string,
-  season: string
+  queueUrl: string,
+  seasonUrl: string
 }
 /**
  * Summoner profile app state types
@@ -70,7 +91,7 @@ interface StateType {}
  */
 export default class App extends React.Component<PropType, StateType> {
   render() {
-    const {summonerName, queue, season} = this.props
+    const {summonerName, queueUrl, seasonUrl} = this.props
     return (
       <SummonerProfileQuery query={query} variables={{ summonerName }}>
         {
@@ -87,33 +108,54 @@ export default class App extends React.Component<PropType, StateType> {
                   {
                     (() => {
                       if(data) {
-                        const {normalizedSummonerStats } = data
+                        const {normalizedSummonerStats, queues, seasons } = data
                         if(normalizedSummonerStats) {
-                          const { seasonQueueTuples } = normalizedSummonerStats
-                          const uniqueQueueIds = Object.keys(seasonQueueTuples.reduce((acc, tuple) => ({ ...acc, [tuple.queueId]: true }), {}))
-                          const uniqueSeasonIds = Object.keys(seasonQueueTuples.reduce((acc, tuple) => ({ ...acc, [tuple.seasonId]: true }), {}))
-                          return (
-                            <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
-                              <Profile profile={normalizedSummonerStats.profile}>
-                                <QueueNav className="ml-auto" validQueueIds={uniqueQueueIds} currentQueueUrl={queue} currentSeasonUrl={season} currentSummonerName={summonerName} />
-                              </Profile>
-                              <div className="container">
-                                <SeasonNav validSeasonIds={uniqueSeasonIds} currentQueueUrl={queue} currentSeasonUrl={season} currentSummonerName={summonerName} />
-                              </div>
-                            </AddOnDelay>
-                          )
-                          /**
-                          return (
-                            <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
-                              <Profile profile={summoner}>
-                                <QueueNav className="ml-auto" />
-                              </Profile>
-                              <div className="container">
-                                <SeasonNav />
-                              </div>
-                            </AddOnDelay>
-                          ) **/
+                          const { accountId, seasonQueueTuples } = normalizedSummonerStats
+                          const queueIdToQueue: { [id: string]: Queue } = queues.reduce((acc, queue) => (
+                              { ...acc, [queue.id]: queue }
+                            ), {})
+                          const seasonIdToSeason: { [id: string]: Season } = seasons.reduce((acc, season) => (
+                              { ...acc, [season.id]: season }
+                            ), {})
+                          const validQueues = Object.keys(seasonQueueTuples.reduce((acc, tuple) => (
+                              { ...acc, [tuple.queueId]: true }
+                            ), {})).reduce((acc, id) => (
+                              [...acc, queueIdToQueue[id]
+                            ]), [])
+                          const validSeasons = Object.keys(seasonQueueTuples.reduce((acc, tuple) => (
+                              { ...acc, [tuple.seasonId]: true }
+                            ), {})).reduce((acc, id) => (
+                              [...acc, seasonIdToSeason[id]]
+                            ), [])
+                          const queue = validQueues.find(queue => queue.profile.url.toUpperCase() == queueUrl.toUpperCase())
+                          const season = validSeasons.find(season => season.profile.url.toUpperCase() == seasonUrl.toUpperCase())
+                          if(!queue || !season) {
+                            const queueRedirect = queue ? queueUrl : validQueues[0].profile.url
+                            const seasonRedirect = season ? seasonUrl : validSeasons[0].profile.url
+                            return (
+                              <Redirect to={createPathSummonerProfile(summonerName, seasonRedirect, queueRedirect)}/>
+                            )
+                          } else {
+                            return (
+                              <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
+                                <Profile profile={normalizedSummonerStats.profile}>
+                                  <QueueNav
+                                    className="ml-auto"
+                                    queues={validQueues}
+                                    urlBuilder={createPathSummonerProfile.bind(null, summonerName, seasonUrl)}
+                                    activeValidator={(queue) => (queue.profile.url.toUpperCase() == queueUrl.toUpperCase())} />
+                                </Profile>
+                                <div className="container">
+                                  <SeasonNav
+                                    seasons={validSeasons}
+                                    urlBuilder={(url) => createPathSummonerProfile(summonerName, url, queueUrl)} />
+                                  <Dashboard accountId={accountId} seasonId={season.id} queueId={queue.id} />
+                                </div>
+                              </AddOnDelay>
+                            )
+                          }
                         } else {
+                          // 404
                           return (
                             <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column animated fadeInDown">
                               <div className="h-40px bg-primary w-100"></div>
