@@ -12,43 +12,40 @@ import GraphQLDate from 'Services/GraphQL/GraphQLDate'
 const schemaString = `
   scalar Date
   type Query {
-    summoner(summonerName: String!): Summoner
-    summonerSeasonQueueStats(summonerName: String!): [SummonerSeasonQueueStats]
     seasons: [Season]
     queues: [Queue]
-    normalizedSummonerMatchStats(summonerName: String!, queueId: String!, seasonId: String!): [NormalizedSummonerMatchStats]
+    normalizedSummonerStats(summonerName: String!): NormalizedSummonerStats
   }
-  type Summoner {
-    profileIconId: String!
-    name: String!
-    level: Int!
-    id: String!
-    accountId: String!
-  }
-  type Queue {
-    id: String!
+  type QueueProfile {
     name: String!
     url: String!
     icon: String!
   }
-  type Season {
+  type Queue {
     id: String!
+    profile: QueueProfile!
+  }
+  type SeasonProfile {
     name: String!
     url: String!
   }
-  type SummonerSeasonQueueStats {
-    accountId: String!
+  type Season {
+    id: String!
+    profile: SeasonProfile!
+  }
+  type SummonerProfile {
+    name: String!
+    profileIconId: String!
+    level: Int!
+  }
+  type SeasonQueueTuple {
     seasonId: String!
     queueId: String!
   }
-  type NormalizedSummonerMatchStats {
-    accountId: String!
-    seasonId: String!
-    queueId: String!
-    matchId: String!
-    dateTime: Date!
-    lp: Number!
-    sp: Number!
+  type NormalizedSummonerStats {
+    id: String!
+    profile: SummonerProfile!
+    seasonQueueTuples: [SeasonQueueTuple]!
   }
 `
 

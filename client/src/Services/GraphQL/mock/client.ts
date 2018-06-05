@@ -10,7 +10,6 @@ import { InMemoryCache, defaultDataIdFromObject } from 'apollo-cache-inmemory';
 import { SchemaLink } from 'apollo-link-schema';
 
 import schema from 'Services/GraphQL/mock/schema'
-import { SummonerSeasonQueueStats } from 'Services/GraphQL/types'
 
 
 /**

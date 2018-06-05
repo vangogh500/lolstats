@@ -7,6 +7,7 @@
 
 import * as React from 'react'
 import { Redirect } from 'react-router'
+import { createPathSummonerProfile } from 'Services/Router/pathing'
 
 /**
  * @type Summoner search bar state types
@@ -44,7 +45,7 @@ export default class SummonerSearch extends React.Component<PropType, StateType>
     const {value, submitted} = this.state
     if(submitted) {
       return (
-        <Redirect to={'/summoner/' + value + '/all/solo'} />
+        <Redirect to={createPathSummonerProfile(value)} />
       )
     } else {
       return (

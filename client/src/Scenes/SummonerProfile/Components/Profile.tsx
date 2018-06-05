@@ -1,17 +1,17 @@
 import * as React from 'react'
-import { Summoner } from 'Services/GraphQL/types'
+import { SummonerProfile } from 'Services/GraphQL/types'
 
 import { getProfileIconURLById } from '../../../Lib/riotapi'
 
 interface PropTypes {
-  profile: Summoner,
+  profile: SummonerProfile,
   children?: React.ReactNode
 }
 
 interface StateType {
 }
 
-export default class SummonerProfile extends React.Component<PropTypes, StateType> {
+export default class extends React.Component<PropTypes, StateType> {
   render() {
     const {profile, children} = this.props
     return (

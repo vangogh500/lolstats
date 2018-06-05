@@ -6,11 +6,9 @@
  */
 
 import * as React from 'react'
-import * as ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import { ChildProps } from "react-apollo"
 import { Query } from "react-apollo"
 import gql from 'graphql-tag'
-import { Summoner, Queue, Season, SummonerSeasonQueueStats } from 'Services/GraphQL/types'
+import { Queue, Season, NormalizedSummonerStats } from 'Services/GraphQL/types'
 
 import Profile from 'Scenes/SummonerProfile/Components/Profile'
 import QueueNav from 'Scenes/SummonerProfile/Components/QueueNav'
@@ -24,25 +22,17 @@ import AddOnDelay from 'Components/Animations/AddOnDelay'
  */
 const query = gql`
   query summonerProfile($summonerName: String!) {
-    summoner(summonerName: $summonerName) {
-      name
-      profileIconId
-    }
-    summonerSeasonQueueStats(summonerName: $summonerName) {
-      queueId
-      seasonId
-      accountId
-    }
-    queues {
+    normalizedSummonerStats(summonerName: $summonerName) {
       id
-      name
-      url
-      icon
-    }
-    seasons {
-      id
-      name
-      url
+      profile {
+        name
+        profileIconId
+        level
+      }
+      seasonQueueTuples {
+        seasonId
+        queueId
+      }
     }
   }
 `
@@ -50,10 +40,7 @@ const query = gql`
  * Query response data types
  */
 interface QueryResponseData {
-  summoner: Summoner,
-  queues: Queue[],
-  seasons: Season[],
-  summonerSeasonQueueStats: SummonerSeasonQueueStats[]
+  normalizedSummonerStats: NormalizedSummonerStats
 }
 /**
  * Query variable types
@@ -71,7 +58,8 @@ class SummonerProfileQuery extends Query<QueryResponseData, QueryVariables> {}
  */
 interface PropType {
   summonerName: string,
-  queue: string
+  queue: string,
+  season: string
 }
 /**
  * Summoner profile app state types
@@ -82,13 +70,14 @@ interface StateType {}
  */
 export default class App extends React.Component<PropType, StateType> {
   render() {
-    const {summonerName, queue} = this.props
+    const {summonerName, queue, season} = this.props
     return (
       <SummonerProfileQuery query={query} variables={{ summonerName }}>
         {
           ({loading, error, data}) => {
             if(error) {
               console.log(error)
+              return null
             }
             return (
               <div className="d-flex flex-grow-1 flex-column">
@@ -98,8 +87,22 @@ export default class App extends React.Component<PropType, StateType> {
                   {
                     (() => {
                       if(data) {
-                        const {summoner, queues, seasons, summonerSeasonQueueStats} = data
-                        if(summoner) {
+                        const {normalizedSummonerStats } = data
+                        if(normalizedSummonerStats) {
+                          const { seasonQueueTuples } = normalizedSummonerStats
+                          const uniqueQueueIds = Object.keys(seasonQueueTuples.reduce((acc, tuple) => ({ ...acc, [tuple.queueId]: true }), {}))
+                          const uniqueSeasonIds = Object.keys(seasonQueueTuples.reduce((acc, tuple) => ({ ...acc, [tuple.seasonId]: true }), {}))
+                          return (
+                            <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
+                              <Profile profile={normalizedSummonerStats.profile}>
+                                <QueueNav className="ml-auto" validQueueIds={uniqueQueueIds} currentQueueUrl={queue} currentSeasonUrl={season} currentSummonerName={summonerName} />
+                              </Profile>
+                              <div className="container">
+                                <SeasonNav validSeasonIds={uniqueSeasonIds} currentQueueUrl={queue} currentSeasonUrl={season} currentSummonerName={summonerName} />
+                              </div>
+                            </AddOnDelay>
+                          )
+                          /**
                           return (
                             <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column bg-grey animated fadeInDown">
                               <Profile profile={summoner}>
@@ -109,7 +112,7 @@ export default class App extends React.Component<PropType, StateType> {
                                 <SeasonNav />
                               </div>
                             </AddOnDelay>
-                          )
+                          ) **/
                         } else {
                           return (
                             <AddOnDelay delay={1000} className="d-flex flex-grow-1 flex-column animated fadeInDown">

@@ -13,6 +13,7 @@ import { Route, Switch } from 'react-router-dom'
 import MainNav from 'Components/MainNav/index'
 import HomePage from 'Scenes/Home/index'
 import SummonerProfilePage from 'Scenes/SummonerProfile/index'
+import {PATH_SUMMONER_PROFILE} from 'Services/Router/pathing'
 
 /**
  * @type Router prop types
@@ -37,7 +38,7 @@ export default class RouterProvider extends React.Component<PropTypes, StateType
           </Switch>
           <Switch>
             <Route exact path='/' component={HomePage} />
-            <Route path='/summoner/:summonerName/:season/:queue' component={SummonerProfilePage} />
+            <Route path={PATH_SUMMONER_PROFILE} component={SummonerProfilePage} />
           </Switch>
         </div>
       </Router>

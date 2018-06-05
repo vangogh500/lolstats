@@ -12,7 +12,8 @@ import App from 'Scenes/SummonerProfile/App'
 
 interface RouteProps {
   summonerName: string,
-  queue: string
+  queue: string,
+  season: string
 }
 /**
  * @type Summoner profile page prop types
@@ -32,7 +33,7 @@ export default class SummonerProfilePage extends React.Component<PropTypes, Stat
     const {match} = this.props
     return (
       <div className="d-flex flex-grow-1">
-        <App summonerName={match.params.summonerName} queue={match.params.queue} />
+        <App summonerName={match.params.summonerName} queue={match.params.queue} season={match.params.season}/>
       </div>
     )
   }

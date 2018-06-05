@@ -5,44 +5,36 @@
  * @version 0.0.1
  */
 
-export interface Summoner {
+export interface Queue {
   id: string,
-  accountId: string
+  profile: {
+    name: string,
+    url: string,
+    icon: string
+  }
+}
+
+export interface Season {
+  id: string,
+  profile: {
+    name: string,
+    url: string
+  }
+}
+
+export interface SeasonQueueTuple {
+  seasonId: string,
+  queueId: string
+}
+
+export interface SummonerProfile {
   profileIconId: string,
   name: string,
   level: number
 }
 
-export interface Queue {
+export interface NormalizedSummonerStats {
   id: string,
-  name: string,
-  url: string,
-  icon: string
-}
-
-export interface Season {
-  id: string,
-  name: string,
-  url: string
-}
-
-export interface SummonerSeasonStats {
-  seasonId: string,
-  accountId: string
-}
-
-export interface SummonerSeasonQueueStats {
-  queueId: string
-  seasonId: string,
-  accountId: string
-}
-
-export interface NormalizedSummonerMatchStats {
-  accountId: string,
-  seasonId: string,
-  queueId: string,
-  matchId: string,
-  dateTime: Date,
-  lp: number,
-  sp: number
+  profile: SummonerProfile,
+  seasonQueueTuples: SeasonQueueTuple[]
 }

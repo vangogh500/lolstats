@@ -6,55 +6,48 @@
  */
 
 import { IMockOptions } from 'graphql-tools'
-import { Queue, Season, Summoner, SummonerSeasonQueueStats, SummonerSeasonStats, NormalizedSummonerMatchStats } from 'Services/GraphQL/types'
+import { Queue, Season, NormalizedSummonerStats } from 'Services/GraphQL/types'
 
 const queues: Queue[] = [
-  { id: "1", name: "Solo", url: "solo", icon: "person" },
-  { id: "2", name: "Flex", url: "flex", icon: "people" },
-  { id: "3", name: "TT", url: "tt", icon: "nature" }
+  { id: "1", profile: { name: "Solo", url: "solo", icon: "person" }},
+  { id: "2", profile: { name: "Flex", url: "flex", icon: "people" }},
+  { id: "3", profile: { name: "TT", url: "tt", icon: "nature" }}
 ]
 
 const seasons: Season[] = [
-  { id: "1", name: "Season 8", url: "season_8" },
-  { id: "2", name: "Season 7", url: "season_7" },
-  { id: "3", name: "Season 6", url: "season_6" }
+  { id: "1", profile: { name: "Season 8", url: "season_8" }},
+  { id: "2", profile: { name: "Season 7", url: "season_7" }},
+  { id: "3", profile: { name: "Season 6", url: "season_6" }}
 ]
 
-const summoners: Summoner[] = [
+const normalizedSummonerStats: NormalizedSummonerStats[] = [
   {
-    "profileIconId": "23",
-    "accountId": "27",
-    "name": "Vangogh",
-    "level": 78,
     "id": "37738212",
+    "profile": {
+      "profileIconId": "23",
+      "name": "Vangogh",
+      "level": 78,
+    },
+    "seasonQueueTuples": [
+      { "queueId": "1", "seasonId": "1" },
+      { "queueId": "2", "seasonId": "1" }
+    ]
   },
   {
-    "profileIconId": "3225",
-    "accountId": "28",
-    "name": "Haimi",
-    "level": 58,
     "id": "31077087",
+    "profile": {
+      "profileIconId": "3225",
+      "name": "Haimi",
+      "level": 58,
+    },
+    "seasonQueueTuples": [
+      { "queueId": "1", "seasonId": "1" },
+      { "queueId": "1", "seasonId": "3" },
+      { "queueId": "2", "seasonId": "2" },
+      { "queueId": "2", "seasonId": "3" },
+      { "queueId": "3", "seasonId": "3" }
+    ]
   }
-]
-
-const summonerSeasonQueueStats: SummonerSeasonQueueStats[] = [
-  { accountId: "27", seasonId: "1", queueId: "1" },
-  { accountId: "27", seasonId: "1", queueId: "2" },
-  { accountId: "28", seasonId: "1", queueId: "1" },
-  { accountId: "28", seasonId: "2", queueId: "2" },
-  { accountId: "28", seasonId: "3", queueId: "1" },
-  { accountId: "28", seasonId: "3", queueId: "2" },
-  { accountId: "28", seasonId: "3", queueId: "3" }
-]
-
-const normalizedSummonerMatchStats: NormalizedSummonerMatchStats[] = [
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "1", dateTime: new Date('2018-06-04T03:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "2", dateTime: new Date('2018-06-04T04:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "3", dateTime: new Date('2018-06-04T06:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "4", dateTime: new Date('2018-06-04T10:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "5", dateTime: new Date('2018-06-04T11:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "6", dateTime: new Date('2018-06-04T12:20:30Z'), lp: 40, sp: 60 },
-  { accountId: "27", seasonId: "1", queueId: "1", matchId: "7", dateTime: new Date('2018-06-04T14:20:30Z'), lp: 40, sp: 60 }
 ]
 
 /**
@@ -62,26 +55,10 @@ const normalizedSummonerMatchStats: NormalizedSummonerMatchStats[] = [
  */
 export default {
   Query: () => ({
-    "summoner": (_: any, { summonerName }: { summonerName: string }) => {
-      return summoners.find(summoner => summoner.name == summonerName) || null
-    },
-    "summonerSeasonQueueStats": (_: any, { summonerName }: { summonerName: string }) => {
-      const summoner = summoners.find(summoner => summoner.name == summonerName)
-      if(summoner) {
-        return summonerSeasonQueueStats.filter(stats => stats.accountId == summoner.accountId)
-      } else {
-        return null
-      }
-    },
     "seasons": (_: any) => seasons,
     "queues": (_: any) => queues,
-    "normalizedSummonerMatchStats": (_: any, { summonerName, queueId, seasonId }: { summonerName: string, queueId: string, seasonId: string }) => {
-      const summoner = summoners.find(summoner => summoner.name == summonerName)
-      if(summoner) {
-        return normalizedSummonerMatchStats.filter(stats => (stats.accountId == summoner.accountId && stats.queueId == queueId && stats.seasonId == seasonId))
-      } else {
-        return null
-      }
+    "normalizedSummonerStats": (_: any, { summonerName }: { summonerName: string }) => {
+      return normalizedSummonerStats.find(stats => stats.profile.name == summonerName)
     }
   })
 }
