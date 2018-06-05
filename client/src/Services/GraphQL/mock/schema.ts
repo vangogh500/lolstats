@@ -10,7 +10,6 @@ import mocks from 'Services/GraphQL/mock/mocks'
 import GraphQLDate from 'Services/GraphQL/GraphQLDate'
 
 const schemaString = `
-  scalar Date
   type Query {
     seasons: [Season]
     queues: [Queue]
@@ -49,6 +48,7 @@ const schemaString = `
     profile: SummonerProfile!
     seasonQueueTuples: [SeasonQueueTuple]!
   }
+  scalar Date
   type MatchSummary {
     id: String!
     lp: Int!,

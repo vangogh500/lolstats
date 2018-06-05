@@ -9,6 +9,8 @@ import { Query } from "react-apollo"
 import gql from 'graphql-tag'
 import { SeasonQueueStats } from 'Services/GraphQL/types'
 
+import { VictoryChart, VictoryLine } from 'victory'
+
 /**
  * Query string
  */
@@ -69,8 +71,27 @@ export default class extends React.Component<PropTypes, StateType> {
       <SummonerProfileDashboardQuery query={query} variables={{ accountId, seasonId, queueId }}>
         {
           ({loading, error, data}) => {
-            console.log({loading, error, data})
-            return null
+            if(!loading) {
+              if(data) {
+                const {seasonQueueStats} = data
+                const {matchSummaries} = seasonQueueStats
+                const plots = matchSummaries.map(summary => ({ x: new Date(summary.dateTime), y: summary.lp }))
+                return (
+                  <VictoryChart style={{
+                      parent: {border: "1px solid #ccc" }
+                    }} scale={{ x: 'time', y: 'linear' }}>
+                      <VictoryLine
+                        style={{
+                          data: { stroke: 'red' }
+                        }} data={plots} />
+                  </VictoryChart>
+                )
+              } else {
+                return null
+              }
+            } else {
+              return null
+            }
           }
         }
       </SummonerProfileDashboardQuery>
