@@ -9,7 +9,8 @@ import { Query } from "react-apollo"
 import gql from 'graphql-tag'
 import { SeasonQueueStats } from 'Services/GraphQL/types'
 
-import { VictoryChart, VictoryLine } from 'victory'
+import { VictoryTheme, VictoryChart, VictoryLine, VictoryAxis, VictoryVoronoiContainer } from 'victory'
+import ToolTip from 'Components/Chart/ToolTip'
 
 /**
  * Query string
@@ -17,10 +18,11 @@ import { VictoryChart, VictoryLine } from 'victory'
 const query = gql`
   query summonerProfileDashboard($accountId: String!, $seasonId: String!, $queueId: String!) {
     seasonQueueStats(accountId: $accountId, seasonId: $seasonId, queueId: $queueId) {
+      lp
       matchSummaries {
         id
-        lp
-        sp
+        lpDelta
+        spDelta
         dateTime
       }
     }
@@ -73,18 +75,54 @@ export default class extends React.Component<PropTypes, StateType> {
           ({loading, error, data}) => {
             if(!loading) {
               if(data) {
+                console.log({loading, error, data})
                 const {seasonQueueStats} = data
-                const {matchSummaries} = seasonQueueStats
-                const plots = matchSummaries.map(summary => ({ x: new Date(summary.dateTime), y: summary.lp }))
+                const {lp, matchSummaries} = seasonQueueStats
+
+                const [_, ...plots] = matchSummaries.reverse().reduce((acc, summary, i) => {
+                  return [...acc, {
+                    x: summary.dateTime,
+                    y: acc[i].y - ( (i-1 < 0) ? 0 : matchSummaries[i-1].lpDelta)
+                  }]
+                }, [{ x: 0, y: lp}])
+                const [yMax, yMin] = plots.reduce(([max, min], plot) => (
+                  [Math.max(max, plot.y), Math.min(min, plot.y)]
+                ), [plots[0].y, plots[0].y])
+                const today_start = new Date(2018, 1, 2, 0)
+                const today_end = new Date(2018, 1, 2, 24)
+                console.log(today_start.getTime() + "," + today_end.getTime())
                 return (
-                  <VictoryChart style={{
-                      parent: {border: "1px solid #ccc" }
-                    }} scale={{ x: 'time', y: 'linear' }}>
-                      <VictoryLine
-                        style={{
-                          data: { stroke: 'red' }
-                        }} data={plots} />
-                  </VictoryChart>
+                  <div className="container-fluid">
+                    <div className="row">
+                      <div className="col-8">
+                        <VictoryChart
+                          theme={VictoryTheme.material}
+                          domain={{x: [today_start, today_end], y: [yMin, yMax]}}
+                          style={{parent: { width: "100%"}}}
+                          scale={{ x: 'time', y: 'linear' }}
+                          containerComponent={<VictoryVoronoiContainer
+                            labels={(d) => d.y}
+                            labelComponent={<ToolTip />}
+                          />}>
+                          <VictoryAxis crossAxis tickFormat={() => ''} />
+                          <VictoryLine
+                            style={{data: { stroke: '#21ce99', strokeWidth: '1' }}}
+                            y={(datum) => {
+                              const plot = plots.find(plot => {
+                                return plot.x <= datum.x
+                              })
+                              if(!plot) {
+                                return plots[plots.length - 1].y - matchSummaries[0].lpDelta
+                              } else {
+                                return plot.y
+                              }
+                            }} />
+                        </VictoryChart>
+                      </div>
+                      <div className="col-4">
+                      </div>
+                    </div>
+                  </div>
                 )
               } else {
                 return null

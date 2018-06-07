@@ -42,8 +42,8 @@ export interface NormalizedSummonerStats {
 
 export interface MatchSummary {
   id: string,
-  lp: number,
-  sp: number,
+  lpDelta: number,
+  spDelta: number,
   dateTime: Date
 }
 
@@ -51,5 +51,6 @@ export interface SeasonQueueStats {
   accountId: string,
   seasonId: string,
   queueId: string,
+  lp: number,
   matchSummaries: MatchSummary[]
 }

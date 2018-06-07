@@ -51,14 +51,15 @@ const schemaString = `
   scalar Date
   type MatchSummary {
     id: String!
-    lp: Int!,
-    sp: Int!,
+    lpDelta: Int!,
+    spDelta: Int!,
     dateTime: Date
   }
   type SeasonQueueStats {
     accountId: String!,
     seasonId: String!,
     queueId: String!,
+    lp: Int!,
     matchSummaries: [MatchSummary]!
   }
 `

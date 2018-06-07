@@ -57,15 +57,16 @@ const seasonQueueStats: SeasonQueueStats[] = [
     accountId: "1",
     seasonId: "1",
     queueId: "1",
+    lp: 1050,
     matchSummaries: [
-      { id: "1", lp: 1000, sp: 1050, dateTime: new Date(Date.UTC(2018, 1, 2, 10)) },
-      { id: "2", lp: 982, sp: 1000, dateTime: new Date(Date.UTC(2018, 1, 2, 11)) },
-      { id: "3", lp: 960, sp: 1055, dateTime: new Date(Date.UTC(2018, 1, 2, 12)) },
-      { id: "4", lp: 932, sp: 1058, dateTime: new Date(Date.UTC(2018, 1, 2, 13)) },
-      { id: "5", lp: 951, sp: 1045, dateTime: new Date(Date.UTC(2018, 1, 2, 20)) },
-      { id: "6", lp: 976, sp: 1040, dateTime: new Date(Date.UTC(2018, 1, 3, 20)) },
-      { id: "7", lp: 959, sp: 1031, dateTime: new Date(Date.UTC(2018, 1, 3, 21)) },
-      { id: "8", lp: 980, sp: 1050, dateTime: new Date(Date.UTC(2018, 1, 4, 10)) }
+      { id: "1", lpDelta: 11, spDelta: 1050, dateTime: new Date(Date.UTC(2018, 1, 2, 10)) },
+      { id: "2", lpDelta: -13, spDelta: 1000, dateTime: new Date(Date.UTC(2018, 1, 2, 11)) },
+      { id: "3", lpDelta: -12, spDelta: 1055, dateTime: new Date(Date.UTC(2018, 1, 2, 12)) },
+      { id: "4", lpDelta: -14, spDelta: 1058, dateTime: new Date(Date.UTC(2018, 1, 2, 13)) },
+      { id: "5", lpDelta: 11, spDelta: 1045, dateTime: new Date(Date.UTC(2018, 1, 2, 20)) },
+      { id: "6", lpDelta: 13, spDelta: 1040, dateTime: new Date(Date.UTC(2018, 1, 3, 20)) },
+      { id: "7", lpDelta: -11, spDelta: 1031, dateTime: new Date(Date.UTC(2018, 1, 3, 21)) },
+      { id: "8", lpDelta: 14, spDelta: 1050, dateTime: new Date(Date.UTC(2018, 1, 4, 10)) }
     ]
   }
 ]
