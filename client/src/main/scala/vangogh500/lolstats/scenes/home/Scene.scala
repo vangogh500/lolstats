@@ -3,6 +3,7 @@ package vangogh500.lolstats.scenes.home
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 import scalacss.ScalaCssReact._
+import vangogh500.lolstats.scenes.home.components._
 
 object Scene {
   private val component = ScalaComponent.static("No args")(
@@ -12,7 +13,8 @@ object Scene {
       <.h1(
         ^.className := "display-3 text-white mb-5",
         "Begin the Climb"
-      )
+      ),
+      SummonerSearchBar()
     )
   )
   def apply() = component()

@@ -22,7 +22,8 @@ object Coloring extends StyleSheet.Inline {
   val colors = Map[String, String](
     "Primary" -> "#0D0C1D",
     "Secondary" -> "#474973",
-    "Ternary" -> "#474973"
+    "Ternary" -> "#474973",
+    "Neon Pink" -> "#ff73d5"
   )
 
   case class ColorOpts(hex: String, alpha: Int)
@@ -42,5 +43,13 @@ object Coloring extends StyleSheet.Inline {
         backgroundColor(dsl.rgba(red, blue, green, alpha / 100.0))
       )
   }
+  val p_color = styleF(domain) {
+    case ColorOpts(hex, alpha) =>
+      val (red, blue, green) = Util.hexToRGB(hex)
+      styleS(
+        dsl.color(dsl.rgba(red, blue, green, alpha / 100.0))
+      )
+  }
   def bg(hex: String, alpha: Double = 1) = p_bg(ColorOpts(hex, alpha))
+  def color(hex: String, alpha: Double = 1) = p_color(ColorOpts(hex, alpha))
 }

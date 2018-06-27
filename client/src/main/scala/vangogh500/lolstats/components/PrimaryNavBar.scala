@@ -10,7 +10,8 @@ object PrimaryNavBar {
     <.nav(^.className := "navbar navbar-expand-sm navbar-dark", Coloring.bg(Coloring.colors("Primary")), Zindex(5),
       <.div(^.className := "container",
         <.a(^.className := "navbar-brand text-uppercase", ^.href := "/",
-          "LoL Stats"
+          <.span("LOL"),
+          <.span(Coloring.color(Coloring.colors("Neon Pink")), "STATS")
         ),
         <.ul(^.className := "navbar-nav ml-auto",
           <.li(^.className := "nav-item",

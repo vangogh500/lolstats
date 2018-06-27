@@ -10,13 +10,13 @@ object SecondaryNavBar {
     <.div(^.className := "w-vw-100", Coloring.bg(Coloring.colors("Secondary"), 0.5), Spacing.mb(-40), Zindex(5),
       <.div(^.className := "container",
         <.nav(^.className := "nav",
-          <.a(^.className := "nav-item nav-link text-light text-uppercase active", ^.href := "/",
+          <.a(^.className := "nav-item nav-link text-light active", ^.href := "/",
             "Summoner"
           ),
-          <.a(^.className := "nav-item nav-link text-light text-uppercase", ^.href := "/",
+          <.a(^.className := "nav-item nav-link text-light", ^.href := "/",
             "Champion"
           ),
-          <.a(^.className := "nav-item nav-link text-light text-uppercase", ^.href := "/",
+          <.a(^.className := "nav-item nav-link text-light", ^.href := "/",
             "Leaderboard"
           )
         )

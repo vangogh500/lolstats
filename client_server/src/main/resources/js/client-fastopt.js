@@ -2296,6 +2296,41 @@ function $m_Ljapgolly_scalajs_react_CtorType$Summoner$() {
   return $n_Ljapgolly_scalajs_react_CtorType$Summoner$
 }
 /** @constructor */
+function $c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$() {
+  $c_O.call(this)
+}
+$c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype = new $h_O();
+$c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype.constructor = $c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_ReactExt$undReactEvent$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype = $c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype;
+$c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype.init___ = (function() {
+  return this
+});
+$c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype.preventDefaultCB$extension__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0 = (function($$this) {
+  return $m_Ljapgolly_scalajs_react_Callback$().apply__F0__Ljapgolly_scalajs_react_Callback$ResultGuard__F0(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, $$this$1) {
+    return (function() {
+      $$this$1.preventDefault()
+    })
+  })(this, $$this)), null)
+});
+var $d_Ljapgolly_scalajs_react_ReactExt$undReactEvent$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_ReactExt$undReactEvent$: 0
+}, false, "japgolly.scalajs.react.ReactExt_ReactEvent$", {
+  Ljapgolly_scalajs_react_ReactExt$undReactEvent$: 1,
+  O: 1
+});
+$c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$.prototype.$classData = $d_Ljapgolly_scalajs_react_ReactExt$undReactEvent$;
+var $n_Ljapgolly_scalajs_react_ReactExt$undReactEvent$ = (void 0);
+function $m_Ljapgolly_scalajs_react_ReactExt$undReactEvent$() {
+  if ((!$n_Ljapgolly_scalajs_react_ReactExt$undReactEvent$)) {
+    $n_Ljapgolly_scalajs_react_ReactExt$undReactEvent$ = new $c_Ljapgolly_scalajs_react_ReactExt$undReactEvent$().init___()
+  };
+  return $n_Ljapgolly_scalajs_react_ReactExt$undReactEvent$
+}
+/** @constructor */
 function $c_Ljapgolly_scalajs_react_component_Generic$() {
   $c_O.call(this)
 }
@@ -4706,6 +4741,27 @@ $c_Ljapgolly_scalajs_react_vdom_Exports.prototype.init___ = (function() {
   this.VdomArray$1 = $m_Ljapgolly_scalajs_react_vdom_VdomArray$();
   return this
 });
+/** @constructor */
+function $c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$() {
+  $c_O.call(this)
+}
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype = new $h_O();
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype.constructor = $c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype = $c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype;
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype.init___Ljapgolly_scalajs_react_vdom_HtmlAttrs = (function($$outer) {
+  return this
+});
+var $d_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$: 0
+}, false, "japgolly.scalajs.react.vdom.HtmlAttrs$aria$", {
+  Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$: 1,
+  O: 1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$.prototype.$classData = $d_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$;
 function $f_Ljapgolly_scalajs_react_vdom_ImplicitsForVdomAttr__$$init$__V($thiz) {
   $thiz.vdomAttrVtBoolean$2 = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().byImplicit__F1__F2(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
     return (function(value$2) {
@@ -9703,29 +9759,39 @@ function $h_Lvangogh500_lolstats_components_PrimaryNavBar$() {
 $h_Lvangogh500_lolstats_components_PrimaryNavBar$.prototype = $c_Lvangogh500_lolstats_components_PrimaryNavBar$.prototype;
 $c_Lvangogh500_lolstats_components_PrimaryNavBar$.prototype.init___ = (function() {
   $n_Lvangogh500_lolstats_components_PrimaryNavBar$ = this;
-  var jsx$19 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
+  var jsx$23 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$18 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  var jsx$22 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$17 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("navbar navbar-expand-sm navbar-dark", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$21 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("navbar navbar-expand-sm navbar-dark", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   var this$3 = $m_Lscalacss_ScalaCssReact$();
   var s = $m_Lvangogh500_lolstats_styling_Coloring$().bg__T__D__Lscalacss_internal_StyleA($as_T($m_Lvangogh500_lolstats_styling_Coloring$().colors$3.apply__O__O("Primary")), ($m_Lvangogh500_lolstats_styling_Coloring$(), 1.0));
-  var jsx$16 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$3, s);
+  var jsx$20 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$3, s);
   var this$5 = $m_Lscalacss_ScalaCssReact$();
   var this$4 = $m_Lvangogh500_lolstats_styling_Zindex$();
   var s$1 = $as_Lscalacss_internal_StyleA(this$4.zindex$3.apply__O__O(5));
-  var jsx$15 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$5, s$1);
-  var jsx$14 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  var jsx$19 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$5, s$1);
+  var jsx$18 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$13 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("container", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-  var jsx$12 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$();
-  var jsx$11 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("navbar-brand text-uppercase", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$17 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("container", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$16 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$();
+  var jsx$15 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("navbar-brand text-uppercase", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
   var this$11 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("href");
   var t = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2;
-  var array = [jsx$11, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$11.name$1, "/"), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("LoL Stats"))];
-  var jsx$10 = jsx$12.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+  var jsx$14 = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$11.name$1, "/");
+  var jsx$13 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var array = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("LOL"))];
+  var jsx$12 = jsx$13.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("span", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+  var jsx$11 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var this$18 = $m_Lscalacss_ScalaCssReact$();
+  var s$2 = $m_Lvangogh500_lolstats_styling_Coloring$().color__T__D__Lscalacss_internal_StyleA($as_T($m_Lvangogh500_lolstats_styling_Coloring$().colors$3.apply__O__O("Neon Pink")), ($m_Lvangogh500_lolstats_styling_Coloring$(), 1.0));
+  var array$1 = [$f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$18, s$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("STATS"))];
+  var array$2 = [jsx$15, jsx$14, jsx$12, jsx$11.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("span", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
+  var jsx$10 = jsx$16.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
   var jsx$9 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   var jsx$8 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("navbar-nav ml-auto", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
@@ -9736,18 +9802,18 @@ $c_Lvangogh500_lolstats_components_PrimaryNavBar$.prototype.init___ = (function(
   var jsx$4 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-link", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   var jsx$3 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var array$1 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("material-icons align-middle", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("place"))];
-  var jsx$2 = jsx$3.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("i", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  var array$3 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("material-icons align-middle", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("place"))];
+  var jsx$2 = jsx$3.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("i", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
   var jsx$1 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var array$2 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("align-middle", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("NA"))];
-  var array$3 = [jsx$4, jsx$2, jsx$1.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("span", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
-  var array$4 = [jsx$6, jsx$5.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))];
-  var array$5 = [jsx$8, jsx$7.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("li", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
-  var array$6 = [jsx$13, jsx$10, jsx$9.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("ul", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5))];
-  var array$7 = [jsx$17, jsx$16, jsx$15, jsx$14.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6))];
-  var a = jsx$18.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("nav", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7));
-  this.component$1 = jsx$19.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("PrimaryNavBar", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
+  var array$4 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("align-middle", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("NA"))];
+  var array$5 = [jsx$4, jsx$2, jsx$1.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("span", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
+  var array$6 = [jsx$6, jsx$5.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5))];
+  var array$7 = [jsx$8, jsx$7.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("li", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6))];
+  var array$8 = [jsx$17, jsx$10, jsx$9.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("ul", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7))];
+  var array$9 = [jsx$21, jsx$20, jsx$19, jsx$18.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8))];
+  var a = jsx$22.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("nav", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9));
+  this.component$1 = jsx$23.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("PrimaryNavBar", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
   return this
 });
 $c_Lvangogh500_lolstats_components_PrimaryNavBar$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
@@ -9804,7 +9870,7 @@ $c_Lvangogh500_lolstats_components_SecondaryNavBar$.prototype.init___ = (functio
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   var jsx$8 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$();
-  var jsx$7 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light text-uppercase active", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$7 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light active", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
   var this$14 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("href");
@@ -9812,7 +9878,7 @@ $c_Lvangogh500_lolstats_components_SecondaryNavBar$.prototype.init___ = (functio
   var array = [jsx$7, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$14.name$1, "/"), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Summoner"))];
   var jsx$6 = jsx$8.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
   var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$();
-  var jsx$4 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light text-uppercase", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$4 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
   var this$22 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("href");
@@ -9820,7 +9886,7 @@ $c_Lvangogh500_lolstats_components_SecondaryNavBar$.prototype.init___ = (functio
   var array$1 = [jsx$4, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t$1, this$22.name$1, "/"), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Champion"))];
   var jsx$3 = jsx$5.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
   var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$();
-  var jsx$1 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light text-uppercase", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$1 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("nav-item nav-link text-light", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
   var this$30 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("href");
@@ -9865,20 +9931,23 @@ function $h_Lvangogh500_lolstats_scenes_home_Scene$() {
 $h_Lvangogh500_lolstats_scenes_home_Scene$.prototype = $c_Lvangogh500_lolstats_scenes_home_Scene$.prototype;
 $c_Lvangogh500_lolstats_scenes_home_Scene$.prototype.init___ = (function() {
   $n_Lvangogh500_lolstats_scenes_home_Scene$ = this;
-  var jsx$5 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
+  var jsx$6 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$4 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   var this$2 = $m_Lscalacss_ScalaCssReact$();
   var s = $m_Lvangogh500_lolstats_scenes_home_Styling$().container$3;
-  var jsx$3 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$2, s);
-  var jsx$2 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-  var jsx$1 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  var jsx$4 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$2, s);
+  var jsx$3 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
   var array = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("display-3 text-white mb-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Begin the Climb"))];
-  var array$1 = [jsx$3, jsx$2, jsx$1.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))];
-  var a = jsx$4.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
-  this.component$1 = jsx$5.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("No args", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
+  var jsx$1 = jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var u = $m_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
+  var array$1 = [jsx$4, jsx$3, jsx$1, u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
+  var a = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  this.component$1 = jsx$6.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("No args", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
   return this
 });
 $c_Lvangogh500_lolstats_scenes_home_Scene$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
@@ -9899,6 +9968,163 @@ function $m_Lvangogh500_lolstats_scenes_home_Scene$() {
   };
   return $n_Lvangogh500_lolstats_scenes_home_Scene$
 }
+/** @constructor */
+function $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$() {
+  $c_O.call(this);
+  this.component$1 = null
+}
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype = new $h_O();
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.constructor = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$;
+/** @constructor */
+function $h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype;
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.init___ = (function() {
+  $n_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$ = this;
+  this.component$1 = ($m_Ljapgolly_scalajs_react_package$(), new $c_Ljapgolly_scalajs_react_component_builder_Builder$Step1().init___T("SummonerSearchBar")).initialState__F0__Ljapgolly_scalajs_react_component_builder_Builder$Step2(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    return (function() {
+      return new $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State().init___T("")
+    })
+  })(this))).backend__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step3(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
+    return (function(x$2) {
+      var x = $as_Ljapgolly_scalajs_react_component_Generic$MountedWithRoot(x$2);
+      return new $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend().init___Ljapgolly_scalajs_react_component_Generic$MountedWithRoot(x)
+    })
+  })(this))).renderWith__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step4(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3) {
+    return (function(x$3$2) {
+      var x$3 = $as_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope(x$3$2).raw$1;
+      var this$4 = new $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope().init___Ljapgolly_scalajs_react_raw_React$Component(x$3);
+      var jsx$1 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__backend__O(this$4));
+      var this$5 = new $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope().init___Ljapgolly_scalajs_react_raw_React$Component(x$3);
+      return jsx$1.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement($as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__mountedImpure__Ljapgolly_scalajs_react_component_Scala$MountedWithRoot(this$5).state__O()))
+    })
+  })(this))).build__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot($m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonN__Ljapgolly_scalajs_react_internal_Singleton__Ljapgolly_scalajs_react_CtorType$Summoner($m_Ljapgolly_scalajs_react_internal_Singleton$().BoxUnit$1));
+  return this
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+  var c = this.component$1;
+  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+});
+var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$ = new $TypeData().initClass({
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$: 0
+}, false, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$", {
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$: 1,
+  O: 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.$classData = $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$;
+var $n_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$ = (void 0);
+function $m_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$() {
+  if ((!$n_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$)) {
+    $n_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$ = new $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$().init___()
+  };
+  return $n_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$
+}
+/** @constructor */
+function $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend() {
+  $c_O.call(this);
+  this.$$$1 = null
+}
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype = new $h_O();
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.constructor = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend;
+/** @constructor */
+function $h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype;
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.onChange__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0 = (function(e) {
+  var newVal = $as_T(e.target.value);
+  var this$1 = this.$$$1;
+  var mod = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, newVal$1) {
+    return (function(x$1$2) {
+      $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(x$1$2);
+      return new $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State().init___T(newVal$1)
+    })
+  })(this, newVal));
+  return $as_Ljapgolly_scalajs_react_CallbackTo(this$1.modState__F1__F0__O(mod, $m_Ljapgolly_scalajs_react_Callback$().empty$1)).japgolly$scalajs$react$CallbackTo$$f$1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement = (function(state) {
+  if ((state !== null)) {
+    var summoner = state.summoner$1;
+    var this$2 = $m_s_Console$();
+    var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((summoner + "\n"));
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var jsx$15 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var jsx$14 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-50 mt-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    var jsx$13 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), new $c_Ljapgolly_scalajs_react_vdom_Attr$Event().init___T("onSubmit")).$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(e$2) {
+        return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0($this.onSubmit__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(e$2))
+      })
+    })(this)), null);
+    var jsx$12 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var jsx$11 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("input-group", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    var this$11 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.input__Ljapgolly_scalajs_react_vdom_HtmlTags$input$();
+    var jsx$10 = this$11.withType__T__Ljapgolly_scalajs_react_vdom_TagOf("search");
+    var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("form-control text-muted", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
+    var this$15 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("placeholder");
+    var t = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2;
+    var jsx$8 = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$15.name$1, "Search");
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.aria__Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$();
+    $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
+    var this$18 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("aria-label");
+    var t$1 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2;
+    var array = [jsx$9, jsx$8, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t$1, this$18.name$1, "Search"), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.value$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod(summoner, $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.onChange$1.$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+      return (function(e$3$2) {
+        return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0(this$2$1.onChange__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(e$3$2))
+      })
+    })(this)), null)];
+    var jsx$7 = jsx$10.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+    var jsx$6 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var jsx$5 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("input-group-append", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    var jsx$4 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var jsx$3 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("btn btn-dark bg-primary-darken-2", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.type$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("submit", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+    var jsx$1 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+    $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+    var array$1 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("material-icons", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("search"))];
+    var array$2 = [jsx$3, jsx$2, jsx$1.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("i", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
+    var array$3 = [jsx$5, jsx$4.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("button", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
+    var array$4 = [jsx$11, jsx$7, jsx$6.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))];
+    var array$5 = [jsx$14, jsx$13, jsx$12.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
+    var a = jsx$15.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("form", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5));
+    return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+  } else {
+    throw new $c_s_MatchError().init___O(state)
+  }
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.onSubmit__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0 = (function(e) {
+  return $m_Ljapgolly_scalajs_react_ReactExt$undReactEvent$().preventDefaultCB$extension__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(($m_Ljapgolly_scalajs_react_package$(), e))
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.init___Ljapgolly_scalajs_react_component_Generic$MountedWithRoot = (function($$) {
+  this.$$$1 = $$;
+  return this
+});
+function $is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend)))
+}
+function $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj) {
+  return (($is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$Backend"))
+}
+function $isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend)))
+}
+function $asArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj, depth) {
+  return (($isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lvangogh500.lolstats.scenes.home.components.SummonerSearchBar$Backend;", depth))
+}
+var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend = new $TypeData().initClass({
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend: 0
+}, false, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$Backend", {
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend: 1,
+  O: 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.$classData = $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend;
 /** @constructor */
 function $c_Lvangogh500_lolstats_services_AppRouter$() {
   $c_O.call(this)
@@ -14171,6 +14397,9 @@ function $h_Ljapgolly_scalajs_react_vdom_Attr$Generic() {
   /*<skip>*/
 }
 $h_Ljapgolly_scalajs_react_vdom_Attr$Generic.prototype = $c_Ljapgolly_scalajs_react_vdom_Attr$Generic.prototype;
+$c_Ljapgolly_scalajs_react_vdom_Attr$Generic.prototype.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod = (function(a, t) {
+  return $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this.name$1, a)
+});
 $c_Ljapgolly_scalajs_react_vdom_Attr$Generic.prototype.init___T = (function(name) {
   $c_Ljapgolly_scalajs_react_vdom_Attr.prototype.init___T.call(this, name);
   return this
@@ -14198,6 +14427,16 @@ $c_Ljapgolly_scalajs_react_vdom_Attr$Key$.prototype.init___ = (function() {
   $c_Ljapgolly_scalajs_react_vdom_Attr.prototype.init___T.call(this, "key");
   return this
 });
+$c_Ljapgolly_scalajs_react_vdom_Attr$Key$.prototype.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod = (function(a, t) {
+  $m_Ljapgolly_scalajs_react_vdom_TagMod$();
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, a$1, t$1) {
+    return (function(b$2) {
+      var b = $as_Ljapgolly_scalajs_react_vdom_Builder(b$2);
+      t$1.apply__O__O__O(b.setKey$1, a$1)
+    })
+  })(this, a, t));
+  return new $c_Ljapgolly_scalajs_react_vdom_TagMod$$anon$2().init___F1(f)
+});
 var $d_Ljapgolly_scalajs_react_vdom_Attr$Key$ = new $TypeData().initClass({
   Ljapgolly_scalajs_react_vdom_Attr$Key$: 0
 }, false, "japgolly.scalajs.react.vdom.Attr$Key$", {
@@ -14214,6 +14453,36 @@ function $m_Ljapgolly_scalajs_react_vdom_Attr$Key$() {
   return $n_Ljapgolly_scalajs_react_vdom_Attr$Key$
 }
 /** @constructor */
+function $c_Ljapgolly_scalajs_react_vdom_Exports$() {
+  $c_Ljapgolly_scalajs_react_vdom_Exports.call(this)
+}
+$c_Ljapgolly_scalajs_react_vdom_Exports$.prototype = new $h_Ljapgolly_scalajs_react_vdom_Exports();
+$c_Ljapgolly_scalajs_react_vdom_Exports$.prototype.constructor = $c_Ljapgolly_scalajs_react_vdom_Exports$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_vdom_Exports$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_vdom_Exports$.prototype = $c_Ljapgolly_scalajs_react_vdom_Exports$.prototype;
+$c_Ljapgolly_scalajs_react_vdom_Exports$.prototype.init___ = (function() {
+  $c_Ljapgolly_scalajs_react_vdom_Exports.prototype.init___.call(this);
+  return this
+});
+var $d_Ljapgolly_scalajs_react_vdom_Exports$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_vdom_Exports$: 0
+}, false, "japgolly.scalajs.react.vdom.Exports$", {
+  Ljapgolly_scalajs_react_vdom_Exports$: 1,
+  Ljapgolly_scalajs_react_vdom_Exports: 1,
+  O: 1
+});
+$c_Ljapgolly_scalajs_react_vdom_Exports$.prototype.$classData = $d_Ljapgolly_scalajs_react_vdom_Exports$;
+var $n_Ljapgolly_scalajs_react_vdom_Exports$ = (void 0);
+function $m_Ljapgolly_scalajs_react_vdom_Exports$() {
+  if ((!$n_Ljapgolly_scalajs_react_vdom_Exports$)) {
+    $n_Ljapgolly_scalajs_react_vdom_Exports$ = new $c_Ljapgolly_scalajs_react_vdom_Exports$().init___()
+  };
+  return $n_Ljapgolly_scalajs_react_vdom_Exports$
+}
+/** @constructor */
 function $c_Ljapgolly_scalajs_react_vdom_HtmlTags$() {
   $c_O.call(this);
   this.a$module$1 = null;
@@ -14228,6 +14497,17 @@ function $h_Ljapgolly_scalajs_react_vdom_HtmlTags$() {
 $h_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype = $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype;
 $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.init___ = (function() {
   return this
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.input__Ljapgolly_scalajs_react_vdom_HtmlTags$input$ = (function() {
+  if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 === null)) {
+    this.input$lzycompute$1__p1__V()
+  };
+  return $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.input$lzycompute$1__p1__V = (function() {
+  if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 === null)) {
+    $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 = new $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$().init___Ljapgolly_scalajs_react_vdom_HtmlTags(this)
+  }
 });
 $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$ = (function() {
   if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().a$module$1 === null)) {
@@ -16941,6 +17221,19 @@ function $h_Ljapgolly_scalajs_react_vdom_Attr$Event() {
   /*<skip>*/
 }
 $h_Ljapgolly_scalajs_react_vdom_Attr$Event.prototype = $c_Ljapgolly_scalajs_react_vdom_Attr$Event.prototype;
+$c_Ljapgolly_scalajs_react_vdom_Attr$Event.prototype.$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod = (function(eventHandler, evidence$2) {
+  var a = (function(arg$outer, eventHandler$1) {
+    return (function(arg1$2) {
+      return arg$outer.japgolly$scalajs$react$vdom$Attr$Event$$$anonfun$$eq$eq$greater$1__Ljapgolly_scalajs_react_raw_SyntheticEvent__F1__O(arg1$2, eventHandler$1)
+    })
+  })(this, eventHandler);
+  var t = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().direct$1;
+  return $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this.name$1, a)
+});
+$c_Ljapgolly_scalajs_react_vdom_Attr$Event.prototype.japgolly$scalajs$react$vdom$Attr$Event$$$anonfun$$eq$eq$greater$1__Ljapgolly_scalajs_react_raw_SyntheticEvent__F1__O = (function(e, eventHandler$1) {
+  var $$this = $as_Ljapgolly_scalajs_react_CallbackTo(eventHandler$1.apply__O__O(e)).japgolly$scalajs$react$CallbackTo$$f$1;
+  return $$this.apply__O()
+});
 $c_Ljapgolly_scalajs_react_vdom_Attr$Event.prototype.init___T = (function(name) {
   $c_Ljapgolly_scalajs_react_vdom_Attr.prototype.init___T.call(this, name);
   return this
@@ -17053,6 +17346,39 @@ var $d_Ljapgolly_scalajs_react_vdom_HtmlTags$a$ = new $TypeData().initClass({
   Ljapgolly_scalajs_react_vdom_TagMod: 1
 });
 $c_Ljapgolly_scalajs_react_vdom_HtmlTags$a$.prototype.$classData = $d_Ljapgolly_scalajs_react_vdom_HtmlTags$a$;
+/** @constructor */
+function $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$() {
+  $c_Ljapgolly_scalajs_react_vdom_TagOf.call(this);
+  this.type$2 = null;
+  this.checkbox$2 = null;
+  this.text$2 = null
+}
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype = new $h_Ljapgolly_scalajs_react_vdom_TagOf();
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype.constructor = $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_vdom_HtmlTags$input$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype = $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype;
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype.init___Ljapgolly_scalajs_react_vdom_HtmlTags = (function($$outer) {
+  $c_Ljapgolly_scalajs_react_vdom_TagOf.prototype.init___T__sci_List__T.call(this, "input", $m_sci_Nil$(), $m_Ljapgolly_scalajs_react_vdom_Namespace$().Html$1);
+  this.type$2 = ($m_Ljapgolly_scalajs_react_vdom_Exports$(), new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("type"));
+  this.checkbox$2 = this.withType__T__Ljapgolly_scalajs_react_vdom_TagOf("checkbox");
+  this.text$2 = this.withType__T__Ljapgolly_scalajs_react_vdom_TagOf("text");
+  return this
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype.withType__T__Ljapgolly_scalajs_react_vdom_TagOf = (function(t) {
+  return this.apply__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(new $c_sjs_js_WrappedArray().init___sjs_js_Array([this.type$2.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod(t, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().string$1)]))
+});
+var $d_Ljapgolly_scalajs_react_vdom_HtmlTags$input$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_vdom_HtmlTags$input$: 0
+}, false, "japgolly.scalajs.react.vdom.HtmlTags$input$", {
+  Ljapgolly_scalajs_react_vdom_HtmlTags$input$: 1,
+  Ljapgolly_scalajs_react_vdom_TagOf: 1,
+  O: 1,
+  Ljapgolly_scalajs_react_vdom_TagMod: 1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$.prototype.$classData = $d_Ljapgolly_scalajs_react_vdom_HtmlTags$input$;
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_vdom_Namespace$() {
   $c_O.call(this);
@@ -19065,6 +19391,11 @@ function $h_s_Predef$() {
   /*<skip>*/
 }
 $h_s_Predef$.prototype = $c_s_Predef$.prototype;
+$c_s_Predef$.prototype.assert__Z__V = (function(assertion) {
+  if ((!assertion)) {
+    throw new $c_jl_AssertionError().init___O("assertion failed")
+  }
+});
 $c_s_Predef$.prototype.init___ = (function() {
   $n_s_Predef$ = this;
   $m_s_package$();
@@ -19078,11 +19409,6 @@ $c_s_Predef$.prototype.init___ = (function() {
   this.singleton$und$less$colon$less$2 = new $c_s_Predef$$anon$1().init___();
   this.scala$Predef$$singleton$und$eq$colon$eq$f = new $c_s_Predef$$anon$2().init___();
   return this
-});
-$c_s_Predef$.prototype.assert__Z__V = (function(assertion) {
-  if ((!assertion)) {
-    throw new $c_jl_AssertionError().init___O("assertion failed")
-  }
 });
 $c_s_Predef$.prototype.require__Z__V = (function(requirement) {
   if ((!requirement)) {
@@ -20404,6 +20730,17 @@ $c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.init___ = (function
   $f_Ljapgolly_scalajs_react_vdom_HtmlAttrs__$$init$__V(this);
   return this
 });
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.aria__Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$ = (function() {
+  if (($m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1 === null)) {
+    this.aria$lzycompute$1__p1__V()
+  };
+  return $m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.aria$lzycompute$1__p1__V = (function() {
+  if (($m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1 === null)) {
+    $m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1 = new $c_Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$().init___Ljapgolly_scalajs_react_vdom_HtmlAttrs(this)
+  }
+});
 var $d_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$ = new $TypeData().initClass({
   Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$: 0
 }, false, "japgolly.scalajs.react.vdom.HtmlAttrAndStyles$", {
@@ -20614,7 +20951,8 @@ function $c_Lvangogh500_lolstats_styling_Coloring$() {
   $c_Lscalacss_internal_mutable_StyleSheet$Inline.call(this);
   this.colors$3 = null;
   this.domain$3 = null;
-  this.p$undbg$3 = null
+  this.p$undbg$3 = null;
+  this.p$undcolor$3 = null
 }
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype = new $h_Lscalacss_internal_mutable_StyleSheet$Inline();
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype.constructor = $c_Lvangogh500_lolstats_styling_Coloring$;
@@ -20627,23 +20965,23 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   var this$1 = $m_Lscalacss_package$DevDefaults$();
   $c_Lscalacss_internal_mutable_StyleSheet$Inline.prototype.init___Lscalacss_internal_mutable_Register.call(this, new $c_Lscalacss_internal_mutable_Register().init___Lscalacss_internal_mutable_Register$NameGen__Lscalacss_internal_mutable_Register$MacroName__Lscalacss_internal_mutable_Register$ErrorHandler__Lscalacss_internal_mutable_Mutex(this$1.cssRegisterNameGen$1, $m_Lscalacss_internal_mutable_Register$MacroName$Use$(), this$1.cssRegisterErrorHandler$1, $m_Lscalacss_internal_mutable_Mutex$().mutex$1));
   $n_Lvangogh500_lolstats_styling_Coloring$ = this;
-  var array = [new $c_T2().init___O__O("Primary", "#0D0C1D"), new $c_T2().init___O__O("Secondary", "#474973"), new $c_T2().init___O__O("Ternary", "#474973")];
-  var this$11 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  var array = [new $c_T2().init___O__O("Primary", "#0D0C1D"), new $c_T2().init___O__O("Secondary", "#474973"), new $c_T2().init___O__O("Ternary", "#474973"), new $c_T2().init___O__O("Neon Pink", "#ff73d5")];
+  var this$13 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
   var i = 0;
   var len = $uI(array.length);
   while ((i < len)) {
     var index = i;
     var arg1 = array[index];
-    this$11.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
+    this$13.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
     i = ((1 + i) | 0)
   };
-  this.colors$3 = $as_sci_Map(this$11.elems$1);
+  this.colors$3 = $as_sci_Map(this$13.elems$1);
   this.dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
-  var this$12 = this.colors$3;
-  var this$13 = new $c_sc_MapLike$DefaultValuesIterable().init___sc_MapLike(this$12);
-  var this$14 = $m_sci_List$();
-  var cbf = this$14.ReusableCBFInstance$2;
-  var this$22 = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$13, cbf));
+  var this$14 = this.colors$3;
+  var this$15 = new $c_sc_MapLike$DefaultValuesIterable().init___sc_MapLike(this$14);
+  var this$16 = $m_sci_List$();
+  var cbf = this$16.ReusableCBFInstance$2;
+  var this$24 = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$15, cbf));
   var f = (function($this) {
     return (function(hex$2) {
       var hex = $as_T(hex$2);
@@ -20665,13 +21003,13 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
       return b.result__sci_Vector()
     })
   })(this);
-  var this$21 = $m_sci_List$();
-  var bf$1 = this$21.ReusableCBFInstance$2;
+  var this$23 = $m_sci_List$();
+  var bf$1 = this$23.ReusableCBFInstance$2;
   if ((bf$1 === $m_sci_List$().ReusableCBFInstance$2)) {
-    if ((this$22 === $m_sci_Nil$())) {
+    if ((this$24 === $m_sci_Nil$())) {
       var jsx$1 = $m_sci_Nil$()
     } else {
-      var rest = this$22;
+      var rest = this$24;
       var found = new $c_sr_BooleanRef().init___Z(false);
       var h = new $c_sr_ObjectRef().init___O(null);
       var t = new $c_sr_ObjectRef().init___O(null);
@@ -20689,7 +21027,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
               t$1.elem$1 = nx
             }
           })
-        })(this$22, found, h, t)));
+        })(this$24, found, h, t)));
         rest = $as_sci_List(rest.tail__O())
       };
       var jsx$1 = ((!found.elem$1) ? $m_sci_Nil$() : $as_sci_$colon$colon(h.elem$1))
@@ -20697,7 +21035,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   } else {
     $m_sci_List$();
     var b$1 = new $c_scm_ListBuffer().init___();
-    var these = this$22;
+    var these = this$24;
     while ((!these.isEmpty__Z())) {
       var arg1$3 = these.head__O();
       var xs = $as_sc_GenTraversableOnce(f(arg1$3)).seq__sc_TraversableOnce();
@@ -20709,8 +21047,8 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   var as = $as_sc_Seq(jsx$1);
   this.domain$3 = new $c_Lscalacss_internal_Domain$OverSeq().init___sc_IndexedSeq(as.toIndexedSeq__sci_IndexedSeq());
   var qual$1 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "p_bg");
-  var x$2 = this.domain$3;
-  var x$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+  var x$3 = this.domain$3;
+  var x$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
     return (function(x0$1$2) {
       var x0$1 = $as_Lvangogh500_lolstats_styling_Coloring$ColorOpts(x0$1$2);
       if ((x0$1 !== null)) {
@@ -20726,17 +21064,17 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var jsx$2 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
-        var this$30 = $m_Lscalacss_internal_Attrs$backgroundColor$();
-        var this$29 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var this$32 = $m_Lscalacss_internal_Attrs$backgroundColor$();
+        var this$31 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var a = (alpha / 100.0);
-        var v = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$29, red, blue, green, a));
+        var v = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$31, red, blue, green, a));
         var v$1 = v.value$1;
-        var array$1 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$2.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$30.attr$4, v$1)))];
+        var array$1 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$2.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$32.attr$4, v$1)))];
         $m_Lscalacss_package$DevDefaults$();
         var c = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
-        var this$35 = $m_Lscalacss_internal_Dsl$();
+        var this$37 = $m_Lscalacss_internal_Dsl$();
         if (($uI(array$1.length) === 0)) {
-          return this$35.StyleS$3.empty$1
+          return this$37.StyleS$3.empty$1
         } else {
           $m_sc_Seq$();
           $m_sjs_js_WrappedArray$();
@@ -20762,7 +21100,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
               var x$11 = $as_Lscalacss_internal_StyleS(x$11$2);
               return c$1.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10, x$11)
             })
-          })(this$35, c);
+          })(this$37, c);
           if (($uI(array$2.length) > 0)) {
             var start = 1;
             var end = $uI(array$2.length);
@@ -20815,15 +21153,130 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
       }
     })
   })(this));
-  var x$4 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var x$5 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
   $m_Lscalacss_internal_StyleLookup$();
   $m_Ljapgolly_univeq_UnivEq$();
   var evidence$6 = new $c_Lscalacss_internal_StyleLookup$$anon$2().init___();
-  this.p$undbg$3 = qual$1.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$2, x$3, x$4, evidence$6);
+  this.p$undbg$3 = qual$1.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$3, x$4, x$5, evidence$6);
+  var qual$2 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "p_color");
+  var x$6 = this.domain$3;
+  var x$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
+    return (function(x0$2$2) {
+      var x0$2 = $as_Lvangogh500_lolstats_styling_Coloring$ColorOpts(x0$2$2);
+      if ((x0$2 !== null)) {
+        var hex$3 = x0$2.hex$1;
+        var alpha$1 = x0$2.alpha$1;
+        var x1$2$1 = $m_Lvangogh500_lolstats_styling_Coloring$Util$().hexToRGB__T__T3(hex$3);
+        if ((x1$2$1 === null)) {
+          throw new $c_s_MatchError().init___O(x1$2$1)
+        };
+        var red$1 = $uI(x1$2$1.$$und1$1);
+        var blue$1 = $uI(x1$2$1.$$und2$1);
+        var green$1 = $uI(x1$2$1.$$und3$1);
+        $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var jsx$4 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var this$47 = $m_Lscalacss_internal_Attrs$color$();
+        var this$46 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var a$1 = (alpha$1 / 100.0);
+        var v$2 = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$46, red$1, blue$1, green$1, a$1));
+        var v$3 = v$2.value$1;
+        var array$3 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$4.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$47.attr$4, v$3)))];
+        $m_Lscalacss_package$DevDefaults$();
+        var c$2 = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
+        var this$52 = $m_Lscalacss_internal_Dsl$();
+        if (($uI(array$3.length) === 0)) {
+          return this$52.StyleS$3.empty$1
+        } else {
+          $m_sc_Seq$();
+          $m_sjs_js_WrappedArray$();
+          var array$4 = [];
+          var x1$1 = $uI(array$3.length);
+          switch (x1$1) {
+            case (-1): {
+              break
+            }
+          };
+          var i$4 = 0;
+          var len$3 = $uI(array$3.length);
+          while ((i$4 < len$3)) {
+            var index$4 = i$4;
+            var arg1$8 = array$3[index$4];
+            var x$9$1 = $as_Lscalacss_internal_DslBase$ToStyle(arg1$8).s$1;
+            array$4.push(x$9$1);
+            i$4 = ((1 + i$4) | 0)
+          };
+          var f$2 = (function(this$2$3, c$3) {
+            return (function(x$10$2$1, x$11$2$1) {
+              var x$10$1 = $as_Lscalacss_internal_StyleS(x$10$2$1);
+              var x$11$1 = $as_Lscalacss_internal_StyleS(x$11$2$1);
+              return c$3.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10$1, x$11$1)
+            })
+          })(this$52, c$2);
+          if (($uI(array$4.length) > 0)) {
+            var start$2 = 1;
+            var end$1 = $uI(array$4.length);
+            var z$2 = array$4[0];
+            var start$3 = start$2;
+            var z$3 = z$2;
+            var jsx$5;
+            _foldl$1: while (true) {
+              if ((start$3 !== end$1)) {
+                var temp$start$1 = ((1 + start$3) | 0);
+                var arg1$9 = z$3;
+                var index$5 = start$3;
+                var arg2$1 = array$4[index$5];
+                var temp$z$1 = f$2(arg1$9, arg2$1);
+                start$3 = temp$start$1;
+                z$3 = temp$z$1;
+                continue _foldl$1
+              };
+              var jsx$5 = z$3;
+              break
+            }
+          } else {
+            if (($uI(array$4.length) === 0)) {
+              throw new $c_jl_UnsupportedOperationException().init___T("empty.reduceLeft")
+            };
+            var elem$1$2 = false;
+            elem$1$2 = true;
+            var elem$1$3 = null;
+            elem$1$3 = 0;
+            var i$5 = 0;
+            var len$4 = $uI(array$4.length);
+            while ((i$5 < len$4)) {
+              var index$6 = i$5;
+              var arg1$10 = array$4[index$6];
+              if (elem$1$2) {
+                elem$1$3 = arg1$10;
+                elem$1$2 = false
+              } else {
+                var arg1$11 = elem$1$3;
+                elem$1$3 = f$2(arg1$11, arg1$10)
+              };
+              i$5 = ((1 + i$5) | 0)
+            };
+            var jsx$5 = elem$1$3
+          };
+          return $as_Lscalacss_internal_StyleS(jsx$5)
+        }
+      } else {
+        throw new $c_s_MatchError().init___O(x0$2)
+      }
+    })
+  })(this));
+  var x$8 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  $m_Lscalacss_internal_StyleLookup$();
+  $m_Ljapgolly_univeq_UnivEq$();
+  var evidence$6$1 = new $c_Lscalacss_internal_StyleLookup$$anon$2().init___();
+  this.p$undcolor$3 = qual$2.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$6, x$7, x$8, evidence$6$1);
   return this
 });
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype.bg__T__D__Lscalacss_internal_StyleA = (function(hex, alpha) {
   return $as_Lscalacss_internal_StyleA(this.p$undbg$3.apply__O__O($m_Lvangogh500_lolstats_styling_Coloring$ColorOpts$().apply__T__D__Lvangogh500_lolstats_styling_Coloring$ColorOpts(hex, alpha)))
+});
+$c_Lvangogh500_lolstats_styling_Coloring$.prototype.color__T__D__Lscalacss_internal_StyleA = (function(hex, alpha) {
+  return $as_Lscalacss_internal_StyleA(this.p$undcolor$3.apply__O__O($m_Lvangogh500_lolstats_styling_Coloring$ColorOpts$().apply__T__D__Lvangogh500_lolstats_styling_Coloring$ColorOpts(hex, alpha)))
 });
 var $d_Lvangogh500_lolstats_styling_Coloring$ = new $TypeData().initClass({
   Lvangogh500_lolstats_styling_Coloring$: 0
@@ -25206,7 +25659,7 @@ function $h_Lscalacss_internal_ValueT$TypedAttr$undColor() {
 }
 $h_Lscalacss_internal_ValueT$TypedAttr$undColor.prototype = $c_Lscalacss_internal_ValueT$TypedAttr$undColor.prototype;
 $c_Lscalacss_internal_ValueT$TypedAttr$undColor.prototype.mkColor__T__O = (function(s) {
-  return new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this.attr$4, s)
+  return new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this.attr__Lscalacss_internal_Attr(), s)
 });
 /** @constructor */
 function $c_Lscalacss_internal_package$Warning() {
@@ -25340,6 +25793,82 @@ function $m_Lscalacss_package$DevDefaults$() {
   };
   return $n_Lscalacss_package$DevDefaults$
 }
+/** @constructor */
+function $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State() {
+  $c_O.call(this);
+  this.summoner$1 = null
+}
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype = new $h_O();
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.constructor = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State;
+/** @constructor */
+function $h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype;
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.productPrefix__T = (function() {
+  return "State"
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(x$1)) {
+    var State$1 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(x$1);
+    return (this.summoner$1 === State$1.summoner$1)
+  } else {
+    return false
+  }
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.summoner$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.init___T = (function(summoner) {
+  this.summoner$1 = summoner;
+  return this
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State)))
+}
+function $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj) {
+  return (($is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$State"))
+}
+function $isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State)))
+}
+function $asArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj, depth) {
+  return (($isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lvangogh500.lolstats.scenes.home.components.SummonerSearchBar$State;", depth))
+}
+var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State = new $TypeData().initClass({
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State: 0
+}, false, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$State", {
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State.prototype.$classData = $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State;
 /** @constructor */
 function $c_Lvangogh500_lolstats_styling_Coloring$ColorOpts() {
   $c_O.call(this);
@@ -28891,6 +29420,45 @@ function $m_Lscalacss_internal_Attrs$backgroundColor$() {
     $n_Lscalacss_internal_Attrs$backgroundColor$ = new $c_Lscalacss_internal_Attrs$backgroundColor$().init___()
   };
   return $n_Lscalacss_internal_Attrs$backgroundColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$color$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undColor.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$color$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undColor();
+$c_Lscalacss_internal_Attrs$color$.prototype.constructor = $c_Lscalacss_internal_Attrs$color$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$color$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$color$.prototype = $c_Lscalacss_internal_Attrs$color$.prototype;
+$c_Lscalacss_internal_Attrs$color$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$color$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("color");
+  return this
+});
+$c_Lscalacss_internal_Attrs$color$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$color$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$color$: 0
+}, false, "scalacss.internal.Attrs$color$", {
+  Lscalacss_internal_Attrs$color$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undColor: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$color$.prototype.$classData = $d_Lscalacss_internal_Attrs$color$;
+var $n_Lscalacss_internal_Attrs$color$ = (void 0);
+function $m_Lscalacss_internal_Attrs$color$() {
+  if ((!$n_Lscalacss_internal_Attrs$color$)) {
+    $n_Lscalacss_internal_Attrs$color$ = new $c_Lscalacss_internal_Attrs$color$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$color$
 }
 /** @constructor */
 function $c_Lscalacss_internal_CanIUse$Prefix$moz$() {
@@ -34301,12 +34869,12 @@ $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototy
 $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototype.toString__T = (function() {
   return $m_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount$().toString$extension__Ljapgolly_scalajs_react_raw_React$Component__T(this.raw$1)
 });
+$c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototype.setState__O__F0__O = (function(newState, callback) {
+  return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$StateW__setState__O__F0__F0(this, newState, callback))
+});
 $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototype.init___Ljapgolly_scalajs_react_raw_React$Component = (function(raw) {
   this.raw$1 = raw;
   return this
-});
-$c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototype.setState__O__F0__O = (function(newState, callback) {
-  return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$StateW__setState__O__F0__F0(this, newState, callback))
 });
 $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$ComponentDidMount.prototype.hashCode__I = (function() {
   var $$this = this.raw$1;

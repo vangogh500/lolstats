@@ -1,7 +1,7 @@
 # Simple Build Tool
 # http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
 
-client/dist/js
+client_server/src/main/resources/js/
 target/
 lib_managed/
 src_managed/
