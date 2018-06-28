@@ -1187,6 +1187,55 @@ function $isArrayOf_Ljapgolly_scalajs_react_extra_OnUnmount(obj, depth) {
 function $asArrayOf_Ljapgolly_scalajs_react_extra_OnUnmount(obj, depth) {
   return (($isArrayOf_Ljapgolly_scalajs_react_extra_OnUnmount(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljapgolly.scalajs.react.extra.OnUnmount;", depth))
 }
+function $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__apply__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB($thiz, fa, fb) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB().init___T__I__F1__F1((("" + fa.regex$2) + fb.regex$2), ((fa.matchGroups$2 + fb.matchGroups$2) | 0), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, fa$1, fb$1) {
+    return (function(g$2) {
+      var g = $as_F1(g$2);
+      var this$1 = $as_s_Option(fa$1.parse$2.apply__O__O(g));
+      if (this$1.isEmpty__Z()) {
+        return $m_s_None$()
+      } else {
+        var arg1 = this$1.get__O();
+        var this$2 = $as_s_Option(fb$1.parse$2.apply__O__O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, fa$1$1, g$6) {
+          return (function(i$2) {
+            var i = $uI(i$2);
+            return $as_T(g$6.apply__O__O(((i + fa$1$1.matchGroups$2) | 0)))
+          })
+        })($this, fa$1, g))));
+        if (this$2.isEmpty__Z()) {
+          return $m_s_None$()
+        } else {
+          var arg1$1 = this$2.get__O();
+          return new $c_s_Some().init___O($this.gc$1.apply__O__O__O(arg1, arg1$1))
+        }
+      }
+    })
+  })($thiz, fa, fb)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, fa$2, fb$2) {
+    return (function(c$2) {
+      return (("" + $as_T(fa$2.build$2.apply__O__O(this$2$1.ga$1.apply__O__O(c$2)))) + fb$2.build$2.apply__O__O(this$2$1.gb$1.apply__O__O(c$2)))
+    })
+  })($thiz, fa, fb)))
+}
+function $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLowest__$$times$times$times__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition($thiz) {
+  var a = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$1$2) {
+      var x$1 = $as_T2(x$1$2);
+      return x$1.$$und1$f
+    })
+  })($thiz));
+  var b = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
+    return (function(x$2$2) {
+      var x$2 = $as_T2(x$2$2);
+      return x$2.$$und2$f
+    })
+  })($thiz));
+  var c = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(this$3) {
+    return (function(x$3$2, x$4$2) {
+      return new $c_T2().init___O__O(x$3$2, x$4$2)
+    })
+  })($thiz));
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1().init___F1__F1__F2(a, b, c)
+}
 function $is_Ljapgolly_scalajs_react_vdom_Builder(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_vdom_Builder)))
 }
@@ -2267,6 +2316,25 @@ $h_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype = $c_Ljapgolly_scalajs_r
 $c_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype.init___ = (function() {
   return this
 });
+$c_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype.summonP__Ljapgolly_scalajs_react_internal_Singleton$Not__Ljapgolly_scalajs_react_CtorType$Summoner = (function(w) {
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(rc$2) {
+      return new $c_Ljapgolly_scalajs_react_CtorType$Props().init___F2__sjs_js_UndefOr(new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function($this$1, rc) {
+        return (function(p$2, mm$2) {
+          if ((mm$2 === (void 0))) {
+            var p2 = p$2
+          } else {
+            var x$5 = $as_Ljapgolly_scalajs_react_CtorType$Mod(mm$2).mod$1;
+            var p2 = $m_Ljapgolly_scalajs_react_CtorType$Mod$().applyAndCast$extension__F1__sjs_js_Object__sjs_js_Object(x$5, $m_Ljapgolly_scalajs_react_CtorType$Summoner$().prepareForMutation__p1__sjs_js_Object__sjs_js_Object(p$2))
+          };
+          return $g.React.createElement(rc, p2)
+        })
+      })($this, rc$2)), (void 0))
+    })
+  })(this));
+  var p = $m_Ljapgolly_scalajs_react_CtorType$ProfunctorP$();
+  return new $c_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1().init___F1__Ljapgolly_scalajs_react_internal_Profunctor(f, p)
+});
 $c_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype.summonN__Ljapgolly_scalajs_react_internal_Singleton__Ljapgolly_scalajs_react_CtorType$Summoner = (function(s) {
   var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, s$1) {
     return (function(rc$2) {
@@ -2280,6 +2348,9 @@ $c_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype.summonN__Ljapgolly_scala
   })(this, s));
   var p = $m_Ljapgolly_scalajs_react_CtorType$ProfunctorN$();
   return new $c_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1().init___F1__Ljapgolly_scalajs_react_internal_Profunctor(f, p)
+});
+$c_Ljapgolly_scalajs_react_CtorType$Summoner$.prototype.prepareForMutation__p1__sjs_js_Object__sjs_js_Object = (function(o) {
+  return ($uZ((o instanceof $g.Object)) ? o : {})
 });
 var $d_Ljapgolly_scalajs_react_CtorType$Summoner$ = new $TypeData().initClass({
   Ljapgolly_scalajs_react_CtorType$Summoner$: 0
@@ -2595,6 +2666,14 @@ $c_Ljapgolly_scalajs_react_component_builder_Builder$Step3.prototype.render$undS
       var $$ = $as_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope($$$).raw$1;
       var this$1 = new $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope().init___Ljapgolly_scalajs_react_raw_React$Component($$);
       return $as_Ljapgolly_scalajs_react_vdom_VdomNode(r$1.apply__O__O($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__mountedImpure__Ljapgolly_scalajs_react_component_Scala$MountedWithRoot(this$1).state__O()))
+    })
+  })(this, r)))
+});
+$c_Ljapgolly_scalajs_react_component_builder_Builder$Step3.prototype.render$undP__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step4 = (function(r) {
+  return this.renderWith__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step4(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, r$1) {
+    return (function($$$) {
+      var $$ = $as_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope($$$).raw$1;
+      return $as_Ljapgolly_scalajs_react_vdom_VdomNode(r$1.apply__O__O($m_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope$().props$extension__Ljapgolly_scalajs_react_raw_React$Component__O($$)))
     })
   })(this, r)))
 });
@@ -3427,6 +3506,10 @@ function $h_Ljapgolly_scalajs_react_extra_router_PathLike() {
   /*<skip>*/
 }
 $h_Ljapgolly_scalajs_react_extra_router_PathLike.prototype = $c_Ljapgolly_scalajs_react_extra_router_PathLike.prototype;
+$c_Ljapgolly_scalajs_react_extra_router_PathLike.prototype.endWith$und$div__Ljapgolly_scalajs_react_extra_router_PathLike = (function() {
+  var arg1 = this.str__Ljapgolly_scalajs_react_extra_router_PathLike__T(this);
+  return this.make__T__Ljapgolly_scalajs_react_extra_router_PathLike($m_sjsr_RuntimeString$().replaceFirst__T__T__T__T(arg1, "/*$", "/"))
+});
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_extra_router_RouteCmd() {
   $c_O.call(this)
@@ -3673,6 +3756,9 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.init___ = (fun
   })(this)));
   return this
 });
+$c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.string__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB = (function(regex) {
+  return this.$$und$undstring1__p1__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB((("(" + regex) + ")"))
+});
 $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.$$undauto$undnotFound$undfrom$undparsed__O__F1__F1 = (function(a, evidence$8) {
   return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, a$1, evidence$8$1) {
     return (function(x$72$2) {
@@ -3681,9 +3767,25 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.$$undauto$undn
     })
   })(this, a, evidence$8))
 });
+$c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.$$und$undstring1__p1__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB = (function(regex) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB().init___T__I__F1__F1(regex, 1, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(g$2) {
+      var g = $as_F1(g$2);
+      return new $c_s_Some().init___O(g.apply__O__O(0))
+    })
+  })(this)), $m_Ljapgolly_scalajs_react_internal_package$().identityFnInstance$1)
+});
 $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.onPage$1__p1__F1__O__F1__s_Option = (function(f, page, op$1) {
   var this$1 = $as_s_Option(op$1.apply__O__O(page));
   return (this$1.isEmpty__Z() ? $m_s_None$() : new $c_s_Some().init___O(f.apply__O__O(this$1.get__O())))
+});
+$c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.renderR__F1__F1__Ljapgolly_scalajs_react_extra_router_Renderer = (function(g, evidence$3) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_Renderer().init___F1(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, g$1, evidence$3$1) {
+    return (function(x$70$2) {
+      var x$70 = $as_Ljapgolly_scalajs_react_extra_router_RouterCtl(x$70$2);
+      return $as_Ljapgolly_scalajs_react_vdom_VdomElement(evidence$3$1.apply__O__O(g$1.apply__O__O(x$70)))
+    })
+  })(this, g, evidence$3)))
 });
 $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.$$undauto$undpToAction$undfrom$undaction__F0__F1 = (function(a) {
   return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, a$1) {
@@ -3699,6 +3801,13 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.render__F0__F1
       return $as_Ljapgolly_scalajs_react_vdom_VdomElement(evidence$2$1.apply__O__O(a$1.apply__O()))
     })
   })(this, a, evidence$2)))
+});
+$c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.dynamicRouteCT__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__s_reflect_ClassTag__F1 = (function(r, ct) {
+  return this.dynamicRouteF__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__F1__F1(r, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, ct$1) {
+    return (function(x$2) {
+      return $f_s_reflect_ClassTag__unapply__O__s_Option(ct$1, x$2)
+    })
+  })(this, ct)))
 });
 $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl.prototype.staticRoute__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__O__F1 = (function(r, page) {
   var ev2 = $m_s_Predef$().scala$Predef$$singleton$und$eq$colon$eq$f;
@@ -3862,6 +3971,27 @@ function $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$() {
     $n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$ = new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$().init___()
   };
   return $n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$
+}
+function $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLow__T3__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition($thiz) {
+  var a = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(r$2) {
+      var r = $as_T3(r$2);
+      return new $c_T2().init___O__O(r.$$und1$1, r.$$und2$1)
+    })
+  })($thiz));
+  var b = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
+    return (function(x$5$2) {
+      var x$5 = $as_T3(x$5$2);
+      return x$5.$$und3$1
+    })
+  })($thiz));
+  var c = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(this$3) {
+    return (function(l$2, r$3$2) {
+      var l = $as_T2(l$2);
+      return new $c_T3().init___O__O__O(l.$$und1$f, l.$$und2$f, r$3$2)
+    })
+  })($thiz));
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1().init___F1__F1__F2(a, b, c)
 }
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteCommon() {
@@ -4280,9 +4410,7 @@ $c_Ljapgolly_scalajs_react_internal_Profunctor$Ops.prototype.init___O__Ljapgolly
   return this
 });
 $c_Ljapgolly_scalajs_react_internal_Profunctor$Ops.prototype.dimap__F1__F1__O = (function(l, r) {
-  var this$1 = this.p$1;
-  var f = this.f$1;
-  return this$1.dimap__Ljapgolly_scalajs_react_CtorType$Nullary__F1__F1__Ljapgolly_scalajs_react_CtorType$Nullary($as_Ljapgolly_scalajs_react_CtorType$Nullary(f), l, r)
+  return this.p$1.dimap__O__F1__F1__O(this.f$1, l, r)
 });
 var $d_Ljapgolly_scalajs_react_internal_Profunctor$Ops = new $TypeData().initClass({
   Ljapgolly_scalajs_react_internal_Profunctor$Ops: 0
@@ -9931,28 +10059,41 @@ function $h_Lvangogh500_lolstats_scenes_home_Scene$() {
 $h_Lvangogh500_lolstats_scenes_home_Scene$.prototype = $c_Lvangogh500_lolstats_scenes_home_Scene$.prototype;
 $c_Lvangogh500_lolstats_scenes_home_Scene$.prototype.init___ = (function() {
   $n_Lvangogh500_lolstats_scenes_home_Scene$ = this;
-  var jsx$6 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var this$2 = $m_Lscalacss_ScalaCssReact$();
-  var s = $m_Lvangogh500_lolstats_scenes_home_Styling$().container$3;
-  var jsx$4 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$2, s);
-  var jsx$3 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-  var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var array = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("display-3 text-white mb-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Begin the Climb"))];
-  var jsx$1 = jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var u = $m_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
-  var array$1 = [jsx$4, jsx$3, jsx$1, u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
-  var a = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
-  this.component$1 = jsx$6.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("No args", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
+  $m_Ljapgolly_scalajs_react_component_builder_Builder$();
+  $m_Ljapgolly_scalajs_react_package$();
+  var b = new $c_Ljapgolly_scalajs_react_component_builder_Builder$Step1().init___T("Home Page");
+  this.component$1 = ($m_Ljapgolly_scalajs_react_component_builder_Builder$(), b.stateless__Ljapgolly_scalajs_react_component_builder_Builder$Step2()).noBackend__Ljapgolly_scalajs_react_component_builder_Builder$Step3().render$undP__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step4(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+    return (function(ctl$2) {
+      var ctl = $as_Ljapgolly_scalajs_react_extra_router_RouterCtl(ctl$2);
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var this$5 = $m_Lscalacss_ScalaCssReact$();
+      var s = $m_Lvangogh500_lolstats_scenes_home_Styling$().container$3;
+      var jsx$4 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$5, s);
+      var jsx$3 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+      var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var array = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("display-3 text-white mb-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Begin the Climb"))];
+      var jsx$1 = jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var u = $m_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$().apply__F1__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, ctl$1) {
+        return (function(summonerName$2) {
+          var summonerName = $as_T(summonerName$2);
+          return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0(ctl$1.set__O__F0(new $c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage().init___T__T__T(summonerName, "all", "all")))
+        })
+      })(this$2$1, ctl)));
+      var array$1 = [jsx$4, jsx$3, jsx$1, u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
+      var a = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+      return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+    })
+  })(this))).build__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot($m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonP__Ljapgolly_scalajs_react_internal_Singleton$Not__Ljapgolly_scalajs_react_CtorType$Summoner(($m_Ljapgolly_scalajs_react_internal_Singleton$(), null)));
   return this
 });
-$c_Lvangogh500_lolstats_scenes_home_Scene$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+$c_Lvangogh500_lolstats_scenes_home_Scene$.prototype.apply__Ljapgolly_scalajs_react_extra_router_RouterCtl__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function(ctl) {
   var c = this.component$1;
-  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+  var this$2 = $as_Ljapgolly_scalajs_react_CtorType$Props(c.ctor__Ljapgolly_scalajs_react_CtorType());
+  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(this$2.construct$2.apply__O__O__O(ctl, this$2.mods$2))
 });
 var $d_Lvangogh500_lolstats_scenes_home_Scene$ = new $TypeData().initClass({
   Lvangogh500_lolstats_scenes_home_Scene$: 0
@@ -9995,16 +10136,19 @@ $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.init
     return (function(x$3$2) {
       var x$3 = $as_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope(x$3$2).raw$1;
       var this$4 = new $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope().init___Ljapgolly_scalajs_react_raw_React$Component(x$3);
-      var jsx$1 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__backend__O(this$4));
+      var jsx$2 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__backend__O(this$4));
+      var jsx$1 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props($m_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope$().props$extension__Ljapgolly_scalajs_react_raw_React$Component__O(x$3));
       var this$5 = new $c_Ljapgolly_scalajs_react_component_builder_Lifecycle$RenderScope().init___Ljapgolly_scalajs_react_raw_React$Component(x$3);
-      return jsx$1.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement($as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__mountedImpure__Ljapgolly_scalajs_react_component_Scala$MountedWithRoot(this$5).state__O()))
+      return jsx$2.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement(jsx$1, $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State($f_Ljapgolly_scalajs_react_component_builder_Lifecycle$Base__mountedImpure__Ljapgolly_scalajs_react_component_Scala$MountedWithRoot(this$5).state__O()))
     })
-  })(this))).build__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot($m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonN__Ljapgolly_scalajs_react_internal_Singleton__Ljapgolly_scalajs_react_CtorType$Summoner($m_Ljapgolly_scalajs_react_internal_Singleton$().BoxUnit$1));
+  })(this))).build__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot($m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonP__Ljapgolly_scalajs_react_internal_Singleton$Not__Ljapgolly_scalajs_react_CtorType$Summoner(($m_Ljapgolly_scalajs_react_internal_Singleton$(), null)));
   return this
 });
-$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$.prototype.apply__F1__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function(onSubmit) {
   var c = this.component$1;
-  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+  var this$2 = $as_Ljapgolly_scalajs_react_CtorType$Props(c.ctor__Ljapgolly_scalajs_react_CtorType());
+  var props = new $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props().init___F1(onSubmit);
+  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(this$2.construct$2.apply__O__O__O(props, this$2.mods$2))
 });
 var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$ = new $TypeData().initClass({
   Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$: 0
@@ -10043,37 +10187,38 @@ $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototy
   })(this, newVal));
   return $as_Ljapgolly_scalajs_react_CallbackTo(this$1.modState__F1__F0__O(mod, $m_Ljapgolly_scalajs_react_Callback$().empty$1)).japgolly$scalajs$react$CallbackTo$$f$1
 });
-$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement = (function(state) {
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.init___Ljapgolly_scalajs_react_component_Generic$MountedWithRoot = (function($$) {
+  this.$$$1 = $$;
+  return this
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.render__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props__Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State__Ljapgolly_scalajs_react_vdom_VdomElement = (function(props, state) {
   if ((state !== null)) {
     var summoner = state.summoner$1;
-    var this$2 = $m_s_Console$();
-    var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((summoner + "\n"));
     $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
     var jsx$15 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
     $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
     var jsx$14 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-50 mt-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-    var jsx$13 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), new $c_Ljapgolly_scalajs_react_vdom_Attr$Event().init___T("onSubmit")).$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    var jsx$13 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), new $c_Ljapgolly_scalajs_react_vdom_Attr$Event().init___T("onSubmit")).$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, props$1, state$1) {
       return (function(e$2) {
-        return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0($this.onSubmit__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(e$2))
+        return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0($m_Ljapgolly_scalajs_react_CallbackTo$().$$greater$greater$extension__F0__F0__F0($m_Ljapgolly_scalajs_react_ReactExt$undReactEvent$().preventDefaultCB$extension__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(($m_Ljapgolly_scalajs_react_package$(), e$2)), $as_Ljapgolly_scalajs_react_CallbackTo(props$1.onSubmit$1.apply__O__O(state$1.summoner$1)).japgolly$scalajs$react$CallbackTo$$f$1))
       })
-    })(this)), null);
+    })(this, props, state)), null);
     var jsx$12 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
     $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
     var jsx$11 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("input-group", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-    var this$11 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.input__Ljapgolly_scalajs_react_vdom_HtmlTags$input$();
-    var jsx$10 = this$11.withType__T__Ljapgolly_scalajs_react_vdom_TagOf("search");
+    var this$9 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3.input__Ljapgolly_scalajs_react_vdom_HtmlTags$input$();
+    var jsx$10 = this$9.withType__T__Ljapgolly_scalajs_react_vdom_TagOf("search");
     var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("form-control text-muted", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
     $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
     $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
-    var this$15 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("placeholder");
+    var this$13 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("placeholder");
     var t = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2;
-    var jsx$8 = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$15.name$1, "Search");
+    var jsx$8 = $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t, this$13.name$1, "Search");
     $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.aria__Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$();
     $m_Ljapgolly_scalajs_react_vdom_PackageBase$();
-    var this$18 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("aria-label");
+    var this$16 = new $c_Ljapgolly_scalajs_react_vdom_Attr$Generic().init___T("aria-label");
     var t$1 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2;
-    var array = [jsx$9, jsx$8, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t$1, this$18.name$1, "Search"), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.value$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod(summoner, $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.onChange$1.$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+    var array = [jsx$9, jsx$8, $m_Ljapgolly_scalajs_react_vdom_Attr$ValueType$().apply$extension__F2__T__O__Ljapgolly_scalajs_react_vdom_TagMod(t$1, this$16.name$1, "Search"), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.value$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod(summoner, $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.onChange$1.$$eq$eq$greater__F1__Ljapgolly_scalajs_react_vdom_DomCallbackResult__Ljapgolly_scalajs_react_vdom_TagMod(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(e$3$2) {
         return new $c_Ljapgolly_scalajs_react_CallbackTo().init___F0(this$2$1.onChange__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(e$3$2))
       })
@@ -10099,13 +10244,6 @@ $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototy
     throw new $c_s_MatchError().init___O(state)
   }
 });
-$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.onSubmit__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0 = (function(e) {
-  return $m_Ljapgolly_scalajs_react_ReactExt$undReactEvent$().preventDefaultCB$extension__Ljapgolly_scalajs_react_raw_SyntheticEvent__F0(($m_Ljapgolly_scalajs_react_package$(), e))
-});
-$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.init___Ljapgolly_scalajs_react_component_Generic$MountedWithRoot = (function($$) {
-  this.$$$1 = $$;
-  return this
-});
 function $is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend)))
 }
@@ -10127,7 +10265,8 @@ var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend = n
 $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend.prototype.$classData = $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Backend;
 /** @constructor */
 function $c_Lvangogh500_lolstats_services_AppRouter$() {
-  $c_O.call(this)
+  $c_O.call(this);
+  this.component$1 = null
 }
 $c_Lvangogh500_lolstats_services_AppRouter$.prototype = new $h_O();
 $c_Lvangogh500_lolstats_services_AppRouter$.prototype.constructor = $c_Lvangogh500_lolstats_services_AppRouter$;
@@ -10137,55 +10276,127 @@ function $h_Lvangogh500_lolstats_services_AppRouter$() {
 }
 $h_Lvangogh500_lolstats_services_AppRouter$.prototype = $c_Lvangogh500_lolstats_services_AppRouter$.prototype;
 $c_Lvangogh500_lolstats_services_AppRouter$.prototype.init___ = (function() {
-  return this
-});
-$c_Lvangogh500_lolstats_services_AppRouter$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
-  var jsx$8 = $m_Ljapgolly_scalajs_react_extra_router_Router$();
-  var jsx$7 = $m_Ljapgolly_scalajs_react_extra_router_BaseUrl$().fromWindowOrigin__Ljapgolly_scalajs_react_extra_router_BaseUrl();
+  $n_Lvangogh500_lolstats_services_AppRouter$ = this;
+  var jsx$14 = $m_Ljapgolly_scalajs_react_extra_router_Router$();
+  var this$1 = $m_Ljapgolly_scalajs_react_extra_router_BaseUrl$();
+  var jsx$13 = $as_Ljapgolly_scalajs_react_extra_router_BaseUrl(this$1.fromWindowOrigin__Ljapgolly_scalajs_react_extra_router_BaseUrl().endWith$und$div__Ljapgolly_scalajs_react_extra_router_PathLike());
   new $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl$BuildInterface().init___();
   var arg1 = new $c_Ljapgolly_scalajs_react_extra_router_RouterConfigDsl().init___();
-  var jsx$5 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule$().empty__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule();
+  var jsx$11 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule$().empty__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule();
   var r = new $c_Ljapgolly_scalajs_react_extra_router_Path().init___T("");
   var $$this = arg1.staticRoute__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__O__F1($m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$().literal__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(r.value$2).route__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route(), $m_Lvangogh500_lolstats_services_AppRouter$HomePage$());
-  var a$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, dsl) {
+  var a = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, dsl) {
     return (function() {
-      return dsl.render__F0__F1__Ljapgolly_scalajs_react_extra_router_Renderer(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-        return (function() {
-          var jsx$4 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-          var jsx$3 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-100 h-100 d-flex flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-          var u = $m_Lvangogh500_lolstats_components_PrimaryNavBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
-          var jsx$2 = u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement();
-          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-          var u$1 = $m_Lvangogh500_lolstats_components_SecondaryNavBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
-          var jsx$1 = u$1.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement();
-          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-          var u$2 = $m_Lvangogh500_lolstats_scenes_home_Scene$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
-          var array = [jsx$3, jsx$2, jsx$1, u$2.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
-          return jsx$4.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))
+      return dsl.renderR__F1__F1__Ljapgolly_scalajs_react_extra_router_Renderer(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+        return (function(ctl$2) {
+          var ctl = $as_Ljapgolly_scalajs_react_extra_router_RouterCtl(ctl$2);
+          return $m_Lvangogh500_lolstats_scenes_home_Scene$().apply__Ljapgolly_scalajs_react_extra_router_RouterCtl__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(ctl)
         })
       })(this$2$1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
-        return (function(a$2) {
-          var a = $as_Ljapgolly_scalajs_react_vdom_TagOf(a$2);
+        return (function(u$2) {
+          var u = $as_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(u$2);
           $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-          return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+          return u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()
         })
       })(this$2$1)))
     })
   })(this, arg1));
-  var r$1 = jsx$5.$$bar__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($as_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($$this.apply__O__O(a$1)));
-  var jsx$6 = r$1.noFallback__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rules();
+  var jsx$10 = jsx$11.$$bar__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($as_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($$this.apply__O__O(a)));
+  var $$this$1 = arg1.staticRoute__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__O__F1($m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$().literal__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB("test").route__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route(), $m_Lvangogh500_lolstats_services_AppRouter$TestPage$());
+  var a$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1, dsl$1) {
+    return (function() {
+      return dsl$1.render__F0__F1__Ljapgolly_scalajs_react_extra_router_Renderer(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1) {
+        return (function() {
+          var jsx$9 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+          var array = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("TEST"))];
+          return jsx$9.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))
+        })
+      })(this$4$1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$3) {
+        return (function(a$2) {
+          var a$1 = $as_Ljapgolly_scalajs_react_vdom_TagOf(a$2);
+          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+          return a$1.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+        })
+      })(this$4$1)))
+    })
+  })(this, arg1));
+  var jsx$8 = jsx$10.$$bar__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($as_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($$this$1.apply__O__O(a$3)));
+  var jsx$6 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$().literal__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB("summoner");
+  var jsx$5 = arg1.string__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB("\\w+");
+  var this$14 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$();
+  var jsx$4 = jsx$6.$$div__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(jsx$5, $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriMed__$$undtoA__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition(this$14));
+  var jsx$3 = arg1.string__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB("\\w+");
+  var this$15 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$();
+  var jsx$2 = jsx$4.$$div__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(jsx$3, $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLowest__$$times$times$times__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition(this$15));
+  var jsx$1 = arg1.string__T__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB("\\w+");
+  var this$16 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$();
+  var r$1 = $as_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(jsx$2.$$div__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(jsx$1, $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLow__T3__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition(this$16)).xmap__F1__F1__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteCommon(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$1) {
+    return (function(t$2) {
+      var t = $as_T3(t$2);
+      return new $c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage().init___T__T__T($as_T(t.$$und1$1), $as_T(t.$$und2$1), $as_T(t.$$und3$1))
+    })
+  })(this)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$6$1) {
+    return (function(c$2) {
+      var c = $as_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(c$2);
+      return new $c_T3().init___O__O__O(c.summonerName$1, c.seasonId$1, c.queueId$1)
+    })
+  })(this))));
+  var $$this$2 = arg1.dynamicRouteCT__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route__s_reflect_ClassTag__F1(r$1.route__Ljapgolly_scalajs_react_extra_router_StaticDsl$Route(), new $c_s_reflect_ClassTag$GenericClassTag().init___jl_Class($d_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.getClassOf()));
+  var g = arg1.$$undauto$undpToAction$undfrom$undaction__F0__F1(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1, dsl$2) {
+    return (function() {
+      return dsl$2.render__F0__F1__Ljapgolly_scalajs_react_extra_router_Renderer(new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$2) {
+        return (function() {
+          var jsx$7 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+          var array$1 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("TEST"))];
+          return jsx$7.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))
+        })
+      })(this$7$1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$4) {
+        return (function(a$2$1) {
+          var a$4 = $as_Ljapgolly_scalajs_react_vdom_TagOf(a$2$1);
+          $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+          return a$4.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+        })
+      })(this$7$1)))
+    })
+  })(this, arg1)));
+  var r$2 = jsx$8.$$bar__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($as_Ljapgolly_scalajs_react_extra_router_StaticDsl$Rule($$this$2.apply__O__O(g)));
+  var jsx$12 = r$2.noFallback__Ljapgolly_scalajs_react_extra_router_StaticDsl$Rules();
   var page = $m_Lvangogh500_lolstats_services_AppRouter$HomePage$();
-  var method = $m_Ljapgolly_scalajs_react_extra_router_Redirect$Replace$();
-  var c = jsx$8.apply__Ljapgolly_scalajs_react_extra_router_BaseUrl__Ljapgolly_scalajs_react_extra_router_RouterConfig__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot(jsx$7, jsx$6.notFound__F1__Ljapgolly_scalajs_react_extra_router_RouterConfig(arg1.$$undauto$undnotFound$undfrom$undparsed__O__F1__F1(new $c_Ljapgolly_scalajs_react_extra_router_RedirectToPage().init___O__Ljapgolly_scalajs_react_extra_router_Redirect$Method(page, method), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1, dsl$1) {
-    return (function(r$2) {
-      var r$3 = $as_Ljapgolly_scalajs_react_extra_router_Redirect(r$2);
+  var method = $m_Ljapgolly_scalajs_react_extra_router_Redirect$Push$();
+  this.component$1 = jsx$14.apply__Ljapgolly_scalajs_react_extra_router_BaseUrl__Ljapgolly_scalajs_react_extra_router_RouterConfig__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot(jsx$13, jsx$12.notFound__F1__Ljapgolly_scalajs_react_extra_router_RouterConfig(arg1.$$undauto$undnotFound$undfrom$undparsed__O__F1__F1(new $c_Ljapgolly_scalajs_react_extra_router_RedirectToPage().init___O__Ljapgolly_scalajs_react_extra_router_Redirect$Method(page, method), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$8$1, dsl$3) {
+    return (function(r$2$1) {
+      var r$3 = $as_Ljapgolly_scalajs_react_extra_router_Redirect(r$2$1);
       $m_s_package$();
       return new $c_s_util_Left().init___O(r$3)
     })
-  })(this, arg1)))));
+  })(this, arg1)))).renderWith__F2__Ljapgolly_scalajs_react_extra_router_RouterConfig(new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(this$9$1) {
+    return (function(ctl$2$1, res$2) {
+      var ctl$1 = $as_Ljapgolly_scalajs_react_extra_router_RouterCtl(ctl$2$1);
+      var res = $as_Ljapgolly_scalajs_react_extra_router_Resolution(res$2);
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var a$5 = $m_Lvangogh500_lolstats_services_AppRouter$().layout__Ljapgolly_scalajs_react_extra_router_RouterCtl__Ljapgolly_scalajs_react_extra_router_Resolution__Ljapgolly_scalajs_react_vdom_TagOf(ctl$1, res);
+      return a$5.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+    })
+  })(this))));
+  return this
+});
+$c_Lvangogh500_lolstats_services_AppRouter$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+  var c = this.component$1;
   return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+});
+$c_Lvangogh500_lolstats_services_AppRouter$.prototype.layout__Ljapgolly_scalajs_react_extra_router_RouterCtl__Ljapgolly_scalajs_react_extra_router_Resolution__Ljapgolly_scalajs_react_vdom_TagOf = (function(ctl, res) {
+  var jsx$3 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var jsx$2 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-100 h-100 d-flex flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var u = $m_Lvangogh500_lolstats_components_PrimaryNavBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
+  var jsx$1 = u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var u$1 = $m_Lvangogh500_lolstats_components_SecondaryNavBar$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
+  var array = [jsx$2, jsx$1, u$1.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement(), $as_Ljapgolly_scalajs_react_vdom_TagMod(res.render$1.apply__O())];
+  return jsx$3.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))
 });
 var $d_Lvangogh500_lolstats_services_AppRouter$ = new $TypeData().initClass({
   Lvangogh500_lolstats_services_AppRouter$: 0
@@ -10382,6 +10593,9 @@ $h_jl_Class.prototype = $c_jl_Class.prototype;
 $c_jl_Class.prototype.getName__T = (function() {
   return $as_T(this.data$1.name)
 });
+$c_jl_Class.prototype.getComponentType__jl_Class = (function() {
+  return $as_jl_Class(this.data$1.getComponentType())
+});
 $c_jl_Class.prototype.isPrimitive__Z = (function() {
   return $uZ(this.data$1.isPrimitive)
 });
@@ -10407,6 +10621,18 @@ $c_jl_Class.prototype.isArray__Z = (function() {
 $c_jl_Class.prototype.isInterface__Z = (function() {
   return $uZ(this.data$1.isInterface)
 });
+function $is_jl_Class(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.jl_Class)))
+}
+function $as_jl_Class(obj) {
+  return (($is_jl_Class(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "java.lang.Class"))
+}
+function $isArrayOf_jl_Class(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Class)))
+}
+function $asArrayOf_jl_Class(obj, depth) {
+  return (($isArrayOf_jl_Class(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Class;", depth))
+}
 var $d_jl_Class = new $TypeData().initClass({
   jl_Class: 0
 }, false, "java.lang.Class", {
@@ -13758,10 +13984,16 @@ $c_Ljapgolly_scalajs_react_CtorType$ProfunctorN$.prototype.rmap__Ljapgolly_scala
   var g$1 = x.construct$2;
   return new $c_Ljapgolly_scalajs_react_CtorType$Nullary().init___O__F1__sjs_js_UndefOr(jsx$1, $f_F1__compose__F1__F1(g, g$1), x.mods$2)
 });
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorN$.prototype.dimap__O__F1__F1__O = (function(f, l, r) {
+  return this.dimap__Ljapgolly_scalajs_react_CtorType$Nullary__F1__F1__Ljapgolly_scalajs_react_CtorType$Nullary($as_Ljapgolly_scalajs_react_CtorType$Nullary(f), l, r)
+});
 $c_Ljapgolly_scalajs_react_CtorType$ProfunctorN$.prototype.dimap__Ljapgolly_scalajs_react_CtorType$Nullary__F1__F1__Ljapgolly_scalajs_react_CtorType$Nullary = (function(x, f, g) {
   var jsx$1 = g.apply__O__O(x.unmodified$2);
   var g$1 = x.construct$2;
   return new $c_Ljapgolly_scalajs_react_CtorType$Nullary().init___O__F1__sjs_js_UndefOr(jsx$1, $f_F1__compose__F1__F1(g, g$1), x.mods$2)
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorN$.prototype.rmap__O__F1__O = (function(f, m) {
+  return this.rmap__Ljapgolly_scalajs_react_CtorType$Nullary__F1__Ljapgolly_scalajs_react_CtorType$Nullary($as_Ljapgolly_scalajs_react_CtorType$Nullary(f), m)
 });
 var $d_Ljapgolly_scalajs_react_CtorType$ProfunctorN$ = new $TypeData().initClass({
   Ljapgolly_scalajs_react_CtorType$ProfunctorN$: 0
@@ -13778,6 +14010,95 @@ function $m_Ljapgolly_scalajs_react_CtorType$ProfunctorN$() {
   };
   return $n_Ljapgolly_scalajs_react_CtorType$ProfunctorN$
 }
+/** @constructor */
+function $c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$() {
+  $c_O.call(this)
+}
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype = new $h_O();
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.constructor = $c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_CtorType$ProfunctorP$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype = $c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype;
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.init___ = (function() {
+  return this
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.dimap__Ljapgolly_scalajs_react_CtorType$Props__F1__F1__Ljapgolly_scalajs_react_CtorType$Props = (function(ct, f, g) {
+  var fn = ct.construct$2;
+  return new $c_Ljapgolly_scalajs_react_CtorType$Props().init___F2__sjs_js_UndefOr(new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function($this, f$1, g$1, fn$1) {
+    return (function(p$2, m$2) {
+      return g$1.apply__O__O(fn$1.apply__O__O__O(f$1.apply__O__O(p$2), m$2))
+    })
+  })(this, f, g, fn)), ct.mods$2)
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.rmap__Ljapgolly_scalajs_react_CtorType$Props__F1__Ljapgolly_scalajs_react_CtorType$Props = (function(ct, g) {
+  var fn = ct.construct$2;
+  return new $c_Ljapgolly_scalajs_react_CtorType$Props().init___F2__sjs_js_UndefOr(new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function($this, g$1, fn$1) {
+    return (function(p$2, m$2) {
+      return g$1.apply__O__O(fn$1.apply__O__O__O(p$2, m$2))
+    })
+  })(this, g, fn)), ct.mods$2)
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.dimap__O__F1__F1__O = (function(f, l, r) {
+  return this.dimap__Ljapgolly_scalajs_react_CtorType$Props__F1__F1__Ljapgolly_scalajs_react_CtorType$Props($as_Ljapgolly_scalajs_react_CtorType$Props(f), l, r)
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.rmap__O__F1__O = (function(f, m) {
+  return this.rmap__Ljapgolly_scalajs_react_CtorType$Props__F1__Ljapgolly_scalajs_react_CtorType$Props($as_Ljapgolly_scalajs_react_CtorType$Props(f), m)
+});
+var $d_Ljapgolly_scalajs_react_CtorType$ProfunctorP$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_CtorType$ProfunctorP$: 0
+}, false, "japgolly.scalajs.react.CtorType$ProfunctorP$", {
+  Ljapgolly_scalajs_react_CtorType$ProfunctorP$: 1,
+  O: 1,
+  Ljapgolly_scalajs_react_internal_Profunctor: 1
+});
+$c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$.prototype.$classData = $d_Ljapgolly_scalajs_react_CtorType$ProfunctorP$;
+var $n_Ljapgolly_scalajs_react_CtorType$ProfunctorP$ = (void 0);
+function $m_Ljapgolly_scalajs_react_CtorType$ProfunctorP$() {
+  if ((!$n_Ljapgolly_scalajs_react_CtorType$ProfunctorP$)) {
+    $n_Ljapgolly_scalajs_react_CtorType$ProfunctorP$ = new $c_Ljapgolly_scalajs_react_CtorType$ProfunctorP$().init___()
+  };
+  return $n_Ljapgolly_scalajs_react_CtorType$ProfunctorP$
+}
+/** @constructor */
+function $c_Ljapgolly_scalajs_react_CtorType$Props() {
+  $c_Ljapgolly_scalajs_react_CtorType.call(this);
+  this.construct$2 = null;
+  this.mods$2 = null
+}
+$c_Ljapgolly_scalajs_react_CtorType$Props.prototype = new $h_Ljapgolly_scalajs_react_CtorType();
+$c_Ljapgolly_scalajs_react_CtorType$Props.prototype.constructor = $c_Ljapgolly_scalajs_react_CtorType$Props;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_CtorType$Props() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_CtorType$Props.prototype = $c_Ljapgolly_scalajs_react_CtorType$Props.prototype;
+$c_Ljapgolly_scalajs_react_CtorType$Props.prototype.init___F2__sjs_js_UndefOr = (function(construct, mods) {
+  this.construct$2 = construct;
+  this.mods$2 = mods;
+  return this
+});
+function $is_Ljapgolly_scalajs_react_CtorType$Props(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_CtorType$Props)))
+}
+function $as_Ljapgolly_scalajs_react_CtorType$Props(obj) {
+  return (($is_Ljapgolly_scalajs_react_CtorType$Props(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "japgolly.scalajs.react.CtorType$Props"))
+}
+function $isArrayOf_Ljapgolly_scalajs_react_CtorType$Props(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljapgolly_scalajs_react_CtorType$Props)))
+}
+function $asArrayOf_Ljapgolly_scalajs_react_CtorType$Props(obj, depth) {
+  return (($isArrayOf_Ljapgolly_scalajs_react_CtorType$Props(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljapgolly.scalajs.react.CtorType$Props;", depth))
+}
+var $d_Ljapgolly_scalajs_react_CtorType$Props = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_CtorType$Props: 0
+}, false, "japgolly.scalajs.react.CtorType$Props", {
+  Ljapgolly_scalajs_react_CtorType$Props: 1,
+  Ljapgolly_scalajs_react_CtorType: 1,
+  O: 1
+});
+$c_Ljapgolly_scalajs_react_CtorType$Props.prototype.$classData = $d_Ljapgolly_scalajs_react_CtorType$Props;
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1() {
   $c_O.call(this);
@@ -13804,6 +14125,18 @@ var $d_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1 = new $TypeData().initC
   Ljapgolly_scalajs_react_CtorType$Summoner: 1
 });
 $c_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1.prototype.$classData = $d_Ljapgolly_scalajs_react_CtorType$Summoner$$anon$1;
+function $is_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot)))
+}
+function $as_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj) {
+  return (($is_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "japgolly.scalajs.react.component.Generic$UnmountedWithRoot"))
+}
+function $isArrayOf_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot)))
+}
+function $asArrayOf_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj, depth) {
+  return (($isArrayOf_Ljapgolly_scalajs_react_component_Generic$UnmountedWithRoot(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljapgolly.scalajs.react.component.Generic$UnmountedWithRoot;", depth))
+}
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_component_Js$() {
   $c_O.call(this);
@@ -13830,14 +14163,11 @@ $c_Ljapgolly_scalajs_react_component_Js$.prototype.japgolly$scalajs$react$compon
   return $as_T(((value === (void 0)) ? "" : value))
 });
 $c_Ljapgolly_scalajs_react_component_Js$.prototype.component__sjs_js_Function1__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot = (function(rc, s) {
-  var this$4 = s.pf$1;
-  var f = s.summon$1.apply__O__O(rc);
-  var m = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+  var c = $as_Ljapgolly_scalajs_react_CtorType(s.pf$1.rmap__O__F1__O(s.summon$1.apply__O__O(rc), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
     return (function(r$2) {
       return $m_Ljapgolly_scalajs_react_component_Js$().unmounted__Ljapgolly_scalajs_react_raw_React$ComponentElement__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(r$2)
     })
-  })(this));
-  var c = this$4.rmap__Ljapgolly_scalajs_react_CtorType$Nullary__F1__Ljapgolly_scalajs_react_CtorType$Nullary($as_Ljapgolly_scalajs_react_CtorType$Nullary(f), m);
+  })(this))));
   var pf = s.pf$1;
   return new $c_Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$$anon$1().init___Ljapgolly_scalajs_react_component_JsBaseComponentTemplate__sjs_js_Any__Ljapgolly_scalajs_react_CtorType__Ljapgolly_scalajs_react_internal_Profunctor(this, rc, c, pf)
 });
@@ -14067,6 +14397,9 @@ function $h_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1() {
   /*<skip>*/
 }
 $h_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype = $c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype;
+$c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype.set__Ljapgolly_scalajs_react_extra_router_Path__F0 = (function(path) {
+  return this.$$outer$2.interpret__Ljapgolly_scalajs_react_extra_router_RouteCmd__F0(this.$$outer$2.setPath__Ljapgolly_scalajs_react_extra_router_Path__Ljapgolly_scalajs_react_extra_router_RouteCmd(path))
+});
 $c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype.init___Ljapgolly_scalajs_react_extra_router_RouterLogic = (function($$outer) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
@@ -14078,6 +14411,9 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype.init___Lja
 });
 $c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype.refresh__F0 = (function() {
   return this.refresh$2
+});
+$c_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1.prototype.set__O__F0 = (function(target) {
+  return this.set__Ljapgolly_scalajs_react_extra_router_Path__F0($as_Ljapgolly_scalajs_react_extra_router_Path(target))
 });
 var $d_Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1 = new $TypeData().initClass({
   Ljapgolly_scalajs_react_extra_router_RouterLogic$$anon$1: 0
@@ -14185,6 +14521,13 @@ $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB.prototype.pmap__F1__F1_
   var this$2 = this.build$2;
   return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB().init___T__I__F1__F1(jsx$3, jsx$2, jsx$1, $f_F1__compose__F1__F1(this$2, a))
 });
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB.prototype.$$div__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB = (function(next, c) {
+  var next$1 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$().$$div$1;
+  var this$1 = $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$();
+  var c$1 = $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriMed__Ato$und__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition(this$1);
+  var this$2 = $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__apply__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(c$1, this, next$1);
+  return $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition__apply__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(c, this$2, next)
+});
 $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB.prototype.pmap__F1__F1__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteCommon = (function(b, a) {
   return this.pmap__F1__F1__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(b, a)
 });
@@ -14215,6 +14558,18 @@ $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB.prototype.init___T__I__
   this.build$2 = build;
   return this
 });
+function $is_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB)))
+}
+function $as_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj) {
+  return (($is_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "japgolly.scalajs.react.extra.router.StaticDsl$RouteB"))
+}
+function $isArrayOf_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB)))
+}
+function $asArrayOf_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj, depth) {
+  return (($isArrayOf_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljapgolly.scalajs.react.extra.router.StaticDsl$RouteB;", depth))
+}
 var $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB = new $TypeData().initClass({
   Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB: 0
 }, false, "japgolly.scalajs.react.extra.router.StaticDsl$RouteB", {
@@ -14223,6 +14578,64 @@ var $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB = new $TypeData().i
   O: 1
 });
 $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB.prototype.$classData = $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB;
+/** @constructor */
+function $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1() {
+  $c_O.call(this);
+  this.ga$1 = null;
+  this.gb$1 = null;
+  this.gc$1 = null
+}
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype = new $h_O();
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype.constructor = $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype = $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype;
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype.init___F1__F1__F2 = (function(a$1, b$1, c$1) {
+  this.ga$1 = a$1;
+  this.gb$1 = b$1;
+  this.gc$1 = c$1;
+  return this
+});
+var $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1 = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1: 0
+}, false, "japgolly.scalajs.react.extra.router.StaticDsl$RouteB$Composition$$anon$1", {
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1: 1,
+  O: 1,
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition: 1
+});
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1.prototype.$classData = $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1;
+function $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriMed__$$undtoA__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition($thiz) {
+  var a = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$25$2) {
+      return (void 0)
+    })
+  })($thiz));
+  var b = $m_Ljapgolly_scalajs_react_internal_package$().identityFnInstance$1;
+  var c = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(this$2) {
+    return (function(x$26$2, a$2) {
+      $asUnit(x$26$2);
+      return a$2
+    })
+  })($thiz));
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1().init___F1__F1__F2(a, b, c)
+}
+function $f_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriMed__Ato$und__Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition($thiz) {
+  var a = $m_Ljapgolly_scalajs_react_internal_package$().identityFnInstance$1;
+  var b = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$27$2) {
+      return (void 0)
+    })
+  })($thiz));
+  var c = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function(this$2) {
+    return (function(a$2, x$28$2) {
+      $asUnit(x$28$2);
+      return a$2
+    })
+  })($thiz));
+  return new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$$anon$1().init___F1__F1__F2(a, b, c)
+}
 /** @constructor */
 function $c_Ljapgolly_scalajs_react_internal_Effect$$anon$1() {
   $c_Ljapgolly_scalajs_react_internal_Effect.call(this)
@@ -14504,16 +14917,16 @@ $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.input__Ljapgolly_scalajs_rea
   };
   return $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1
 });
-$c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.input$lzycompute$1__p1__V = (function() {
-  if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 === null)) {
-    $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 = new $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$().init___Ljapgolly_scalajs_react_vdom_HtmlTags(this)
-  }
-});
 $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.a__Ljapgolly_scalajs_react_vdom_HtmlTags$a$ = (function() {
   if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().a$module$1 === null)) {
     this.a$lzycompute$1__p1__V()
   };
   return $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().a$module$1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.input$lzycompute$1__p1__V = (function() {
+  if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 === null)) {
+    $m_Ljapgolly_scalajs_react_vdom_HtmlTags$().input$module$1 = new $c_Ljapgolly_scalajs_react_vdom_HtmlTags$input$().init___Ljapgolly_scalajs_react_vdom_HtmlTags(this)
+  }
 });
 $c_Ljapgolly_scalajs_react_vdom_HtmlTags$.prototype.a$lzycompute$1__p1__V = (function() {
   if (($m_Ljapgolly_scalajs_react_vdom_HtmlTags$().a$module$1 === null)) {
@@ -17017,6 +17430,16 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterLogic.prototype.redirectCmd__Ljapg
     }
   }
 });
+$c_Ljapgolly_scalajs_react_extra_router_RouterLogic.prototype.setPath__Ljapgolly_scalajs_react_extra_router_Path__Ljapgolly_scalajs_react_extra_router_RouteCmd = (function(path) {
+  var msg = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, path$1) {
+    return (function() {
+      return new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Set route to ", "."])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([path$1]))
+    })
+  })(this, path));
+  var jsx$1 = new $c_Ljapgolly_scalajs_react_extra_router_RouteCmd$Log().init___F0(msg);
+  var base = this.baseUrl$1;
+  return jsx$1.$$greater$greater__Ljapgolly_scalajs_react_extra_router_RouteCmd__Ljapgolly_scalajs_react_extra_router_RouteCmd(new $c_Ljapgolly_scalajs_react_extra_router_RouteCmd$PushState().init___Ljapgolly_scalajs_react_extra_router_AbsUrl(base.apply__Ljapgolly_scalajs_react_extra_router_Path__Ljapgolly_scalajs_react_extra_router_AbsUrl(path))).$$greater$greater__Ljapgolly_scalajs_react_extra_router_RouteCmd__Ljapgolly_scalajs_react_extra_router_RouteCmd($m_Ljapgolly_scalajs_react_extra_router_RouteCmd$BroadcastSync$())
+});
 $c_Ljapgolly_scalajs_react_extra_router_RouterLogic.prototype.syncToPath__Ljapgolly_scalajs_react_extra_router_Path__Ljapgolly_scalajs_react_extra_router_RouteCmd = (function(path) {
   var parsed = $as_s_util_Either(this.cfg$1.parse$1.apply__O__O(path));
   if ($is_s_util_Right(parsed)) {
@@ -19391,11 +19814,6 @@ function $h_s_Predef$() {
   /*<skip>*/
 }
 $h_s_Predef$.prototype = $c_s_Predef$.prototype;
-$c_s_Predef$.prototype.assert__Z__V = (function(assertion) {
-  if ((!assertion)) {
-    throw new $c_jl_AssertionError().init___O("assertion failed")
-  }
-});
 $c_s_Predef$.prototype.init___ = (function() {
   $n_s_Predef$ = this;
   $m_s_package$();
@@ -19409,6 +19827,11 @@ $c_s_Predef$.prototype.init___ = (function() {
   this.singleton$und$less$colon$less$2 = new $c_s_Predef$$anon$1().init___();
   this.scala$Predef$$singleton$und$eq$colon$eq$f = new $c_s_Predef$$anon$2().init___();
   return this
+});
+$c_s_Predef$.prototype.assert__Z__V = (function(assertion) {
+  if ((!assertion)) {
+    throw new $c_jl_AssertionError().init___O("assertion failed")
+  }
 });
 $c_s_Predef$.prototype.require__Z__V = (function(requirement) {
   if ((!requirement)) {
@@ -20650,6 +21073,37 @@ function $asArrayOf_Ljapgolly_scalajs_react_extra_router_Action(obj, depth) {
   return (($isArrayOf_Ljapgolly_scalajs_react_extra_router_Action(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljapgolly.scalajs.react.extra.router.Action;", depth))
 }
 /** @constructor */
+function $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$() {
+  $c_O.call(this)
+}
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype = new $h_O();
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype.constructor = $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$;
+/** @constructor */
+function $h_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$() {
+  /*<skip>*/
+}
+$h_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype = $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype;
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype.init___ = (function() {
+  return this
+});
+var $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$ = new $TypeData().initClass({
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$: 0
+}, false, "japgolly.scalajs.react.extra.router.StaticDsl$RouteB$Composition$", {
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$: 1,
+  O: 1,
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriMed: 1,
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLow: 1,
+  Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$undPriLowest: 1
+});
+$c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$.prototype.$classData = $d_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$;
+var $n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$ = (void 0);
+function $m_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$() {
+  if ((!$n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$)) {
+    $n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$ = new $c_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$().init___()
+  };
+  return $n_Ljapgolly_scalajs_react_extra_router_StaticDsl$RouteB$Composition$
+}
+/** @constructor */
 function $c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$() {
   $c_O.call(this);
   this.backgroundAttachment$module$1 = null;
@@ -20725,16 +21179,16 @@ function $h_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$() {
   /*<skip>*/
 }
 $h_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype = $c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype;
-$c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.init___ = (function() {
-  $n_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$ = this;
-  $f_Ljapgolly_scalajs_react_vdom_HtmlAttrs__$$init$__V(this);
-  return this
-});
 $c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.aria__Ljapgolly_scalajs_react_vdom_HtmlAttrs$aria$ = (function() {
   if (($m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1 === null)) {
     this.aria$lzycompute$1__p1__V()
   };
   return $m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1
+});
+$c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.init___ = (function() {
+  $n_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$ = this;
+  $f_Ljapgolly_scalajs_react_vdom_HtmlAttrs__$$init$__V(this);
+  return this
 });
 $c_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$.prototype.aria$lzycompute$1__p1__V = (function() {
   if (($m_Ljapgolly_scalajs_react_vdom_HtmlAttrAndStyles$().aria$module$1 === null)) {
@@ -21624,6 +22078,12 @@ var $d_jl_AssertionError = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_jl_AssertionError.prototype.$classData = $d_jl_AssertionError;
+function $isArrayOf_jl_Byte(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Byte)))
+}
+function $asArrayOf_jl_Byte(obj, depth) {
+  return (($isArrayOf_jl_Byte(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Byte;", depth))
+}
 var $d_jl_Byte = new $TypeData().initClass({
   jl_Byte: 0
 }, false, "java.lang.Byte", {
@@ -21677,6 +22137,12 @@ var $d_jl_Double = new $TypeData().initClass({
 }, (void 0), (void 0), (function(x) {
   return ((typeof x) === "number")
 }));
+function $isArrayOf_jl_Float(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Float)))
+}
+function $asArrayOf_jl_Float(obj, depth) {
+  return (($isArrayOf_jl_Float(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Float;", depth))
+}
 var $d_jl_Float = new $TypeData().initClass({
   jl_Float: 0
 }, false, "java.lang.Float", {
@@ -21747,6 +22213,12 @@ var $d_jl_RuntimeException = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_jl_RuntimeException.prototype.$classData = $d_jl_RuntimeException;
+function $isArrayOf_jl_Short(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Short)))
+}
+function $asArrayOf_jl_Short(obj, depth) {
+  return (($isArrayOf_jl_Short(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Short;", depth))
+}
 var $d_jl_Short = new $TypeData().initClass({
   jl_Short: 0
 }, false, "java.lang.Short", {
@@ -23594,6 +24066,14 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterConfig.prototype.init___F1__F1__F2
   this.postRenderFn$1 = postRenderFn;
   this.logger$1 = logger;
   return this
+});
+$c_Ljapgolly_scalajs_react_extra_router_RouterConfig.prototype.renderWith__F2__Ljapgolly_scalajs_react_extra_router_RouterConfig = (function(f) {
+  var x$18 = this.parse$1;
+  var x$19 = this.path$1;
+  var x$20 = this.action$1;
+  var x$21 = this.postRenderFn$1;
+  var x$22 = this.logger$1;
+  return new $c_Ljapgolly_scalajs_react_extra_router_RouterConfig().init___F1__F1__F2__F2__F2__F1(x$18, x$19, x$20, f, x$21, x$22)
 });
 $c_Ljapgolly_scalajs_react_extra_router_RouterConfig.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
@@ -25794,6 +26274,84 @@ function $m_Lscalacss_package$DevDefaults$() {
   return $n_Lscalacss_package$DevDefaults$
 }
 /** @constructor */
+function $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props() {
+  $c_O.call(this);
+  this.onSubmit$1 = null
+}
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype = new $h_O();
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.constructor = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props;
+/** @constructor */
+function $h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype = $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype;
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.productPrefix__T = (function() {
+  return "Props"
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(x$1)) {
+    var Props$1 = $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(x$1);
+    var x = this.onSubmit$1;
+    var x$2 = Props$1.onSubmit$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.onSubmit$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.init___F1 = (function(onSubmit) {
+  this.onSubmit$1 = onSubmit;
+  return this
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props)))
+}
+function $as_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj) {
+  return (($is_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$Props"))
+}
+function $isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props)))
+}
+function $asArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj, depth) {
+  return (($isArrayOf_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lvangogh500.lolstats.scenes.home.components.SummonerSearchBar$Props;", depth))
+}
+var $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props = new $TypeData().initClass({
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props: 0
+}, false, "vangogh500.lolstats.scenes.home.components.SummonerSearchBar$Props", {
+  Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props.prototype.$classData = $d_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$Props;
+/** @constructor */
 function $c_Lvangogh500_lolstats_scenes_home_components_SummonerSearchBar$State() {
   $c_O.call(this);
   this.summoner$1 = null
@@ -26616,6 +27174,38 @@ var $d_s_StringContext = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_s_StringContext.prototype.$classData = $d_s_StringContext;
+function $f_s_reflect_ClassTag__equals__O__Z($thiz, x) {
+  if ($is_s_reflect_ClassTag(x)) {
+    var x$2 = $thiz.runtimeClass__jl_Class();
+    var x$3 = $as_s_reflect_ClassTag(x).runtimeClass__jl_Class();
+    return (x$2 === x$3)
+  } else {
+    return false
+  }
+}
+function $f_s_reflect_ClassTag__unapply__O__s_Option($thiz, x) {
+  return (((x !== null) && ((((((((($thiz.runtimeClass__jl_Class().isInstance__O__Z(x) || ($isByte(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_B.getClassOf()))) || ($isShort(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_S.getClassOf()))) || ($is_jl_Character(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_C.getClassOf()))) || ($isInt(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_I.getClassOf()))) || ($is_sjsr_RuntimeLong(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_J.getClassOf()))) || ($isFloat(x) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_F.getClassOf()))) || (((typeof x) === "number") && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_D.getClassOf()))) || (((typeof x) === "boolean") && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_Z.getClassOf()))) || ((x === (void 0)) && $thiz.runtimeClass__jl_Class().isAssignableFrom__jl_Class__Z($d_V.getClassOf())))) ? new $c_s_Some().init___O(x) : $m_s_None$())
+}
+function $f_s_reflect_ClassTag__prettyprint$1__ps_reflect_ClassTag__jl_Class__T($thiz, clazz) {
+  if (clazz.isArray__Z()) {
+    var clazz$1 = clazz.getComponentType__jl_Class();
+    return (("Array[" + $f_s_reflect_ClassTag__prettyprint$1__ps_reflect_ClassTag__jl_Class__T($thiz, clazz$1)) + "]")
+  } else {
+    return clazz.getName__T()
+  }
+}
+function $is_s_reflect_ClassTag(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.s_reflect_ClassTag)))
+}
+function $as_s_reflect_ClassTag(obj) {
+  return (($is_s_reflect_ClassTag(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.reflect.ClassTag"))
+}
+function $isArrayOf_s_reflect_ClassTag(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.s_reflect_ClassTag)))
+}
+function $asArrayOf_s_reflect_ClassTag(obj, depth) {
+  return (($isArrayOf_s_reflect_ClassTag(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.reflect.ClassTag;", depth))
+}
 /** @constructor */
 function $c_s_util_Either() {
   $c_O.call(this)
@@ -28223,8 +28813,16 @@ $c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.productElement__I__O = 
     }
   }
 });
+$c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.str__Ljapgolly_scalajs_react_extra_router_PathLike__T = (function(s) {
+  var s$1 = $as_Ljapgolly_scalajs_react_extra_router_AbsUrl(s);
+  return s$1.value$2
+});
 $c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
 $c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.init___T = (function(value) {
   this.value$2 = value;
@@ -28236,12 +28834,11 @@ $c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.init___T = (function(va
   };
   return this
 });
-$c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
 $c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_AbsUrl.prototype.make__T__Ljapgolly_scalajs_react_extra_router_PathLike = (function(s) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_AbsUrl().init___T(s)
 });
 function $is_Ljapgolly_scalajs_react_extra_router_AbsUrl(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_extra_router_AbsUrl)))
@@ -28306,8 +28903,16 @@ $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.productElement__I__O =
     }
   }
 });
+$c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.str__Ljapgolly_scalajs_react_extra_router_PathLike__T = (function(s) {
+  var s$1 = $as_Ljapgolly_scalajs_react_extra_router_BaseUrl(s);
+  return s$1.value$2
+});
 $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
 $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.init___T = (function(value) {
   this.value$2 = value;
@@ -28319,12 +28924,11 @@ $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.init___T = (function(v
   };
   return this
 });
-$c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
 $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.make__T__Ljapgolly_scalajs_react_extra_router_PathLike = (function(s) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_BaseUrl().init___T(s)
 });
 $c_Ljapgolly_scalajs_react_extra_router_BaseUrl.prototype.apply__Ljapgolly_scalajs_react_extra_router_Path__Ljapgolly_scalajs_react_extra_router_AbsUrl = (function(p) {
   return new $c_Ljapgolly_scalajs_react_extra_router_AbsUrl().init___T((("" + this.value$2) + p.value$2))
@@ -28395,16 +28999,23 @@ $c_Ljapgolly_scalajs_react_extra_router_Path.prototype.productElement__I__O = (f
 $c_Ljapgolly_scalajs_react_extra_router_Path.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Ljapgolly_scalajs_react_extra_router_Path.prototype.init___T = (function(value) {
-  this.value$2 = value;
-  return this
+$c_Ljapgolly_scalajs_react_extra_router_Path.prototype.str__Ljapgolly_scalajs_react_extra_router_PathLike__T = (function(s) {
+  var s$1 = $as_Ljapgolly_scalajs_react_extra_router_Path(s);
+  return s$1.value$2
 });
 $c_Ljapgolly_scalajs_react_extra_router_Path.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
+$c_Ljapgolly_scalajs_react_extra_router_Path.prototype.init___T = (function(value) {
+  this.value$2 = value;
+  return this
+});
 $c_Ljapgolly_scalajs_react_extra_router_Path.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_Path.prototype.make__T__Ljapgolly_scalajs_react_extra_router_PathLike = (function(s) {
+  return new $c_Ljapgolly_scalajs_react_extra_router_Path().init___T(s)
 });
 function $is_Ljapgolly_scalajs_react_extra_router_Path(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_extra_router_Path)))
@@ -29300,6 +29911,9 @@ $c_Ljapgolly_scalajs_react_extra_router_RouterCtl$Contramap.prototype.hashCode__
 });
 $c_Ljapgolly_scalajs_react_extra_router_RouterCtl$Contramap.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Ljapgolly_scalajs_react_extra_router_RouterCtl$Contramap.prototype.set__O__F0 = (function(b) {
+  return this.u$2.set__O__F0(this.f$2.apply__O__O(b))
 });
 function $is_Ljapgolly_scalajs_react_extra_router_RouterCtl$Contramap(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ljapgolly_scalajs_react_extra_router_RouterCtl$Contramap)))
@@ -30766,6 +31380,146 @@ function $m_Lvangogh500_lolstats_services_AppRouter$HomePage$() {
     $n_Lvangogh500_lolstats_services_AppRouter$HomePage$ = new $c_Lvangogh500_lolstats_services_AppRouter$HomePage$().init___()
   };
   return $n_Lvangogh500_lolstats_services_AppRouter$HomePage$
+}
+/** @constructor */
+function $c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage() {
+  $c_O.call(this);
+  this.summonerName$1 = null;
+  this.seasonId$1 = null;
+  this.queueId$1 = null
+}
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype = new $h_O();
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.constructor = $c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage;
+/** @constructor */
+function $h_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype = $c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype;
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.productPrefix__T = (function() {
+  return "SummonerProfilePage"
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.productArity__I = (function() {
+  return 3
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(x$1)) {
+    var SummonerProfilePage$1 = $as_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(x$1);
+    return (((this.summonerName$1 === SummonerProfilePage$1.summonerName$1) && (this.seasonId$1 === SummonerProfilePage$1.seasonId$1)) && (this.queueId$1 === SummonerProfilePage$1.queueId$1))
+  } else {
+    return false
+  }
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.summonerName$1;
+      break
+    }
+    case 1: {
+      return this.seasonId$1;
+      break
+    }
+    case 2: {
+      return this.queueId$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.init___T__T__T = (function(summonerName, seasonId, queueId) {
+  this.summonerName$1 = summonerName;
+  this.seasonId$1 = seasonId;
+  this.queueId$1 = queueId;
+  return this
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage)))
+}
+function $as_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj) {
+  return (($is_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "vangogh500.lolstats.services.AppRouter$SummonerProfilePage"))
+}
+function $isArrayOf_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage)))
+}
+function $asArrayOf_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj, depth) {
+  return (($isArrayOf_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lvangogh500.lolstats.services.AppRouter$SummonerProfilePage;", depth))
+}
+var $d_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage = new $TypeData().initClass({
+  Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage: 0
+}, false, "vangogh500.lolstats.services.AppRouter$SummonerProfilePage", {
+  Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage: 1,
+  O: 1,
+  Lvangogh500_lolstats_services_AppRouter$AppPage: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage.prototype.$classData = $d_Lvangogh500_lolstats_services_AppRouter$SummonerProfilePage;
+/** @constructor */
+function $c_Lvangogh500_lolstats_services_AppRouter$TestPage$() {
+  $c_O.call(this)
+}
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype = new $h_O();
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.constructor = $c_Lvangogh500_lolstats_services_AppRouter$TestPage$;
+/** @constructor */
+function $h_Lvangogh500_lolstats_services_AppRouter$TestPage$() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype = $c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype;
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.init___ = (function() {
+  return this
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.productPrefix__T = (function() {
+  return "TestPage"
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.productArity__I = (function() {
+  return 0
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.productElement__I__O = (function(x$1) {
+  throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.toString__T = (function() {
+  return "TestPage"
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.hashCode__I = (function() {
+  return (-1082268063)
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+var $d_Lvangogh500_lolstats_services_AppRouter$TestPage$ = new $TypeData().initClass({
+  Lvangogh500_lolstats_services_AppRouter$TestPage$: 0
+}, false, "vangogh500.lolstats.services.AppRouter$TestPage$", {
+  Lvangogh500_lolstats_services_AppRouter$TestPage$: 1,
+  O: 1,
+  Lvangogh500_lolstats_services_AppRouter$AppPage: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lvangogh500_lolstats_services_AppRouter$TestPage$.prototype.$classData = $d_Lvangogh500_lolstats_services_AppRouter$TestPage$;
+var $n_Lvangogh500_lolstats_services_AppRouter$TestPage$ = (void 0);
+function $m_Lvangogh500_lolstats_services_AppRouter$TestPage$() {
+  if ((!$n_Lvangogh500_lolstats_services_AppRouter$TestPage$)) {
+    $n_Lvangogh500_lolstats_services_AppRouter$TestPage$ = new $c_Lvangogh500_lolstats_services_AppRouter$TestPage$().init___()
+  };
+  return $n_Lvangogh500_lolstats_services_AppRouter$TestPage$
 }
 /** @constructor */
 function $c_T2() {
@@ -33228,6 +33982,48 @@ var $d_ju_MissingFormatWidthException = new $TypeData().initClass({
 });
 $c_ju_MissingFormatWidthException.prototype.$classData = $d_ju_MissingFormatWidthException;
 /** @constructor */
+function $c_s_reflect_ClassTag$GenericClassTag() {
+  $c_O.call(this);
+  this.runtimeClass$1 = null
+}
+$c_s_reflect_ClassTag$GenericClassTag.prototype = new $h_O();
+$c_s_reflect_ClassTag$GenericClassTag.prototype.constructor = $c_s_reflect_ClassTag$GenericClassTag;
+/** @constructor */
+function $h_s_reflect_ClassTag$GenericClassTag() {
+  /*<skip>*/
+}
+$h_s_reflect_ClassTag$GenericClassTag.prototype = $c_s_reflect_ClassTag$GenericClassTag.prototype;
+$c_s_reflect_ClassTag$GenericClassTag.prototype.equals__O__Z = (function(x) {
+  return $f_s_reflect_ClassTag__equals__O__Z(this, x)
+});
+$c_s_reflect_ClassTag$GenericClassTag.prototype.toString__T = (function() {
+  var clazz = this.runtimeClass$1;
+  return $f_s_reflect_ClassTag__prettyprint$1__ps_reflect_ClassTag__jl_Class__T(this, clazz)
+});
+$c_s_reflect_ClassTag$GenericClassTag.prototype.runtimeClass__jl_Class = (function() {
+  return this.runtimeClass$1
+});
+$c_s_reflect_ClassTag$GenericClassTag.prototype.init___jl_Class = (function(runtimeClass) {
+  this.runtimeClass$1 = runtimeClass;
+  return this
+});
+$c_s_reflect_ClassTag$GenericClassTag.prototype.hashCode__I = (function() {
+  return $m_sr_Statics$().anyHash__O__I(this.runtimeClass$1)
+});
+var $d_s_reflect_ClassTag$GenericClassTag = new $TypeData().initClass({
+  s_reflect_ClassTag$GenericClassTag: 0
+}, false, "scala.reflect.ClassTag$GenericClassTag", {
+  s_reflect_ClassTag$GenericClassTag: 1,
+  O: 1,
+  s_reflect_ClassTag: 1,
+  s_reflect_ClassManifestDeprecatedApis: 1,
+  s_reflect_OptManifest: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1,
+  s_Equals: 1
+});
+$c_s_reflect_ClassTag$GenericClassTag.prototype.$classData = $d_s_reflect_ClassTag$GenericClassTag;
+/** @constructor */
 function $c_sc_Seq$() {
   $c_scg_SeqFactory.call(this)
 }
@@ -34139,6 +34935,9 @@ $c_s_reflect_ManifestFactory$BooleanManifest$.prototype.init___ = (function() {
   this.toString$1 = "Boolean";
   return this
 });
+$c_s_reflect_ManifestFactory$BooleanManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_Z.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$BooleanManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$BooleanManifest$: 0
 }, false, "scala.reflect.ManifestFactory$BooleanManifest$", {
@@ -34175,6 +34974,9 @@ $h_s_reflect_ManifestFactory$ByteManifest$.prototype = $c_s_reflect_ManifestFact
 $c_s_reflect_ManifestFactory$ByteManifest$.prototype.init___ = (function() {
   this.toString$1 = "Byte";
   return this
+});
+$c_s_reflect_ManifestFactory$ByteManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_B.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$ByteManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$ByteManifest$: 0
@@ -34213,6 +35015,9 @@ $c_s_reflect_ManifestFactory$CharManifest$.prototype.init___ = (function() {
   this.toString$1 = "Char";
   return this
 });
+$c_s_reflect_ManifestFactory$CharManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_C.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$CharManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$CharManifest$: 0
 }, false, "scala.reflect.ManifestFactory$CharManifest$", {
@@ -34249,6 +35054,9 @@ $h_s_reflect_ManifestFactory$DoubleManifest$.prototype = $c_s_reflect_ManifestFa
 $c_s_reflect_ManifestFactory$DoubleManifest$.prototype.init___ = (function() {
   this.toString$1 = "Double";
   return this
+});
+$c_s_reflect_ManifestFactory$DoubleManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_D.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$DoubleManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$DoubleManifest$: 0
@@ -34287,6 +35095,9 @@ $c_s_reflect_ManifestFactory$FloatManifest$.prototype.init___ = (function() {
   this.toString$1 = "Float";
   return this
 });
+$c_s_reflect_ManifestFactory$FloatManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_F.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$FloatManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$FloatManifest$: 0
 }, false, "scala.reflect.ManifestFactory$FloatManifest$", {
@@ -34324,6 +35135,9 @@ $c_s_reflect_ManifestFactory$IntManifest$.prototype.init___ = (function() {
   this.toString$1 = "Int";
   return this
 });
+$c_s_reflect_ManifestFactory$IntManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_I.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$IntManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$IntManifest$: 0
 }, false, "scala.reflect.ManifestFactory$IntManifest$", {
@@ -34360,6 +35174,9 @@ $h_s_reflect_ManifestFactory$LongManifest$.prototype = $c_s_reflect_ManifestFact
 $c_s_reflect_ManifestFactory$LongManifest$.prototype.init___ = (function() {
   this.toString$1 = "Long";
   return this
+});
+$c_s_reflect_ManifestFactory$LongManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_J.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$LongManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$LongManifest$: 0
@@ -34419,6 +35236,9 @@ $c_s_reflect_ManifestFactory$ShortManifest$.prototype.init___ = (function() {
   this.toString$1 = "Short";
   return this
 });
+$c_s_reflect_ManifestFactory$ShortManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_S.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$ShortManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$ShortManifest$: 0
 }, false, "scala.reflect.ManifestFactory$ShortManifest$", {
@@ -34455,6 +35275,9 @@ $h_s_reflect_ManifestFactory$UnitManifest$.prototype = $c_s_reflect_ManifestFact
 $c_s_reflect_ManifestFactory$UnitManifest$.prototype.init___ = (function() {
   this.toString$1 = "Unit";
   return this
+});
+$c_s_reflect_ManifestFactory$UnitManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_V.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$UnitManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$UnitManifest$: 0
@@ -35028,6 +35851,9 @@ $c_s_reflect_ManifestFactory$AnyManifest$.prototype.init___ = (function() {
   this.typeArguments$1 = typeArguments;
   return this
 });
+$c_s_reflect_ManifestFactory$AnyManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_O.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$AnyManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$AnyManifest$: 0
 }, false, "scala.reflect.ManifestFactory$AnyManifest$", {
@@ -35070,6 +35896,9 @@ $c_s_reflect_ManifestFactory$AnyValManifest$.prototype.init___ = (function() {
   this.runtimeClass1$1 = $d_O.getClassOf();
   this.typeArguments$1 = typeArguments;
   return this
+});
+$c_s_reflect_ManifestFactory$AnyValManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_O.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$AnyValManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$AnyValManifest$: 0
@@ -35114,6 +35943,9 @@ $c_s_reflect_ManifestFactory$NothingManifest$.prototype.init___ = (function() {
   this.typeArguments$1 = typeArguments;
   return this
 });
+$c_s_reflect_ManifestFactory$NothingManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_sr_Nothing$.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$NothingManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$NothingManifest$: 0
 }, false, "scala.reflect.ManifestFactory$NothingManifest$", {
@@ -35157,6 +35989,9 @@ $c_s_reflect_ManifestFactory$NullManifest$.prototype.init___ = (function() {
   this.typeArguments$1 = typeArguments;
   return this
 });
+$c_s_reflect_ManifestFactory$NullManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_sr_Null$.getClassOf()
+});
 var $d_s_reflect_ManifestFactory$NullManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$NullManifest$: 0
 }, false, "scala.reflect.ManifestFactory$NullManifest$", {
@@ -35199,6 +36034,9 @@ $c_s_reflect_ManifestFactory$ObjectManifest$.prototype.init___ = (function() {
   this.runtimeClass1$1 = $d_O.getClassOf();
   this.typeArguments$1 = typeArguments;
   return this
+});
+$c_s_reflect_ManifestFactory$ObjectManifest$.prototype.runtimeClass__jl_Class = (function() {
+  return $d_O.getClassOf()
 });
 var $d_s_reflect_ManifestFactory$ObjectManifest$ = new $TypeData().initClass({
   s_reflect_ManifestFactory$ObjectManifest$: 0
@@ -39562,22 +40400,22 @@ $c_sci_HashSet$HashSet1.prototype.updated0__O__I__I__sci_HashSet = (function(key
     return new $c_sci_HashSet$HashSetCollision1().init___I__sci_ListSet(hash, new $c_sci_ListSet$Node().init___sci_ListSet__O(this$2, elem).$$plus__O__sci_ListSet(key))
   }
 });
+$c_sci_HashSet$HashSet1.prototype.foreach__F1__V = (function(f) {
+  f.apply__O__O(this.key$6)
+});
 $c_sci_HashSet$HashSet1.prototype.init___O__I = (function(key, hash) {
   this.key$6 = key;
   this.hash$6 = hash;
   return this
 });
-$c_sci_HashSet$HashSet1.prototype.foreach__F1__V = (function(f) {
-  f.apply__O__O(this.key$6)
+$c_sci_HashSet$HashSet1.prototype.size__I = (function() {
+  return 1
 });
 $c_sci_HashSet$HashSet1.prototype.iterator__sc_Iterator = (function() {
   $m_sc_Iterator$();
   var array = [this.key$6];
   var elems = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
   return new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(elems, 0, $uI(elems.array$6.length))
-});
-$c_sci_HashSet$HashSet1.prototype.size__I = (function() {
-  return 1
 });
 $c_sci_HashSet$HashSet1.prototype.removed0__O__I__I__sci_HashSet = (function(key, hash, level) {
   return (((hash === this.hash$6) && $m_sr_BoxesRunTime$().equals__O__O__Z(key, this.key$6)) ? null : this)

@@ -6,19 +6,20 @@ import scalacss.ScalaCssReact._
 import vangogh500.lolstats.styling.{Coloring, Zindex}
 
 object SummonerSearchBar {
+  case class Props(onSubmit: String => Callback)
   case class State(summoner: String = "")
-  class Backend($: BackendScope[Unit, State]) {
+  class Backend($: BackendScope[Props, State]) {
     def onChange(e: ReactEventFromInput) = {
       val newVal = e.target.value
       $.modState(_.copy(summoner = newVal))
     }
-    def onSubmit(e: ReactEventFromInput) = {
-      e.preventDefaultCB
-    }
-    def render(state: State): VdomElement = state match {
+    def render(props: Props, state: State): VdomElement = state match {
       case State(summoner) =>
-        println(summoner)
-        <.form(^.className := "w-50 mt-5", ^.onSubmit ==> onSubmit,
+        <.form(^.className := "w-50 mt-5",
+          ^.onSubmit ==> { e =>
+            e.preventDefaultCB >>
+            props.onSubmit(state.summoner)
+          },
           <.div(^.className := "input-group",
             <.input.search(^.className := "form-control text-muted",
               ^.placeholder := "Search",
@@ -36,10 +37,10 @@ object SummonerSearchBar {
         )
     }
   }
-  private val component = ScalaComponent.builder[Unit]("SummonerSearchBar")
+  private val component = ScalaComponent.builder[Props]("SummonerSearchBar")
     .initialState(State())
     .renderBackend[Backend]
     .build
 
-  def apply() = component()
+  def apply(onSubmit: String => Callback) = component(Props(onSubmit))
 }
