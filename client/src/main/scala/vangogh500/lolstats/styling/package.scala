@@ -7,7 +7,9 @@ package object styling {
   def initializeStyling(): Unit = {
     home.Styling.addToDocument()
     Coloring.addToDocument()
+    Layout.addToDocument()
     Spacing.addToDocument()
+    Typography.addToDocument()
     Zindex.addToDocument()
   }
 }

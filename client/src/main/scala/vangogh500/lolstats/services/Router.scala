@@ -1,9 +1,10 @@
-package vangogh500.lolstats.services
+package vangogh500.lolstats
+package services
 
 import japgolly.scalajs.react.extra.router._
 import japgolly.scalajs.react.vdom.html_<^._
 
-import vangogh500.lolstats.scenes._
+import scenes._
 import vangogh500.lolstats.components._
 
 object AppRouter {
@@ -24,7 +25,9 @@ object AppRouter {
     (emptyRule
     |   staticRoute(root, HomePage) ~> renderR(ctl => home.Scene(ctl))
     |   staticRoute("test", TestPage) ~> render(<.h1("TEST"))
-    |   dynamicRouteCT(("summoner" / string("\\w+") / string("\\w+") / string("\\w+")).caseClass[SummonerProfilePage]) ~> render(<.h1("TEST"))
+    |   dynamicRouteCT(("summoner" / string("\\w+") / string("\\w+") / string("\\w+")).caseClass[SummonerProfilePage]) ~> dynRenderR {
+          case (SummonerProfilePage(summonerName, _, _), ctl) => summonerprofile.Scene(ctl, summonerName)
+        }
     ).notFound(redirectToPage(HomePage)(Redirect.Push))
     .renderWith(layout)
   })

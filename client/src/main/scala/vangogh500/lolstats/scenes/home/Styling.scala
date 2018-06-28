@@ -5,8 +5,6 @@ import scalacss.DevDefaults._
 object Styling extends StyleSheet.Inline {
   import dsl._
   val container = style(
-    backgroundImage := "url(\"/img/home_bg.png\")",
-    backgroundPosition := "center",
-    backgroundSize := "cover"
+    backgroundImage := "url(\"/img/home_bg.png\")"
   )
 }

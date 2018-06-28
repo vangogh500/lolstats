@@ -9,4 +9,17 @@ object Spacing extends StyleSheet.Inline {
   val mb = styleF(domain)(num => styleS(
     marginBottom := num + "px"
   ))
+  val mt = styleF(domain)(num => styleS(
+    marginTop := num + "px"
+  ))
+  val ml = styleF(domain)(num => styleS(
+    marginLeft := num + "px"
+  ))
+  val my = styleF(domain)(num => styleS(
+    marginTop := num + "px",
+    marginBottom := num + "px"
+  ))
+  val pt = styleF(domain)(num => styleS(
+    paddingTop := num + "px"
+  ))
 }

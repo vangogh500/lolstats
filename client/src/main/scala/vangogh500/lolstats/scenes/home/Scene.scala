@@ -1,11 +1,14 @@
-package vangogh500.lolstats.scenes.home
+package vangogh500.lolstats
+package scenes.home
 
 import japgolly.scalajs.react.extra.router.RouterCtl
-import vangogh500.lolstats.services.AppRouter.{AppPage, SummonerProfilePage}
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 import scalacss.ScalaCssReact._
-import vangogh500.lolstats.scenes.home.components._
+
+import services.AppRouter.{AppPage, SummonerProfilePage}
+import components._
+import styling.{Layout}
 
 object Scene {
   private val component = ScalaComponent.builder[RouterCtl[AppPage]]("Home Page")
@@ -13,6 +16,7 @@ object Scene {
       <.div(
         Styling.container,
         ^.className := "d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary",
+        Layout.bgCenter, Layout.bgCover,
         <.h1(
           ^.className := "display-3 text-white mb-5",
           "Begin the Climb"

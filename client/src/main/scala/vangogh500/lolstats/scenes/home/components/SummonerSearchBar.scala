@@ -1,9 +1,11 @@
-package vangogh500.lolstats.scenes.home.components
+package vangogh500.lolstats
+package scenes.home.components
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 import scalacss.ScalaCssReact._
-import vangogh500.lolstats.styling.{Coloring, Zindex}
+
+import styling.{Coloring, Zindex}
 
 object SummonerSearchBar {
   case class Props(onSubmit: String => Callback)
