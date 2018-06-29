@@ -1,5 +1,4 @@
 package vangogh500.lolstats.services.lolstats
-package api
 
 import scala.concurrent.{Future, Promise}
 import scala.scalajs.js.timers._
