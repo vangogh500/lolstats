@@ -8,6 +8,7 @@ package object styling {
     home.Styling.addToDocument()
     Coloring.addToDocument()
     Layout.addToDocument()
+    Sizing.addToDocument()
     Spacing.addToDocument()
     Typography.addToDocument()
     Zindex.addToDocument()

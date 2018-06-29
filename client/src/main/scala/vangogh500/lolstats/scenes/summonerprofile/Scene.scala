@@ -11,8 +11,9 @@ import services.riot.api.{Static => RiotStaticAPI}
 import containers.{Query}
 import services.lolstats.types.Summoner._
 import services.lolstats.api.{Summoner => LolStatAPI}
-import components.{LoadingScreen}
-import styling.{Spacing, Layout}
+import vangogh500.lolstats.components.{LoadingScreen}
+import components.{NotFoundScreen}
+import styling.{Spacing, Layout, Sizing, Coloring}
 
 object Scene {
   private val pQuery = Query[NormalizedStats]()
@@ -22,16 +23,28 @@ object Scene {
     .render_P {
       case Props(ctl, summonerName) =>
         pQuery(LolStatAPI.normalizedStats(summonerName), {
-          case (true, _, _) => LoadingScreen()
-          case (false, Some(error), _) => <.div()
+          case (true, _, _) =>
+            <.div(^.className := "w-100 h-100 d-flex flex-column",
+              LoadingScreen(false)
+            )
+          case (false, Some(error), _) =>
+            <.div(^.className := "w-100 h-100 d-flex flex-column",
+              LoadingScreen(true),
+              NotFoundScreen()
+            )
           case (false, None, Some(data)) => data match {
             case NormalizedStats(id, accountId, Profile(name, profileIconId, level), _) =>
-              <.div(Layout.bgCenter, Layout.bgCover, Spacing.pt(40),
-                VdomStyle("backgroundImage") := "url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg)",
-                <.div(^.className := "container",
-                  <.div(^.className := "d-flex flex-row align-items-center my-4",
-                    <.img(^.src := RiotStaticAPI.profileIconUrl(profileIconId)),
-                    <.h4(^.className := "text-white ml-3", name)
+              <.div(^.className := "w-100 h-100 d-flex flex-column",
+                LoadingScreen(true),
+                <.div(Layout.bgCenter, Layout.bgCover, Spacing.pt(40),
+                  VdomStyle("backgroundImage") := "url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg)",
+                  <.div(^.className := "container",
+                    <.div(^.className := "d-flex flex-row align-items-center my-4",
+                      <.img(^.src := RiotStaticAPI.profileIconUrl(profileIconId),
+                        ^.className := "img-thumbnail p-0 rounded-circle border border-platinum",
+                        Coloring.border("Platinum"), Sizing.bWidth(5), Sizing.h(100), Sizing.w(100)),
+                      <.h4(^.className := "text-white ml-3", name)
+                    )
                   )
                 )
               )

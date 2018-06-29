@@ -23,7 +23,12 @@ object Coloring extends StyleSheet.Inline {
     "Primary" -> "#0D0C1D",
     "Secondary" -> "#474973",
     "Ternary" -> "#474973",
-    "Neon Pink" -> "#ff73d5"
+    "Neon Pink" -> "#ff73d5",
+    "Bronze" -> "#8C7853",
+    "Silver" -> "#E6E8FA",
+    "Gold" -> "#CFB53B",
+    "Platinum" -> "#A0BFB4",
+    "Diamond" -> "#b9f2ff"
   )
 
   case class ColorOpts(hex: String, alpha: Int)
@@ -51,6 +56,15 @@ object Coloring extends StyleSheet.Inline {
         dsl.color(dsl.rgba(red, blue, green, alpha / 100.0))
       )
   }
+  val p_border = styleF(domain) {
+    case ColorOpts(hex, alpha) =>
+      val (red, blue, green) = Util.hexToRGB(hex)
+      styleS(
+        borderColor(dsl.rgba(red, blue, green, alpha / 100.0)).important
+      )
+  }
+
   def bg(name: String, alpha: Double = 1) = p_bg(ColorOpts(name = name, alpha = alpha))
   def color(name: String, alpha: Double = 1) = p_color(ColorOpts(name = name, alpha = alpha))
+  def border(name: String, alpha: Double = 1) = p_border(ColorOpts(name = name, alpha = alpha))
 }

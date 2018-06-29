@@ -5620,6 +5620,22 @@ $c_Lscalacss_internal_Attr$.prototype.genSimple__T__F1 = (function(css) {
     })
   })(this, css))
 });
+$c_Lscalacss_internal_Attr$.prototype.$$undalias__p1__T__F1__F1 = (function(id, g) {
+  return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, id$1, g$1) {
+    return (function(f$2) {
+      var f = $as_F1(f$2);
+      var a = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this$1, f$1) {
+        return (function() {
+          return $as_Lscalacss_internal_NonEmptyVector(f$1.apply__O__O($m_Lscalacss_internal_Attr$AliasB$()))
+        })
+      })($this, f));
+      return new $c_Lscalacss_internal_AliasAttr().init___T__F1__Lscalacss_internal_Need(id$1, g$1, new $c_Lscalacss_internal_Need().init___F0(a))
+    })
+  })(this, id, g))
+});
+$c_Lscalacss_internal_Attr$.prototype.alias__T__F1 = (function(css) {
+  return this.$$undalias__p1__T__F1__F1(css, this.genSimple__T__F1(css))
+});
 $c_Lscalacss_internal_Attr$.prototype.real__T__Lscalacss_internal_Transform__Lscalacss_internal_Attr = (function(css, t) {
   return new $c_Lscalacss_internal_RealAttr().init___T__F1(css, t.attrGen__T__F1(css))
 });
@@ -5636,6 +5652,46 @@ function $m_Lscalacss_internal_Attr$() {
     $n_Lscalacss_internal_Attr$ = new $c_Lscalacss_internal_Attr$().init___()
   };
   return $n_Lscalacss_internal_Attr$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attr$AliasB$() {
+  $c_O.call(this)
+}
+$c_Lscalacss_internal_Attr$AliasB$.prototype = new $h_O();
+$c_Lscalacss_internal_Attr$AliasB$.prototype.constructor = $c_Lscalacss_internal_Attr$AliasB$;
+/** @constructor */
+function $h_Lscalacss_internal_Attr$AliasB$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attr$AliasB$.prototype = $c_Lscalacss_internal_Attr$AliasB$.prototype;
+$c_Lscalacss_internal_Attr$AliasB$.prototype.init___ = (function() {
+  return this
+});
+function $is_Lscalacss_internal_Attr$AliasB$(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalacss_internal_Attr$AliasB$)))
+}
+function $as_Lscalacss_internal_Attr$AliasB$(obj) {
+  return (($is_Lscalacss_internal_Attr$AliasB$(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scalacss.internal.Attr$AliasB$"))
+}
+function $isArrayOf_Lscalacss_internal_Attr$AliasB$(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lscalacss_internal_Attr$AliasB$)))
+}
+function $asArrayOf_Lscalacss_internal_Attr$AliasB$(obj, depth) {
+  return (($isArrayOf_Lscalacss_internal_Attr$AliasB$(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalacss.internal.Attr$AliasB$;", depth))
+}
+var $d_Lscalacss_internal_Attr$AliasB$ = new $TypeData().initClass({
+  Lscalacss_internal_Attr$AliasB$: 0
+}, false, "scalacss.internal.Attr$AliasB$", {
+  Lscalacss_internal_Attr$AliasB$: 1,
+  O: 1
+});
+$c_Lscalacss_internal_Attr$AliasB$.prototype.$classData = $d_Lscalacss_internal_Attr$AliasB$;
+var $n_Lscalacss_internal_Attr$AliasB$ = (void 0);
+function $m_Lscalacss_internal_Attr$AliasB$() {
+  if ((!$n_Lscalacss_internal_Attr$AliasB$)) {
+    $n_Lscalacss_internal_Attr$AliasB$ = new $c_Lscalacss_internal_Attr$AliasB$().init___()
+  };
+  return $n_Lscalacss_internal_Attr$AliasB$
 }
 /** @constructor */
 function $c_Lscalacss_internal_AttrCmp() {
@@ -5687,8 +5743,8 @@ $c_Lscalacss_internal_AttrCmp$.prototype.init___ = (function() {
     return (function(x$2, y$2) {
       var x = $as_Lscalacss_internal_Attr(x$2);
       var y = $as_Lscalacss_internal_Attr(y$2);
-      var a$1 = x.real$2;
-      var b$1 = y.real$2;
+      var a$1 = x.real__sci_Set();
+      var b$1 = y.real__sci_Set();
       return (a$1.exists__F1__Z(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, b$3) {
         return (function(elem$2) {
           var elem = $as_Lscalacss_internal_RealAttr(elem$2);
@@ -5750,6 +5806,290 @@ function $h_Lscalacss_internal_CanIUse$() {
   /*<skip>*/
 }
 $h_Lscalacss_internal_CanIUse$.prototype = $c_Lscalacss_internal_CanIUse$.prototype;
+$c_Lscalacss_internal_CanIUse$.prototype.intrinsicWidth__sci_Map = (function() {
+  var self = $m_Lscalacss_internal_CanIUse$Agent$().AndroidBrowser$1;
+  var array = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$FullX$(), $m_Lscalacss_internal_CanIUse$Support$Full$()];
+  if (($uI(array.length) === 0)) {
+    var y = $m_sci_Set$EmptySet$()
+  } else {
+    var b = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i = 0;
+    var len = $uI(array.length);
+    while ((i < len)) {
+      var index = i;
+      var arg1 = array[index];
+      b.$$plus$eq__O__scm_SetBuilder(arg1);
+      i = ((1 + i) | 0)
+    };
+    var y = b.elems$1
+  };
+  var jsx$15 = new $c_T2().init___O__O(self, y);
+  var self$1 = $m_Lscalacss_internal_CanIUse$Agent$().AndroidChrome$1;
+  var array$1 = [$m_Lscalacss_internal_CanIUse$Support$Full$()];
+  if (($uI(array$1.length) === 0)) {
+    var y$1 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$1 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$1 = 0;
+    var len$1 = $uI(array$1.length);
+    while ((i$1 < len$1)) {
+      var index$1 = i$1;
+      var arg1$1 = array$1[index$1];
+      b$1.$$plus$eq__O__scm_SetBuilder(arg1$1);
+      i$1 = ((1 + i$1) | 0)
+    };
+    var y$1 = b$1.elems$1
+  };
+  var jsx$14 = new $c_T2().init___O__O(self$1, y$1);
+  var self$2 = $m_Lscalacss_internal_CanIUse$Agent$().AndroidFirefox$1;
+  var array$2 = [$m_Lscalacss_internal_CanIUse$Support$PartialX$()];
+  if (($uI(array$2.length) === 0)) {
+    var y$2 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$2 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$2 = 0;
+    var len$2 = $uI(array$2.length);
+    while ((i$2 < len$2)) {
+      var index$2 = i$2;
+      var arg1$2 = array$2[index$2];
+      b$2.$$plus$eq__O__scm_SetBuilder(arg1$2);
+      i$2 = ((1 + i$2) | 0)
+    };
+    var y$2 = b$2.elems$1
+  };
+  var jsx$13 = new $c_T2().init___O__O(self$2, y$2);
+  var self$3 = $m_Lscalacss_internal_CanIUse$Agent$().AndroidUC$1;
+  var array$3 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$()];
+  if (($uI(array$3.length) === 0)) {
+    var y$3 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$3 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$3 = 0;
+    var len$3 = $uI(array$3.length);
+    while ((i$3 < len$3)) {
+      var index$3 = i$3;
+      var arg1$3 = array$3[index$3];
+      b$3.$$plus$eq__O__scm_SetBuilder(arg1$3);
+      i$3 = ((1 + i$3) | 0)
+    };
+    var y$3 = b$3.elems$1
+  };
+  var jsx$12 = new $c_T2().init___O__O(self$3, y$3);
+  var self$4 = $m_Lscalacss_internal_CanIUse$Agent$().BlackberryBrowser$1;
+  var array$4 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$FullX$()];
+  if (($uI(array$4.length) === 0)) {
+    var y$4 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$4 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$4 = 0;
+    var len$4 = $uI(array$4.length);
+    while ((i$4 < len$4)) {
+      var index$4 = i$4;
+      var arg1$4 = array$4[index$4];
+      b$4.$$plus$eq__O__scm_SetBuilder(arg1$4);
+      i$4 = ((1 + i$4) | 0)
+    };
+    var y$4 = b$4.elems$1
+  };
+  var jsx$11 = new $c_T2().init___O__O(self$4, y$4);
+  var self$5 = $m_Lscalacss_internal_CanIUse$Agent$().Chrome$1;
+  var array$5 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$FullX$(), $m_Lscalacss_internal_CanIUse$Support$Full$()];
+  if (($uI(array$5.length) === 0)) {
+    var y$5 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$5 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$5 = 0;
+    var len$5 = $uI(array$5.length);
+    while ((i$5 < len$5)) {
+      var index$5 = i$5;
+      var arg1$5 = array$5[index$5];
+      b$5.$$plus$eq__O__scm_SetBuilder(arg1$5);
+      i$5 = ((1 + i$5) | 0)
+    };
+    var y$5 = b$5.elems$1
+  };
+  var jsx$10 = new $c_T2().init___O__O(self$5, y$5);
+  var self$6 = $m_Lscalacss_internal_CanIUse$Agent$().Edge$1;
+  var array$6 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$()];
+  if (($uI(array$6.length) === 0)) {
+    var y$6 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$6 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$6 = 0;
+    var len$6 = $uI(array$6.length);
+    while ((i$6 < len$6)) {
+      var index$6 = i$6;
+      var arg1$6 = array$6[index$6];
+      b$6.$$plus$eq__O__scm_SetBuilder(arg1$6);
+      i$6 = ((1 + i$6) | 0)
+    };
+    var y$6 = b$6.elems$1
+  };
+  var jsx$9 = new $c_T2().init___O__O(self$6, y$6);
+  var self$7 = $m_Lscalacss_internal_CanIUse$Agent$().Firefox$1;
+  var array$7 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$PartialX$()];
+  if (($uI(array$7.length) === 0)) {
+    var y$7 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$7 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$7 = 0;
+    var len$7 = $uI(array$7.length);
+    while ((i$7 < len$7)) {
+      var index$7 = i$7;
+      var arg1$7 = array$7[index$7];
+      b$7.$$plus$eq__O__scm_SetBuilder(arg1$7);
+      i$7 = ((1 + i$7) | 0)
+    };
+    var y$7 = b$7.elems$1
+  };
+  var jsx$8 = new $c_T2().init___O__O(self$7, y$7);
+  var self$8 = $m_Lscalacss_internal_CanIUse$Agent$().IE$1;
+  var array$8 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$()];
+  if (($uI(array$8.length) === 0)) {
+    var y$8 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$8 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$8 = 0;
+    var len$8 = $uI(array$8.length);
+    while ((i$8 < len$8)) {
+      var index$8 = i$8;
+      var arg1$8 = array$8[index$8];
+      b$8.$$plus$eq__O__scm_SetBuilder(arg1$8);
+      i$8 = ((1 + i$8) | 0)
+    };
+    var y$8 = b$8.elems$1
+  };
+  var jsx$7 = new $c_T2().init___O__O(self$8, y$8);
+  var self$9 = $m_Lscalacss_internal_CanIUse$Agent$().IEMobile$1;
+  var array$9 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$()];
+  if (($uI(array$9.length) === 0)) {
+    var y$9 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$9 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$9 = 0;
+    var len$9 = $uI(array$9.length);
+    while ((i$9 < len$9)) {
+      var index$9 = i$9;
+      var arg1$9 = array$9[index$9];
+      b$9.$$plus$eq__O__scm_SetBuilder(arg1$9);
+      i$9 = ((1 + i$9) | 0)
+    };
+    var y$9 = b$9.elems$1
+  };
+  var jsx$6 = new $c_T2().init___O__O(self$9, y$9);
+  var self$10 = $m_Lscalacss_internal_CanIUse$Agent$().IOSSafari$1;
+  var array$10 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$PartialX$()];
+  if (($uI(array$10.length) === 0)) {
+    var y$10 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$10 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$10 = 0;
+    var len$10 = $uI(array$10.length);
+    while ((i$10 < len$10)) {
+      var index$10 = i$10;
+      var arg1$10 = array$10[index$10];
+      b$10.$$plus$eq__O__scm_SetBuilder(arg1$10);
+      i$10 = ((1 + i$10) | 0)
+    };
+    var y$10 = b$10.elems$1
+  };
+  var jsx$5 = new $c_T2().init___O__O(self$10, y$10);
+  var self$11 = $m_Lscalacss_internal_CanIUse$Agent$().Opera$1;
+  var array$11 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$FullX$(), $m_Lscalacss_internal_CanIUse$Support$Full$()];
+  if (($uI(array$11.length) === 0)) {
+    var y$11 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$11 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$11 = 0;
+    var len$11 = $uI(array$11.length);
+    while ((i$11 < len$11)) {
+      var index$11 = i$11;
+      var arg1$11 = array$11[index$11];
+      b$11.$$plus$eq__O__scm_SetBuilder(arg1$11);
+      i$11 = ((1 + i$11) | 0)
+    };
+    var y$11 = b$11.elems$1
+  };
+  var jsx$4 = new $c_T2().init___O__O(self$11, y$11);
+  var self$12 = $m_Lscalacss_internal_CanIUse$Agent$().OperaMini$1;
+  var array$12 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$()];
+  if (($uI(array$12.length) === 0)) {
+    var y$12 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$12 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$12 = 0;
+    var len$12 = $uI(array$12.length);
+    while ((i$12 < len$12)) {
+      var index$12 = i$12;
+      var arg1$12 = array$12[index$12];
+      b$12.$$plus$eq__O__scm_SetBuilder(arg1$12);
+      i$12 = ((1 + i$12) | 0)
+    };
+    var y$12 = b$12.elems$1
+  };
+  var jsx$3 = new $c_T2().init___O__O(self$12, y$12);
+  var self$13 = $m_Lscalacss_internal_CanIUse$Agent$().OperaMobile$1;
+  var array$13 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$Full$()];
+  if (($uI(array$13.length) === 0)) {
+    var y$13 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$13 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$13 = 0;
+    var len$13 = $uI(array$13.length);
+    while ((i$13 < len$13)) {
+      var index$13 = i$13;
+      var arg1$13 = array$13[index$13];
+      b$13.$$plus$eq__O__scm_SetBuilder(arg1$13);
+      i$13 = ((1 + i$13) | 0)
+    };
+    var y$13 = b$13.elems$1
+  };
+  var jsx$2 = new $c_T2().init___O__O(self$13, y$13);
+  var self$14 = $m_Lscalacss_internal_CanIUse$Agent$().Safari$1;
+  var array$14 = [$m_Lscalacss_internal_CanIUse$Support$Unsupported$(), $m_Lscalacss_internal_CanIUse$Support$PartialX$()];
+  if (($uI(array$14.length) === 0)) {
+    var y$14 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$14 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$14 = 0;
+    var len$14 = $uI(array$14.length);
+    while ((i$14 < len$14)) {
+      var index$14 = i$14;
+      var arg1$14 = array$14[index$14];
+      b$14.$$plus$eq__O__scm_SetBuilder(arg1$14);
+      i$14 = ((1 + i$14) | 0)
+    };
+    var y$14 = b$14.elems$1
+  };
+  var jsx$1 = new $c_T2().init___O__O(self$14, y$14);
+  var self$15 = $m_Lscalacss_internal_CanIUse$Agent$().Samsung$1;
+  var array$15 = [$m_Lscalacss_internal_CanIUse$Support$FullX$()];
+  if (($uI(array$15.length) === 0)) {
+    var y$15 = $m_sci_Set$EmptySet$()
+  } else {
+    var b$15 = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i$15 = 0;
+    var len$15 = $uI(array$15.length);
+    while ((i$15 < len$15)) {
+      var index$15 = i$15;
+      var arg1$15 = array$15[index$15];
+      b$15.$$plus$eq__O__scm_SetBuilder(arg1$15);
+      i$15 = ((1 + i$15) | 0)
+    };
+    var y$15 = b$15.elems$1
+  };
+  var array$16 = [jsx$15, jsx$14, jsx$13, jsx$12, jsx$11, jsx$10, jsx$9, jsx$8, jsx$7, jsx$6, jsx$5, jsx$4, jsx$3, jsx$2, jsx$1, new $c_T2().init___O__O(self$15, y$15)];
+  var this$50 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  var i$16 = 0;
+  var len$16 = $uI(array$16.length);
+  while ((i$16 < len$16)) {
+    var index$16 = i$16;
+    var arg1$16 = array$16[index$16];
+    this$50.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1$16));
+    i$16 = ((1 + i$16) | 0)
+  };
+  return $as_sci_Map(this$50.elems$1)
+});
 $c_Lscalacss_internal_CanIUse$.prototype.init___ = (function() {
   $n_Lscalacss_internal_CanIUse$ = this;
   var jsx$16 = $m_s_Predef$().Map$2;
@@ -7389,8 +7729,18 @@ $c_Lscalacss_internal_CanIUse2$.prototype.init___ = (function() {
   })(this, p));
   return this
 });
+$c_Lscalacss_internal_CanIUse2$.prototype.intrinsicWidthTransforms$lzycompute__p1__Lscalacss_internal_Transform = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.intrinsicWidthTransforms$1 = $m_Lscalacss_internal_Transform$().values__sci_Map__T__sc_Seq__Lscalacss_internal_Transform($m_Lscalacss_internal_CanIUse$().intrinsicWidth__sci_Map(), "fill-available", new $c_sjs_js_WrappedArray().init___sjs_js_Array(["max-content", "min-content", "fit-content", "contain-floats"]));
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.intrinsicWidthTransforms$1
+});
 $c_Lscalacss_internal_CanIUse2$.prototype.backgroundImageTransforms__Lscalacss_internal_Transform = (function() {
   return (((2 & this.bitmap$0$1) === 0) ? this.backgroundImageTransforms$lzycompute__p1__Lscalacss_internal_Transform() : this.backgroundImageTransforms$1)
+});
+$c_Lscalacss_internal_CanIUse2$.prototype.intrinsicWidthTransforms__Lscalacss_internal_Transform = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.intrinsicWidthTransforms$lzycompute__p1__Lscalacss_internal_Transform() : this.intrinsicWidthTransforms$1)
 });
 $c_Lscalacss_internal_CanIUse2$.prototype.subjectPrefixes__sci_Map__sci_Set = (function(s) {
   var this$1 = s.iterator__sc_Iterator();
@@ -7727,6 +8077,14 @@ $c_Lscalacss_internal_CanIUse2$PrefixApply$.prototype.init___ = (function() {
     })
   })(this));
   return this
+});
+$c_Lscalacss_internal_CanIUse2$PrefixApply$.prototype.maybePrepend__F1__F1 = (function(f) {
+  return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, f$1) {
+    return (function($$in) {
+      var $in = $as_T($$in);
+      return ($uZ(f$1.apply__O__O($in)) ? $as_s_Option($this.prepend$1.apply__O__O($in)) : $m_s_None$())
+    })
+  })(this, f))
 });
 var $d_Lscalacss_internal_CanIUse2$PrefixApply$ = new $TypeData().initClass({
   Lscalacss_internal_CanIUse2$PrefixApply$: 0
@@ -8803,6 +9161,43 @@ function $m_Lscalacss_internal_Media$StringExt$() {
   return $n_Lscalacss_internal_Media$StringExt$
 }
 /** @constructor */
+function $c_Lscalacss_internal_Need() {
+  $c_O.call(this);
+  this.value$1 = null;
+  this.$$undthunk$1 = null;
+  this.bitmap$0$1 = false
+}
+$c_Lscalacss_internal_Need.prototype = new $h_O();
+$c_Lscalacss_internal_Need.prototype.constructor = $c_Lscalacss_internal_Need;
+/** @constructor */
+function $h_Lscalacss_internal_Need() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Need.prototype = $c_Lscalacss_internal_Need.prototype;
+$c_Lscalacss_internal_Need.prototype.init___F0 = (function(thunk) {
+  this.$$undthunk$1 = thunk;
+  return this
+});
+$c_Lscalacss_internal_Need.prototype.value__O = (function() {
+  return ((!this.bitmap$0$1) ? this.value$lzycompute__p1__O() : this.value$1)
+});
+$c_Lscalacss_internal_Need.prototype.value$lzycompute__p1__O = (function() {
+  if ((!this.bitmap$0$1)) {
+    var t = this.$$undthunk$1;
+    this.$$undthunk$1 = null;
+    this.value$1 = t.apply__O();
+    this.bitmap$0$1 = true
+  };
+  return this.value$1
+});
+var $d_Lscalacss_internal_Need = new $TypeData().initClass({
+  Lscalacss_internal_Need: 0
+}, false, "scalacss.internal.Need", {
+  Lscalacss_internal_Need: 1,
+  O: 1
+});
+$c_Lscalacss_internal_Need.prototype.$classData = $d_Lscalacss_internal_Need;
+/** @constructor */
 function $c_Lscalacss_internal_NonEmptyVector() {
   $c_O.call(this);
   this.head$1 = null;
@@ -9343,6 +9738,18 @@ $c_Lscalacss_internal_Transform.prototype.attrGen__T__F1 = (function(key) {
     })
   })(this, key))
 });
+function $is_Lscalacss_internal_Transform(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalacss_internal_Transform)))
+}
+function $as_Lscalacss_internal_Transform(obj) {
+  return (($is_Lscalacss_internal_Transform(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scalacss.internal.Transform"))
+}
+function $isArrayOf_Lscalacss_internal_Transform(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lscalacss_internal_Transform)))
+}
+function $asArrayOf_Lscalacss_internal_Transform(obj, depth) {
+  return (($isArrayOf_Lscalacss_internal_Transform(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalacss.internal.Transform;", depth))
+}
 var $d_Lscalacss_internal_Transform = new $TypeData().initClass({
   Lscalacss_internal_Transform: 0
 }, false, "scalacss.internal.Transform", {
@@ -9363,6 +9770,16 @@ function $h_Lscalacss_internal_Transform$() {
 $h_Lscalacss_internal_Transform$.prototype = $c_Lscalacss_internal_Transform$.prototype;
 $c_Lscalacss_internal_Transform$.prototype.init___ = (function() {
   return this
+});
+$c_Lscalacss_internal_Transform$.prototype.values__sci_Map__T__sc_Seq__Lscalacss_internal_Transform = (function(subject, v1, vn) {
+  var whitelist = $as_sci_Set(vn.toSet__sci_Set().$$plus__O__sc_Set(v1));
+  var pa = $m_Lscalacss_internal_CanIUse2$PrefixApply$().maybePrepend__F1__F1(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, whitelist$1) {
+    return (function(elem$2) {
+      var elem = $as_T(elem$2);
+      return whitelist$1.contains__O__Z(elem)
+    })
+  })(this, whitelist)));
+  return this.prefix__p1__sci_Map__F1__Lscalacss_internal_CssKV$Lens__Lscalacss_internal_Transform(subject, pa, $m_Lscalacss_internal_CssKV$().value$1)
 });
 $c_Lscalacss_internal_Transform$.prototype.prefix__p1__sci_Map__F1__Lscalacss_internal_CssKV$Lens__Lscalacss_internal_Transform = (function(subject, pa, l) {
   var pp0 = $as_sci_Vector($m_Lscalacss_internal_CanIUse2$().prefixPlan$1.apply__O__O(subject));
@@ -9938,40 +10355,48 @@ function $h_Lvangogh500_lolstats_components_LoadingScreen$() {
 $h_Lvangogh500_lolstats_components_LoadingScreen$.prototype = $c_Lvangogh500_lolstats_components_LoadingScreen$.prototype;
 $c_Lvangogh500_lolstats_components_LoadingScreen$.prototype.init___ = (function() {
   $n_Lvangogh500_lolstats_components_LoadingScreen$ = this;
-  var jsx$11 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$10 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("position-fixed w-100 h-100 d-flex flex-grow-1 justify-content-center align-items-center flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-  var this$4 = $m_Lscalacss_ScalaCssReact$();
-  var this$3 = $m_Lvangogh500_lolstats_styling_Zindex$();
-  var s = $as_Lscalacss_internal_StyleA(this$3.zindex$3.apply__O__O(5));
-  var jsx$8 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$4, s);
-  var this$5 = $m_Lscalacss_ScalaCssReact$();
-  var s$1 = $m_Lvangogh500_lolstats_styling_Coloring$().bg__T__D__Lscalacss_internal_StyleA("Primary", ($m_Lvangogh500_lolstats_styling_Coloring$(), 1.0));
-  var jsx$7 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$5, s$1);
-  var jsx$6 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  var this$7 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3;
-  var jsx$4 = $f_Ljapgolly_scalajs_react_vdom_HtmlTags__img__T(this$7);
-  var array = [$m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.src$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("https://streamlabs.com/images/gallery/default.gif", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2)];
-  var jsx$3 = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(jsx$4, new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
-  var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-  var jsx$1 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("text-white text-center mt-4", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-  var this$12 = $m_Lscalacss_ScalaCssReact$();
-  var s$2 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Typography$().ff$3.apply__O__O("VT323"));
-  var array$1 = [jsx$1, $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$12, s$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Contacting HQ..."))];
-  var array$2 = [jsx$3, jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h5", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
-  var array$3 = [jsx$9, jsx$8, jsx$7, jsx$6.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
-  var a = jsx$10.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
-  this.component$1 = jsx$11.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("LoadingScreen", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
+  $m_Ljapgolly_scalajs_react_component_builder_Builder$();
+  $m_Ljapgolly_scalajs_react_package$();
+  var b = new $c_Ljapgolly_scalajs_react_component_builder_Builder$Step1().init___T("LoadingScreen");
+  this.component$1 = ($m_Ljapgolly_scalajs_react_component_builder_Builder$(), b.stateless__Ljapgolly_scalajs_react_component_builder_Builder$Step2()).noBackend__Ljapgolly_scalajs_react_component_builder_Builder$Step3().render$undP__F1__Ljapgolly_scalajs_react_component_builder_Builder$Step4(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+    return (function(hidden$2) {
+      var hidden = $uZ(hidden$2);
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var jsx$10 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod((hidden ? "position-fixed w-100 h-100 d-flex justify-content-center align-items-center flex-column animated fadeOutUp" : "position-fixed w-100 h-100 d-flex justify-content-center align-items-center flex-column"), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+      var this$7 = $m_Lscalacss_ScalaCssReact$();
+      var this$6 = $m_Lvangogh500_lolstats_styling_Zindex$();
+      var s = $as_Lscalacss_internal_StyleA(this$6.zindex$3.apply__O__O(5));
+      var jsx$8 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$7, s);
+      var this$8 = $m_Lscalacss_ScalaCssReact$();
+      var s$1 = $m_Lvangogh500_lolstats_styling_Coloring$().bg__T__D__Lscalacss_internal_StyleA("Primary", ($m_Lvangogh500_lolstats_styling_Coloring$(), 1.0));
+      var jsx$7 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$8, s$1);
+      var jsx$6 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      var this$10 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3;
+      var jsx$4 = $f_Ljapgolly_scalajs_react_vdom_HtmlTags__img__T(this$10);
+      var array = [$m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.src$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("https://streamlabs.com/images/gallery/default.gif", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2)];
+      var jsx$3 = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(jsx$4, new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+      var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+      $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+      var jsx$1 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("text-white text-center mt-4", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+      var this$15 = $m_Lscalacss_ScalaCssReact$();
+      var s$2 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Typography$().ff$3.apply__O__O("VT323"));
+      var array$1 = [jsx$1, $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$15, s$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Contacting HQ..."))];
+      var array$2 = [jsx$3, jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h5", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
+      var array$3 = [jsx$9, jsx$8, jsx$7, jsx$6.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
+      var a = jsx$10.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+      return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+    })
+  })(this))).build__Ljapgolly_scalajs_react_CtorType$Summoner__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot($m_Ljapgolly_scalajs_react_CtorType$Summoner$().summonP__Ljapgolly_scalajs_react_internal_Singleton$Not__Ljapgolly_scalajs_react_CtorType$Summoner(($m_Ljapgolly_scalajs_react_internal_Singleton$(), null)));
   return this
 });
-$c_Lvangogh500_lolstats_components_LoadingScreen$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+$c_Lvangogh500_lolstats_components_LoadingScreen$.prototype.apply__Z__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function(hidden) {
   var c = this.component$1;
-  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+  var this$2 = $as_Ljapgolly_scalajs_react_CtorType$Props(c.ctor__Ljapgolly_scalajs_react_CtorType());
+  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(this$2.construct$2.apply__O__O__O(hidden, this$2.mods$2))
 });
 var $d_Lvangogh500_lolstats_components_LoadingScreen$ = new $TypeData().initClass({
   Lvangogh500_lolstats_components_LoadingScreen$: 0
@@ -10589,7 +11014,7 @@ $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$.prototype.init___ = (funct
       if ((x0$1 !== null)) {
         var summonerName = x0$1.summonerName$1;
         $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-        var u$1 = $m_Lvangogh500_lolstats_scenes_summonerprofile_Scene$().pQuery$1.apply__s_concurrent_Future__F3__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($m_Lvangogh500_lolstats_services_lolstats_api_Summoner$().normalizedStats__T__s_concurrent_Future(summonerName), new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function($this) {
+        var u$4 = $m_Lvangogh500_lolstats_scenes_summonerprofile_Scene$().pQuery$1.apply__s_concurrent_Future__F3__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($m_Lvangogh500_lolstats_services_lolstats_api_Summoner$().normalizedStats__T__s_concurrent_Future(summonerName), new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function($this) {
           return (function(x0$2$2, x1$1$2, x2$1$2) {
             var x0$2 = $uZ(x0$2$2);
             var x1$1 = $as_s_Option(x1$1$2);
@@ -10598,15 +11023,30 @@ $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$.prototype.init___ = (funct
             var p2 = $uZ(x1.$$und1$1);
             if ((p2 === true)) {
               $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-              var u = $m_Lvangogh500_lolstats_components_LoadingScreen$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
-              return u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()
+              var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+              $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+              var jsx$1 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-100 h-100 d-flex flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+              $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+              var u = $m_Lvangogh500_lolstats_components_LoadingScreen$().apply__Z__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(false);
+              var array = [jsx$1, u.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
+              var a = jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+              return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
             };
             var p5 = $uZ(x1.$$und1$1);
             var p6 = $as_s_Option(x1.$$und2$1);
             if (((p5 === false) && $is_s_Some(p6))) {
               $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-              var a = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$().apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), "div"), $m_sci_Nil$());
-              return a.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+              var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+              $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+              var jsx$4 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-100 h-100 d-flex flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+              $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+              var u$1 = $m_Lvangogh500_lolstats_components_LoadingScreen$().apply__Z__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(true);
+              var jsx$3 = u$1.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement();
+              $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+              var u$2 = $m_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$().apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot();
+              var array$1 = [jsx$4, jsx$3, u$2.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()];
+              var a$1 = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+              return a$1.render__Ljapgolly_scalajs_react_vdom_VdomElement()
             };
             var p9 = $uZ(x1.$$und1$1);
             var p10 = $as_s_Option(x1.$$und2$1);
@@ -10614,14 +11054,14 @@ $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$.prototype.init___ = (funct
             if ((p9 === false)) {
               var x = $m_s_None$();
               if ((x === p10)) {
-                var jsx$1 = $is_s_Some(p11)
+                var jsx$6 = $is_s_Some(p11)
               } else {
-                var jsx$1 = false
+                var jsx$6 = false
               }
             } else {
-              var jsx$1 = false
+              var jsx$6 = false
             };
-            if (jsx$1) {
+            if (jsx$6) {
               var x12 = $as_s_Some(p11);
               var data = $as_Lvangogh500_lolstats_services_lolstats_types_Summoner$NormalizedStats(x12.value$2);
               if ((data !== null)) {
@@ -10630,37 +11070,57 @@ $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$.prototype.init___ = (funct
                   var name = p2$2.name$1;
                   var profileIconId = p2$2.profileIconId$1;
                   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-                  var jsx$14 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+                  var jsx$27 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
                   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-                  var this$8 = $m_Lscalacss_ScalaCssReact$();
+                  var jsx$26 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("w-100 h-100 d-flex flex-column", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+                  var u$3 = $m_Lvangogh500_lolstats_components_LoadingScreen$().apply__Z__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot(true);
+                  var jsx$25 = u$3.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement();
+                  var jsx$24 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+                  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+                  var this$21 = $m_Lscalacss_ScalaCssReact$();
                   var s = $m_Lvangogh500_lolstats_styling_Layout$().bgCenter$3;
-                  var jsx$13 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$8, s);
-                  var this$9 = $m_Lscalacss_ScalaCssReact$();
+                  var jsx$23 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$21, s);
+                  var this$22 = $m_Lscalacss_ScalaCssReact$();
                   var s$1 = $m_Lvangogh500_lolstats_styling_Layout$().bgCover$3;
-                  var jsx$12 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$9, s$1);
-                  var this$10 = $m_Lscalacss_ScalaCssReact$();
+                  var jsx$22 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$22, s$1);
+                  var this$23 = $m_Lscalacss_ScalaCssReact$();
                   var s$2 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Spacing$().pt$3.apply__O__O(40));
-                  var jsx$11 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$10, s$2);
-                  var jsx$10 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), new $c_Ljapgolly_scalajs_react_vdom_Style().init___T("backgroundImage")).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg)", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-                  var jsx$9 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+                  var jsx$21 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$23, s$2);
+                  var jsx$20 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), new $c_Ljapgolly_scalajs_react_vdom_Style().init___T("backgroundImage")).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg)", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var jsx$19 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
                   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-                  var jsx$8 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("container", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var jsx$18 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("container", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var jsx$17 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+                  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+                  var jsx$16 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-row align-items-center my-4", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var jsx$15 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+                  var this$29 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3;
+                  var jsx$14 = $f_Ljapgolly_scalajs_react_vdom_HtmlTags__img__T(this$29);
+                  var jsx$13 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.src$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod($m_Lvangogh500_lolstats_services_riot_api_Static$().profileIconUrl__T__T(profileIconId), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var jsx$12 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("img-thumbnail p-0 rounded-circle border border-platinum", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+                  var this$31 = $m_Lscalacss_ScalaCssReact$();
+                  var s$3 = $m_Lvangogh500_lolstats_styling_Coloring$().border__T__D__Lscalacss_internal_StyleA("Platinum", ($m_Lvangogh500_lolstats_styling_Coloring$(), 1.0));
+                  var jsx$11 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$31, s$3);
+                  var this$32 = $m_Lscalacss_ScalaCssReact$();
+                  var s$4 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Sizing$().bWidth$3.apply__O__O(5));
+                  var jsx$10 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$32, s$4);
+                  var this$33 = $m_Lscalacss_ScalaCssReact$();
+                  var s$5 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Sizing$().h$3.apply__O__O(100));
+                  var jsx$9 = $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$33, s$5);
+                  var this$34 = $m_Lscalacss_ScalaCssReact$();
+                  var s$6 = $as_Lscalacss_internal_StyleA($m_Lvangogh500_lolstats_styling_Sizing$().w$3.apply__O__O(100));
+                  var array$2 = [jsx$13, jsx$12, jsx$11, jsx$10, jsx$9, $f_Lscalacss_ScalaCssReactImplicits__scalacssStyleaToTagMod__Lscalacss_internal_StyleA__Ljapgolly_scalajs_react_vdom_TagMod(this$34, s$6)];
+                  var jsx$8 = jsx$15.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(jsx$14, new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
                   var jsx$7 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
                   $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-                  var jsx$6 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-row align-items-center my-4", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
-                  var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-                  var this$16 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3;
-                  var jsx$4 = $f_Ljapgolly_scalajs_react_vdom_HtmlTags__img__T(this$16);
-                  var array = [$m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.src$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod($m_Lvangogh500_lolstats_services_riot_api_Static$().profileIconUrl__T__T(profileIconId), $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2)];
-                  var jsx$3 = jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(jsx$4, new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
-                  var jsx$2 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
-                  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
-                  var array$1 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("text-white ml-3", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar(name))];
-                  var array$2 = [jsx$6, jsx$3, jsx$2.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h4", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
-                  var array$3 = [jsx$8, jsx$7.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
-                  var array$4 = [jsx$13, jsx$12, jsx$11, jsx$10, jsx$9.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))];
-                  var a$1 = jsx$14.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
-                  return a$1.render__Ljapgolly_scalajs_react_vdom_VdomElement()
+                  var array$3 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("text-white ml-3", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2), ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar(name))];
+                  var array$4 = [jsx$16, jsx$8, jsx$7.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h4", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))];
+                  var array$5 = [jsx$18, jsx$17.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
+                  var array$6 = [jsx$23, jsx$22, jsx$21, jsx$20, jsx$19.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5))];
+                  var array$7 = [jsx$26, jsx$25, jsx$24.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6))];
+                  var a$2 = jsx$27.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7));
+                  return a$2.render__Ljapgolly_scalajs_react_vdom_VdomElement()
                 }
               };
               throw new $c_s_MatchError().init___O(data)
@@ -10668,7 +11128,7 @@ $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$.prototype.init___ = (funct
             throw new $c_s_MatchError().init___O(x1)
           })
         })(this$2$1)));
-        return u$1.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()
+        return u$4.vdomElement__Ljapgolly_scalajs_react_vdom_VdomElement()
       } else {
         throw new $c_s_MatchError().init___O(x0$1)
       }
@@ -10695,6 +11155,64 @@ function $m_Lvangogh500_lolstats_scenes_summonerprofile_Scene$() {
     $n_Lvangogh500_lolstats_scenes_summonerprofile_Scene$ = new $c_Lvangogh500_lolstats_scenes_summonerprofile_Scene$().init___()
   };
   return $n_Lvangogh500_lolstats_scenes_summonerprofile_Scene$
+}
+/** @constructor */
+function $c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$() {
+  $c_O.call(this);
+  this.component$1 = null
+}
+$c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype = new $h_O();
+$c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype.constructor = $c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$;
+/** @constructor */
+function $h_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype = $c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype;
+$c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype.init___ = (function() {
+  $n_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$ = this;
+  var jsx$11 = $m_Ljapgolly_scalajs_react_package$().ScalaComponent$1;
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var jsx$10 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var jsx$9 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("d-flex flex-grow-1 justify-content-center align-items-center flex-row", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$8 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  var this$3 = $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$less$3;
+  var jsx$7 = $f_Ljapgolly_scalajs_react_vdom_HtmlTags__img__T(this$3);
+  var array = [$m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().$$up$3.src$1.$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("https://orig00.deviantart.net/8719/f/2013/215/a/4/teemo_pixel_art___league_of_legends_by_deviant_mell-d6gjn2n.png", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2)];
+  var jsx$6 = jsx$8.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf(jsx$7, new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+  var jsx$5 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var jsx$4 = ($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_Attr$ClassName$()).$$colon$eq__O__F2__Ljapgolly_scalajs_react_vdom_TagMod("ml-5", $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$().vdomAttrVtString$2);
+  var jsx$3 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var array$1 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("404"))];
+  var jsx$2 = jsx$3.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("h1", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  var jsx$1 = $m_Ljapgolly_scalajs_react_vdom_HtmlTagOf$();
+  $m_Ljapgolly_scalajs_react_vdom_html$und$less$up$();
+  var array$2 = [($m_Ljapgolly_scalajs_react_vdom_html$und$less$up$(), $m_Ljapgolly_scalajs_react_vdom_VdomNode$(), new $c_Ljapgolly_scalajs_react_vdom_VdomNode().init___sjs_js_$bar("Oops! We couldn't find the summoner here."))];
+  var array$3 = [jsx$4, jsx$2, jsx$1.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("p", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))];
+  var array$4 = [jsx$9, jsx$6, jsx$5.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))];
+  var a = jsx$10.apply$extension__T__sc_Seq__Ljapgolly_scalajs_react_vdom_TagOf("div", new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
+  this.component$1 = jsx$11.$static__T__Ljapgolly_scalajs_react_vdom_VdomNode__Ljapgolly_scalajs_react_component_JsBaseComponentTemplate$ComponentWithRoot("404Screen", a.render__Ljapgolly_scalajs_react_vdom_VdomElement());
+  return this
+});
+$c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype.apply__Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot = (function() {
+  var c = this.component$1;
+  return $as_Ljapgolly_scalajs_react_component_Js$UnmountedWithRoot($as_Ljapgolly_scalajs_react_CtorType$Nullary(c.ctor__Ljapgolly_scalajs_react_CtorType()).apply__O())
+});
+var $d_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$ = new $TypeData().initClass({
+  Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$: 0
+}, false, "vangogh500.lolstats.scenes.summonerprofile.components.NotFoundScreen$", {
+  Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$: 1,
+  O: 1
+});
+$c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$.prototype.$classData = $d_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$;
+var $n_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$ = (void 0);
+function $m_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$() {
+  if ((!$n_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$)) {
+    $n_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$ = new $c_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$().init___()
+  };
+  return $n_Lvangogh500_lolstats_scenes_summonerprofile_components_NotFoundScreen$
 }
 /** @constructor */
 function $c_Lvangogh500_lolstats_services_AppRouter$() {
@@ -11159,25 +11677,32 @@ $c_Lvangogh500_lolstats_styling_package$.prototype.initializeStyling__V = (funct
   jsx$3.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$4, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$5), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1));
   var jsx$4 = $m_Lscalacss_defaults_PlatformExports$StyleSheetInlineJsOps$();
   $m_Lscalacss_package$DevDefaults$();
-  var s$6 = $m_Lvangogh500_lolstats_styling_Spacing$();
+  var s$6 = $m_Lvangogh500_lolstats_styling_Sizing$();
   $m_Lscalacss_package$DevDefaults$();
   $m_Lscalacss_package$DevDefaults$();
   var s$7 = $m_Lscalacss_internal_StringRenderer$().defaultPretty__Lscalacss_internal_Renderer();
   jsx$4.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$6, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$7), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1));
   var jsx$5 = $m_Lscalacss_defaults_PlatformExports$StyleSheetInlineJsOps$();
   $m_Lscalacss_package$DevDefaults$();
-  var s$8 = $m_Lvangogh500_lolstats_styling_Typography$();
+  var s$8 = $m_Lvangogh500_lolstats_styling_Spacing$();
   $m_Lscalacss_package$DevDefaults$();
   $m_Lscalacss_package$DevDefaults$();
   var s$9 = $m_Lscalacss_internal_StringRenderer$().defaultPretty__Lscalacss_internal_Renderer();
   jsx$5.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$8, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$9), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1));
   var jsx$6 = $m_Lscalacss_defaults_PlatformExports$StyleSheetInlineJsOps$();
   $m_Lscalacss_package$DevDefaults$();
-  var s$10 = $m_Lvangogh500_lolstats_styling_Zindex$();
+  var s$10 = $m_Lvangogh500_lolstats_styling_Typography$();
   $m_Lscalacss_package$DevDefaults$();
   $m_Lscalacss_package$DevDefaults$();
   var s$11 = $m_Lscalacss_internal_StringRenderer$().defaultPretty__Lscalacss_internal_Renderer();
-  jsx$6.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$10, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$11), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1))
+  jsx$6.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$10, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$11), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1));
+  var jsx$7 = $m_Lscalacss_defaults_PlatformExports$StyleSheetInlineJsOps$();
+  $m_Lscalacss_package$DevDefaults$();
+  var s$12 = $m_Lvangogh500_lolstats_styling_Zindex$();
+  $m_Lscalacss_package$DevDefaults$();
+  $m_Lscalacss_package$DevDefaults$();
+  var s$13 = $m_Lscalacss_internal_StringRenderer$().defaultPretty__Lscalacss_internal_Renderer();
+  jsx$7.addToDocument$extension__Lscalacss_internal_mutable_StyleSheet$Inline__Lscalacss_internal_Renderer__Lscalacss_internal_Env__V(s$12, new $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer().init___Lscalacss_internal_Renderer(s$13), ($m_Lscalacss_package$DevDefaults$(), $m_Lscalacss_internal_Env$().empty$1))
 });
 var $d_Lvangogh500_lolstats_styling_package$ = new $TypeData().initClass({
   Lvangogh500_lolstats_styling_package$: 0
@@ -16734,6 +17259,87 @@ var $d_Lscalacss_defaults_PlatformExports$StyleElementRenderer = new $TypeData()
 });
 $c_Lscalacss_defaults_PlatformExports$StyleElementRenderer.prototype.$classData = $d_Lscalacss_defaults_PlatformExports$StyleElementRenderer;
 /** @constructor */
+function $c_Lscalacss_internal_AliasAttr() {
+  $c_Lscalacss_internal_Attr.call(this);
+  this.real$2 = null;
+  this.targets$2 = null;
+  this.bitmap$0$2 = false
+}
+$c_Lscalacss_internal_AliasAttr.prototype = new $h_Lscalacss_internal_Attr();
+$c_Lscalacss_internal_AliasAttr.prototype.constructor = $c_Lscalacss_internal_AliasAttr;
+/** @constructor */
+function $h_Lscalacss_internal_AliasAttr() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_AliasAttr.prototype = $c_Lscalacss_internal_AliasAttr.prototype;
+$c_Lscalacss_internal_AliasAttr.prototype.go$1__p2__sci_Set__sci_Set__sci_Vector__sci_Set = (function(seen, found, queue) {
+  _go: while (true) {
+    var this$1 = queue;
+    if ($f_sc_SeqLike__isEmpty__Z(this$1)) {
+      return found
+    } else {
+      var t = queue.tail__sci_Vector();
+      var x1 = $as_Lscalacss_internal_Attr(queue.head__O());
+      if (seen.contains__O__Z(x1)) {
+        queue = t;
+        continue _go
+      } else if ($is_Lscalacss_internal_RealAttr(x1)) {
+        var x2 = $as_Lscalacss_internal_RealAttr(x1);
+        var temp$seen = $as_sci_Set(seen.$$plus__O__sc_Set(x2));
+        var temp$found = $as_sci_Set(found.$$plus__O__sc_Set(x2));
+        seen = temp$seen;
+        found = temp$found;
+        queue = t;
+        continue _go
+      } else if ($is_Lscalacss_internal_AliasAttr(x1)) {
+        var x3 = $as_Lscalacss_internal_AliasAttr(x1);
+        var temp$seen$2 = $as_sci_Set(seen.$$plus__O__sc_Set(x3));
+        var temp$queue$3 = $as_sci_Vector($as_Lscalacss_internal_NonEmptyVector(x3.targets$2.value__O()).whole__sci_Vector().$$plus$plus__sc_GenTraversableOnce__scg_CanBuildFrom__O(t, ($m_sci_Vector$(), $m_sc_IndexedSeq$().ReusableCBF$6)));
+        seen = temp$seen$2;
+        queue = temp$queue$3;
+        continue _go
+      } else {
+        throw new $c_s_MatchError().init___O(x1)
+      }
+    }
+  }
+});
+$c_Lscalacss_internal_AliasAttr.prototype.init___T__F1__Lscalacss_internal_Need = (function(id, gen, targets) {
+  this.targets$2 = targets;
+  $c_Lscalacss_internal_Attr.prototype.init___T__F1.call(this, id, gen);
+  return this
+});
+$c_Lscalacss_internal_AliasAttr.prototype.real__sci_Set = (function() {
+  return ((!this.bitmap$0$2) ? this.real$lzycompute__p2__sci_Set() : this.real$2)
+});
+$c_Lscalacss_internal_AliasAttr.prototype.real$lzycompute__p2__sci_Set = (function() {
+  if ((!this.bitmap$0$2)) {
+    this.real$2 = this.go$1__p2__sci_Set__sci_Set__sci_Vector__sci_Set($m_sci_Set$EmptySet$(), $m_sci_Set$EmptySet$(), $as_Lscalacss_internal_NonEmptyVector(this.targets$2.value__O()).whole__sci_Vector());
+    this.bitmap$0$2 = true
+  };
+  return this.real$2
+});
+function $is_Lscalacss_internal_AliasAttr(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalacss_internal_AliasAttr)))
+}
+function $as_Lscalacss_internal_AliasAttr(obj) {
+  return (($is_Lscalacss_internal_AliasAttr(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scalacss.internal.AliasAttr"))
+}
+function $isArrayOf_Lscalacss_internal_AliasAttr(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lscalacss_internal_AliasAttr)))
+}
+function $asArrayOf_Lscalacss_internal_AliasAttr(obj, depth) {
+  return (($isArrayOf_Lscalacss_internal_AliasAttr(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalacss.internal.AliasAttr;", depth))
+}
+var $d_Lscalacss_internal_AliasAttr = new $TypeData().initClass({
+  Lscalacss_internal_AliasAttr: 0
+}, false, "scalacss.internal.AliasAttr", {
+  Lscalacss_internal_AliasAttr: 1,
+  Lscalacss_internal_Attr: 1,
+  O: 1
+});
+$c_Lscalacss_internal_AliasAttr.prototype.$classData = $d_Lscalacss_internal_AliasAttr;
+/** @constructor */
 function $c_Lscalacss_internal_AttrAliasesAndValueTRules() {
   $c_Lscalacss_internal_ValueT$Rules.call(this)
 }
@@ -16878,6 +17484,9 @@ function $h_Lscalacss_internal_RealAttr() {
   /*<skip>*/
 }
 $h_Lscalacss_internal_RealAttr.prototype = $c_Lscalacss_internal_RealAttr.prototype;
+$c_Lscalacss_internal_RealAttr.prototype.real__sci_Set = (function() {
+  return this.real$2
+});
 $c_Lscalacss_internal_RealAttr.prototype.init___T__F1 = (function(id, gen) {
   $c_Lscalacss_internal_Attr.prototype.init___T__F1.call(this, id, gen);
   var array = [this];
@@ -17142,6 +17751,22 @@ function $h_Lscalacss_internal_ValueT$TypedAttrT1() {
   /*<skip>*/
 }
 $h_Lscalacss_internal_ValueT$TypedAttrT1.prototype = $c_Lscalacss_internal_ValueT$TypedAttrT1.prototype;
+/** @constructor */
+function $c_Lscalacss_internal_ValueT$TypedAttrT4Edges() {
+  $c_Lscalacss_internal_ValueT$TypedAttrBase.call(this);
+  this.sep$2 = null
+}
+$c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype = new $h_Lscalacss_internal_ValueT$TypedAttrBase();
+$c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype.constructor = $c_Lscalacss_internal_ValueT$TypedAttrT4Edges;
+/** @constructor */
+function $h_Lscalacss_internal_ValueT$TypedAttrT4Edges() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype = $c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype;
+$c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype.init___T = (function(sep) {
+  this.sep$2 = sep;
+  return this
+});
 /** @constructor */
 function $c_Lscalacss_internal_mutable_Register$ErrorHandler$Noisy() {
   $c_O.call(this);
@@ -23231,6 +23856,25 @@ function $h_Lscalacss_internal_ValueT$TypedAttr$undLenPctAuto() {
 }
 $h_Lscalacss_internal_ValueT$TypedAttr$undLenPctAuto.prototype = $c_Lscalacss_internal_ValueT$TypedAttr$undLenPctAuto.prototype;
 /** @constructor */
+function $c_Lscalacss_internal_ValueT$TypedAttr$undLength() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT1.call(this);
+  this.attr$3 = null
+}
+$c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype = new $h_Lscalacss_internal_ValueT$TypedAttrT1();
+$c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype.constructor = $c_Lscalacss_internal_ValueT$TypedAttr$undLength;
+/** @constructor */
+function $h_Lscalacss_internal_ValueT$TypedAttr$undLength() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype = $c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype;
+$c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype.init___ = (function() {
+  this.attr$3 = $as_Lscalacss_internal_Attr(this.attr2__F1().apply__O__O($m_Lscalacss_internal_CanIUse2$().intrinsicWidthTransforms__Lscalacss_internal_Transform()));
+  return this
+});
+$c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$3
+});
+/** @constructor */
 function $c_Lvangogh500_lolstats_scenes_home_Styling$() {
   $c_Lscalacss_internal_mutable_StyleSheet$Inline.call(this);
   this.container$3 = null
@@ -23357,7 +24001,8 @@ function $c_Lvangogh500_lolstats_styling_Coloring$() {
   this.vangogh500$lolstats$styling$Coloring$$colors$3 = null;
   this.domain$3 = null;
   this.p$undbg$3 = null;
-  this.p$undcolor$3 = null
+  this.p$undcolor$3 = null;
+  this.p$undborder$3 = null
 }
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype = new $h_Lscalacss_internal_mutable_StyleSheet$Inline();
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype.constructor = $c_Lvangogh500_lolstats_styling_Coloring$;
@@ -23370,23 +24015,23 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   var this$1 = $m_Lscalacss_package$DevDefaults$();
   $c_Lscalacss_internal_mutable_StyleSheet$Inline.prototype.init___Lscalacss_internal_mutable_Register.call(this, new $c_Lscalacss_internal_mutable_Register().init___Lscalacss_internal_mutable_Register$NameGen__Lscalacss_internal_mutable_Register$MacroName__Lscalacss_internal_mutable_Register$ErrorHandler__Lscalacss_internal_mutable_Mutex(this$1.cssRegisterNameGen$1, $m_Lscalacss_internal_mutable_Register$MacroName$Use$(), this$1.cssRegisterErrorHandler$1, $m_Lscalacss_internal_mutable_Mutex$().mutex$1));
   $n_Lvangogh500_lolstats_styling_Coloring$ = this;
-  var array = [new $c_T2().init___O__O("Primary", "#0D0C1D"), new $c_T2().init___O__O("Secondary", "#474973"), new $c_T2().init___O__O("Ternary", "#474973"), new $c_T2().init___O__O("Neon Pink", "#ff73d5")];
-  var this$13 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  var array = [new $c_T2().init___O__O("Primary", "#0D0C1D"), new $c_T2().init___O__O("Secondary", "#474973"), new $c_T2().init___O__O("Ternary", "#474973"), new $c_T2().init___O__O("Neon Pink", "#ff73d5"), new $c_T2().init___O__O("Bronze", "#8C7853"), new $c_T2().init___O__O("Silver", "#E6E8FA"), new $c_T2().init___O__O("Gold", "#CFB53B"), new $c_T2().init___O__O("Platinum", "#A0BFB4"), new $c_T2().init___O__O("Diamond", "#b9f2ff")];
+  var this$23 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
   var i = 0;
   var len = $uI(array.length);
   while ((i < len)) {
     var index = i;
     var arg1 = array[index];
-    this$13.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
+    this$23.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1));
     i = ((1 + i) | 0)
   };
-  this.vangogh500$lolstats$styling$Coloring$$colors$3 = $as_sci_Map(this$13.elems$1);
+  this.vangogh500$lolstats$styling$Coloring$$colors$3 = $as_sci_Map(this$23.elems$1);
   this.dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
-  var this$14 = this.vangogh500$lolstats$styling$Coloring$$colors$3;
-  var this$15 = new $c_sci_MapLike$ImmutableDefaultKeySet().init___sci_MapLike(this$14);
-  var this$16 = $m_sci_List$();
-  var cbf = this$16.ReusableCBFInstance$2;
-  var this$24 = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$15, cbf));
+  var this$24 = this.vangogh500$lolstats$styling$Coloring$$colors$3;
+  var this$25 = new $c_sci_MapLike$ImmutableDefaultKeySet().init___sci_MapLike(this$24);
+  var this$26 = $m_sci_List$();
+  var cbf = this$26.ReusableCBFInstance$2;
+  var this$34 = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$25, cbf));
   var f = (function($this) {
     return (function(name$2) {
       var name = $as_T(name$2);
@@ -23408,13 +24053,13 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
       return b.result__sci_Vector()
     })
   })(this);
-  var this$23 = $m_sci_List$();
-  var bf$1 = this$23.ReusableCBFInstance$2;
+  var this$33 = $m_sci_List$();
+  var bf$1 = this$33.ReusableCBFInstance$2;
   if ((bf$1 === $m_sci_List$().ReusableCBFInstance$2)) {
-    if ((this$24 === $m_sci_Nil$())) {
+    if ((this$34 === $m_sci_Nil$())) {
       var jsx$1 = $m_sci_Nil$()
     } else {
-      var rest = this$24;
+      var rest = this$34;
       var found = new $c_sr_BooleanRef().init___Z(false);
       var h = new $c_sr_ObjectRef().init___O(null);
       var t = new $c_sr_ObjectRef().init___O(null);
@@ -23432,7 +24077,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
               t$1.elem$1 = nx
             }
           })
-        })(this$24, found, h, t)));
+        })(this$34, found, h, t)));
         rest = $as_sci_List(rest.tail__O())
       };
       var jsx$1 = ((!found.elem$1) ? $m_sci_Nil$() : $as_sci_$colon$colon(h.elem$1))
@@ -23440,7 +24085,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   } else {
     $m_sci_List$();
     var b$1 = new $c_scm_ListBuffer().init___();
-    var these = this$24;
+    var these = this$34;
     while ((!these.isEmpty__Z())) {
       var arg1$3 = these.head__O();
       var xs = $as_sc_GenTraversableOnce(f(arg1$3)).seq__sc_TraversableOnce();
@@ -23452,8 +24097,8 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
   var as = $as_sc_Seq(jsx$1);
   this.domain$3 = new $c_Lscalacss_internal_Domain$OverSeq().init___sc_IndexedSeq(as.toIndexedSeq__sci_IndexedSeq());
   var qual$1 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "p_bg");
-  var x$3 = this.domain$3;
-  var x$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+  var x$4 = this.domain$3;
+  var x$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
     return (function(x0$1$2) {
       var x0$1 = $as_Lvangogh500_lolstats_styling_Coloring$ColorOpts(x0$1$2);
       if ((x0$1 !== null)) {
@@ -23469,17 +24114,17 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var jsx$2 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
-        var this$32 = $m_Lscalacss_internal_Attrs$backgroundColor$();
-        var this$31 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var this$42 = $m_Lscalacss_internal_Attrs$backgroundColor$();
+        var this$41 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var a = (alpha / 100.0);
-        var v = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$31, red, blue, green, a));
+        var v = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$41, red, blue, green, a));
         var v$1 = v.value$1;
-        var array$1 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$2.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$32.attr$4, v$1)))];
+        var array$1 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$2.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$42.attr$4, v$1)))];
         $m_Lscalacss_package$DevDefaults$();
         var c = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
-        var this$37 = $m_Lscalacss_internal_Dsl$();
+        var this$47 = $m_Lscalacss_internal_Dsl$();
         if (($uI(array$1.length) === 0)) {
-          return this$37.StyleS$3.empty$1
+          return this$47.StyleS$3.empty$1
         } else {
           $m_sc_Seq$();
           $m_sjs_js_WrappedArray$();
@@ -23505,7 +24150,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
               var x$11 = $as_Lscalacss_internal_StyleS(x$11$2);
               return c$1.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10, x$11)
             })
-          })(this$37, c);
+          })(this$47, c);
           if (($uI(array$2.length) > 0)) {
             var start = 1;
             var end = $uI(array$2.length);
@@ -23558,14 +24203,14 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
       }
     })
   })(this));
-  var x$5 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var x$6 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
   $m_Lscalacss_internal_StyleLookup$();
   $m_Ljapgolly_univeq_UnivEq$();
   var evidence$6 = new $c_Lscalacss_internal_StyleLookup$$anon$2().init___();
-  this.p$undbg$3 = qual$1.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$3, x$4, x$5, evidence$6);
+  this.p$undbg$3 = qual$1.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$4, x$5, x$6, evidence$6);
   var qual$2 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "p_color");
-  var x$6 = this.domain$3;
-  var x$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
+  var x$7 = this.domain$3;
+  var x$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
     return (function(x0$2$2) {
       var x0$2 = $as_Lvangogh500_lolstats_styling_Coloring$ColorOpts(x0$2$2);
       if ((x0$2 !== null)) {
@@ -23581,17 +24226,17 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var jsx$4 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
-        var this$47 = $m_Lscalacss_internal_Attrs$color$();
-        var this$46 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var this$57 = $m_Lscalacss_internal_Attrs$color$();
+        var this$56 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
         var a$1 = (alpha$1 / 100.0);
-        var v$2 = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$46, red$1, blue$1, green$1, a$1));
+        var v$2 = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$56, red$1, blue$1, green$1, a$1));
         var v$3 = v$2.value$1;
-        var array$3 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$4.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$47.attr$4, v$3)))];
+        var array$3 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$4.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$57.attr$4, v$3)))];
         $m_Lscalacss_package$DevDefaults$();
         var c$2 = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
-        var this$52 = $m_Lscalacss_internal_Dsl$();
+        var this$62 = $m_Lscalacss_internal_Dsl$();
         if (($uI(array$3.length) === 0)) {
-          return this$52.StyleS$3.empty$1
+          return this$62.StyleS$3.empty$1
         } else {
           $m_sc_Seq$();
           $m_sjs_js_WrappedArray$();
@@ -23617,7 +24262,7 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
               var x$11$1 = $as_Lscalacss_internal_StyleS(x$11$2$1);
               return c$3.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10$1, x$11$1)
             })
-          })(this$52, c$2);
+          })(this$62, c$2);
           if (($uI(array$4.length) > 0)) {
             var start$2 = 1;
             var end$1 = $uI(array$4.length);
@@ -23670,11 +24315,123 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.init___ = (function() {
       }
     })
   })(this));
-  var x$8 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var x$9$2 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
   $m_Lscalacss_internal_StyleLookup$();
   $m_Ljapgolly_univeq_UnivEq$();
   var evidence$6$1 = new $c_Lscalacss_internal_StyleLookup$$anon$2().init___();
-  this.p$undcolor$3 = qual$2.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$6, x$7, x$8, evidence$6$1);
+  this.p$undcolor$3 = qual$2.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$7, x$8, x$9$2, evidence$6$1);
+  var qual$3 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "p_border");
+  var x$10$3 = this.domain$3;
+  var x$11$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1) {
+    return (function(x0$3$2) {
+      var x0$3 = $as_Lvangogh500_lolstats_styling_Coloring$ColorOpts(x0$3$2);
+      if ((x0$3 !== null)) {
+        var hex$2 = x0$3.hex$1;
+        var alpha$2 = x0$3.alpha$1;
+        var x1$2$2 = $m_Lvangogh500_lolstats_styling_Coloring$Util$().hexToRGB__T__T3(hex$2);
+        if ((x1$2$2 === null)) {
+          throw new $c_s_MatchError().init___O(x1$2$2)
+        };
+        var red$2 = $uI(x1$2$2.$$und1$1);
+        var blue$2 = $uI(x1$2$2.$$und2$1);
+        var green$2 = $uI(x1$2$2.$$und3$1);
+        $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var jsx$6 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var this$72 = $m_Lscalacss_internal_Attrs$borderColor$();
+        var this$71 = $m_Lvangogh500_lolstats_styling_Coloring$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+        var a$2 = (alpha$2 / 100.0);
+        var all = $as_Lscalacss_internal_ValueT($f_Lscalacss_internal_ColorOps__rgba__I__I__I__D__O(this$71, red$2, blue$2, green$2, a$2));
+        var v$4 = all.value$1;
+        var array$5 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$6.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this$72.attr$3, v$4).important__Lscalacss_internal_AV()))];
+        $m_Lscalacss_package$DevDefaults$();
+        var c$4 = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
+        var this$77 = $m_Lscalacss_internal_Dsl$();
+        if (($uI(array$5.length) === 0)) {
+          return this$77.StyleS$3.empty$1
+        } else {
+          $m_sc_Seq$();
+          $m_sjs_js_WrappedArray$();
+          var array$6 = [];
+          var x1$3 = $uI(array$5.length);
+          switch (x1$3) {
+            case (-1): {
+              break
+            }
+          };
+          var i$6 = 0;
+          var len$5 = $uI(array$5.length);
+          while ((i$6 < len$5)) {
+            var index$7 = i$6;
+            var arg1$12 = array$5[index$7];
+            var x$9$3 = $as_Lscalacss_internal_DslBase$ToStyle(arg1$12).s$1;
+            array$6.push(x$9$3);
+            i$6 = ((1 + i$6) | 0)
+          };
+          var f$3 = (function(this$2$4, c$5) {
+            return (function(x$10$2$2, x$11$2$2) {
+              var x$10$4 = $as_Lscalacss_internal_StyleS(x$10$2$2);
+              var x$11$3 = $as_Lscalacss_internal_StyleS(x$11$2$2);
+              return c$5.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10$4, x$11$3)
+            })
+          })(this$77, c$4);
+          if (($uI(array$6.length) > 0)) {
+            var start$4 = 1;
+            var end$2 = $uI(array$6.length);
+            var z$4 = array$6[0];
+            var start$5 = start$4;
+            var z$5 = z$4;
+            var jsx$7;
+            _foldl$2: while (true) {
+              if ((start$5 !== end$2)) {
+                var temp$start$2 = ((1 + start$5) | 0);
+                var arg1$13 = z$5;
+                var index$8 = start$5;
+                var arg2$2 = array$6[index$8];
+                var temp$z$2 = f$3(arg1$13, arg2$2);
+                start$5 = temp$start$2;
+                z$5 = temp$z$2;
+                continue _foldl$2
+              };
+              var jsx$7 = z$5;
+              break
+            }
+          } else {
+            if (($uI(array$6.length) === 0)) {
+              throw new $c_jl_UnsupportedOperationException().init___T("empty.reduceLeft")
+            };
+            var elem$1$4 = false;
+            elem$1$4 = true;
+            var elem$1$5 = null;
+            elem$1$5 = 0;
+            var i$7 = 0;
+            var len$6 = $uI(array$6.length);
+            while ((i$7 < len$6)) {
+              var index$9 = i$7;
+              var arg1$14 = array$6[index$9];
+              if (elem$1$4) {
+                elem$1$5 = arg1$14;
+                elem$1$4 = false
+              } else {
+                var arg1$15 = elem$1$5;
+                elem$1$5 = f$3(arg1$15, arg1$14)
+              };
+              i$7 = ((1 + i$7) | 0)
+            };
+            var jsx$7 = elem$1$5
+          };
+          return $as_Lscalacss_internal_StyleS(jsx$7)
+        }
+      } else {
+        throw new $c_s_MatchError().init___O(x0$3)
+      }
+    })
+  })(this));
+  var x$12 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  $m_Lscalacss_internal_StyleLookup$();
+  $m_Ljapgolly_univeq_UnivEq$();
+  var evidence$6$2 = new $c_Lscalacss_internal_StyleLookup$$anon$2().init___();
+  this.p$undborder$3 = qual$3.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$10$3, x$11$4, x$12, evidence$6$2);
   return this
 });
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype.bg__T__D__Lscalacss_internal_StyleA = (function(name, alpha) {
@@ -23682,6 +24439,9 @@ $c_Lvangogh500_lolstats_styling_Coloring$.prototype.bg__T__D__Lscalacss_internal
 });
 $c_Lvangogh500_lolstats_styling_Coloring$.prototype.color__T__D__Lscalacss_internal_StyleA = (function(name, alpha) {
   return $as_Lscalacss_internal_StyleA(this.p$undcolor$3.apply__O__O($m_Lvangogh500_lolstats_styling_Coloring$ColorOpts$().apply__T__D__Lvangogh500_lolstats_styling_Coloring$ColorOpts(name, alpha)))
+});
+$c_Lvangogh500_lolstats_styling_Coloring$.prototype.border__T__D__Lscalacss_internal_StyleA = (function(name, alpha) {
+  return $as_Lscalacss_internal_StyleA(this.p$undborder$3.apply__O__O($m_Lvangogh500_lolstats_styling_Coloring$ColorOpts$().apply__T__D__Lvangogh500_lolstats_styling_Coloring$ColorOpts(name, alpha)))
 });
 var $d_Lvangogh500_lolstats_styling_Coloring$ = new $TypeData().initClass({
   Lvangogh500_lolstats_styling_Coloring$: 0
@@ -23907,6 +24667,334 @@ function $m_Lvangogh500_lolstats_styling_Layout$() {
     $n_Lvangogh500_lolstats_styling_Layout$ = new $c_Lvangogh500_lolstats_styling_Layout$().init___()
   };
   return $n_Lvangogh500_lolstats_styling_Layout$
+}
+/** @constructor */
+function $c_Lvangogh500_lolstats_styling_Sizing$() {
+  $c_Lscalacss_internal_mutable_StyleSheet$Inline.call(this);
+  this.domain$3 = null;
+  this.h$3 = null;
+  this.w$3 = null;
+  this.bWidth$3 = null
+}
+$c_Lvangogh500_lolstats_styling_Sizing$.prototype = new $h_Lscalacss_internal_mutable_StyleSheet$Inline();
+$c_Lvangogh500_lolstats_styling_Sizing$.prototype.constructor = $c_Lvangogh500_lolstats_styling_Sizing$;
+/** @constructor */
+function $h_Lvangogh500_lolstats_styling_Sizing$() {
+  /*<skip>*/
+}
+$h_Lvangogh500_lolstats_styling_Sizing$.prototype = $c_Lvangogh500_lolstats_styling_Sizing$.prototype;
+$c_Lvangogh500_lolstats_styling_Sizing$.prototype.init___ = (function() {
+  var this$1 = $m_Lscalacss_package$DevDefaults$();
+  $c_Lscalacss_internal_mutable_StyleSheet$Inline.prototype.init___Lscalacss_internal_mutable_Register.call(this, new $c_Lscalacss_internal_mutable_Register().init___Lscalacss_internal_mutable_Register$NameGen__Lscalacss_internal_mutable_Register$MacroName__Lscalacss_internal_mutable_Register$ErrorHandler__Lscalacss_internal_mutable_Mutex(this$1.cssRegisterNameGen$1, $m_Lscalacss_internal_mutable_Register$MacroName$Use$(), this$1.cssRegisterErrorHandler$1, $m_Lscalacss_internal_mutable_Mutex$().mutex$1));
+  $n_Lvangogh500_lolstats_styling_Sizing$ = this;
+  this.dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+  var r = new $c_sci_Range$Inclusive().init___I__I__I(50, 500, 50);
+  this.domain$3 = new $c_Lscalacss_internal_Domain$OverSeq().init___sc_IndexedSeq(r);
+  var qual$1 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "h");
+  var x$1 = this.domain$3;
+  var x$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(num$2) {
+      var num = $uI(num$2);
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var jsx$1 = $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var a = $m_Lscalacss_internal_Attrs$height$();
+      var value = (num + "px");
+      var array = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$1.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(a.attr$3, value)))];
+      $m_Lscalacss_package$DevDefaults$();
+      var c = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
+      var this$14 = $m_Lscalacss_internal_Dsl$();
+      if (($uI(array.length) === 0)) {
+        return this$14.StyleS$3.empty$1
+      } else {
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var array$1 = [];
+        var x1 = $uI(array.length);
+        switch (x1) {
+          case (-1): {
+            break
+          }
+        };
+        var i = 0;
+        var len = $uI(array.length);
+        while ((i < len)) {
+          var index = i;
+          var arg1 = array[index];
+          var x$9 = $as_Lscalacss_internal_DslBase$ToStyle(arg1).s$1;
+          array$1.push(x$9);
+          i = ((1 + i) | 0)
+        };
+        var f = (function(this$2$1, c$1) {
+          return (function(x$10$2, x$11$2) {
+            var x$10 = $as_Lscalacss_internal_StyleS(x$10$2);
+            var x$11 = $as_Lscalacss_internal_StyleS(x$11$2);
+            return c$1.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10, x$11)
+          })
+        })(this$14, c);
+        if (($uI(array$1.length) > 0)) {
+          var start = 1;
+          var end = $uI(array$1.length);
+          var z = array$1[0];
+          var start$1 = start;
+          var z$1 = z;
+          var jsx$2;
+          _foldl: while (true) {
+            if ((start$1 !== end)) {
+              var temp$start = ((1 + start$1) | 0);
+              var arg1$1 = z$1;
+              var index$1 = start$1;
+              var arg2 = array$1[index$1];
+              var temp$z = f(arg1$1, arg2);
+              start$1 = temp$start;
+              z$1 = temp$z;
+              continue _foldl
+            };
+            var jsx$2 = z$1;
+            break
+          }
+        } else {
+          if (($uI(array$1.length) === 0)) {
+            throw new $c_jl_UnsupportedOperationException().init___T("empty.reduceLeft")
+          };
+          var elem$1 = false;
+          elem$1 = true;
+          var elem$1$1 = null;
+          elem$1$1 = 0;
+          var i$1 = 0;
+          var len$1 = $uI(array$1.length);
+          while ((i$1 < len$1)) {
+            var index$2 = i$1;
+            var arg1$2 = array$1[index$2];
+            if (elem$1) {
+              elem$1$1 = arg1$2;
+              elem$1 = false
+            } else {
+              var arg1$3 = elem$1$1;
+              elem$1$1 = f(arg1$3, arg1$2)
+            };
+            i$1 = ((1 + i$1) | 0)
+          };
+          var jsx$2 = elem$1$1
+        };
+        return $as_Lscalacss_internal_StyleS(jsx$2)
+      }
+    })
+  })(this));
+  var x$3 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var evidence$6 = $m_Lscalacss_internal_StyleLookup$().int$1;
+  this.h$3 = qual$1.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$1, x$2, x$3, evidence$6);
+  var qual$2 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "w");
+  var x$4 = this.domain$3;
+  var x$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
+    return (function(num$3$2) {
+      var num$3 = $uI(num$3$2);
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var jsx$3 = $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var a$1 = $m_Lscalacss_internal_Attrs$width$();
+      var value$1 = (num$3 + "px");
+      var array$2 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$3.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(a$1.attr$3, value$1)))];
+      $m_Lscalacss_package$DevDefaults$();
+      var c$2 = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
+      var this$27 = $m_Lscalacss_internal_Dsl$();
+      if (($uI(array$2.length) === 0)) {
+        return this$27.StyleS$3.empty$1
+      } else {
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var array$3 = [];
+        var x1$1 = $uI(array$2.length);
+        switch (x1$1) {
+          case (-1): {
+            break
+          }
+        };
+        var i$2 = 0;
+        var len$2 = $uI(array$2.length);
+        while ((i$2 < len$2)) {
+          var index$3 = i$2;
+          var arg1$4 = array$2[index$3];
+          var x$9$1 = $as_Lscalacss_internal_DslBase$ToStyle(arg1$4).s$1;
+          array$3.push(x$9$1);
+          i$2 = ((1 + i$2) | 0)
+        };
+        var f$1 = (function(this$2$3, c$3) {
+          return (function(x$10$2$1, x$11$2$1) {
+            var x$10$1 = $as_Lscalacss_internal_StyleS(x$10$2$1);
+            var x$11$1 = $as_Lscalacss_internal_StyleS(x$11$2$1);
+            return c$3.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10$1, x$11$1)
+          })
+        })(this$27, c$2);
+        if (($uI(array$3.length) > 0)) {
+          var start$2 = 1;
+          var end$1 = $uI(array$3.length);
+          var z$2 = array$3[0];
+          var start$3 = start$2;
+          var z$3 = z$2;
+          var jsx$4;
+          _foldl$1: while (true) {
+            if ((start$3 !== end$1)) {
+              var temp$start$1 = ((1 + start$3) | 0);
+              var arg1$5 = z$3;
+              var index$4 = start$3;
+              var arg2$1 = array$3[index$4];
+              var temp$z$1 = f$1(arg1$5, arg2$1);
+              start$3 = temp$start$1;
+              z$3 = temp$z$1;
+              continue _foldl$1
+            };
+            var jsx$4 = z$3;
+            break
+          }
+        } else {
+          if (($uI(array$3.length) === 0)) {
+            throw new $c_jl_UnsupportedOperationException().init___T("empty.reduceLeft")
+          };
+          var elem$1$2 = false;
+          elem$1$2 = true;
+          var elem$1$3 = null;
+          elem$1$3 = 0;
+          var i$3 = 0;
+          var len$3 = $uI(array$3.length);
+          while ((i$3 < len$3)) {
+            var index$5 = i$3;
+            var arg1$6 = array$3[index$5];
+            if (elem$1$2) {
+              elem$1$3 = arg1$6;
+              elem$1$2 = false
+            } else {
+              var arg1$7 = elem$1$3;
+              elem$1$3 = f$1(arg1$7, arg1$6)
+            };
+            i$3 = ((1 + i$3) | 0)
+          };
+          var jsx$4 = elem$1$3
+        };
+        return $as_Lscalacss_internal_StyleS(jsx$4)
+      }
+    })
+  })(this));
+  var x$6 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var evidence$6$1 = $m_Lscalacss_internal_StyleLookup$().int$1;
+  this.w$3 = qual$2.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$4, x$5, x$6, evidence$6$1);
+  var qual$3 = new $c_Lscalacss_internal_mutable_StyleSheet$Inline$MStyleF().init___Lscalacss_internal_mutable_StyleSheet$Inline__T(this, "bWidth");
+  this.dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+  var r$1 = new $c_sci_Range$Inclusive().init___I__I__I(5, 15, 5);
+  var x$7 = new $c_Lscalacss_internal_Domain$OverSeq().init___sc_IndexedSeq(r$1);
+  var x$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
+    return (function(num$4$2) {
+      var num$4 = $uI(num$4$2);
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var jsx$5 = $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      $m_Lvangogh500_lolstats_styling_Sizing$().dsl__Lscalacss_internal_mutable_StyleSheet$Base$dsl$();
+      var a$2 = $m_Lscalacss_internal_Attrs$borderWidth$();
+      var value$2 = (num$4 + "px !important");
+      var array$4 = [new $c_Lscalacss_internal_DslBase$ToStyle().init___Lscalacss_internal_StyleS(jsx$5.ToStyleAV__Lscalacss_internal_AV__Lscalacss_internal_StyleS(new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(a$2.attr$3, value$2)))];
+      $m_Lscalacss_package$DevDefaults$();
+      var c$4 = $m_Lscalacss_internal_Compose$().safe__Lscalacss_internal_Compose();
+      var this$44 = $m_Lscalacss_internal_Dsl$();
+      if (($uI(array$4.length) === 0)) {
+        return this$44.StyleS$3.empty$1
+      } else {
+        $m_sc_Seq$();
+        $m_sjs_js_WrappedArray$();
+        var array$5 = [];
+        var x1$2 = $uI(array$4.length);
+        switch (x1$2) {
+          case (-1): {
+            break
+          }
+        };
+        var i$4 = 0;
+        var len$4 = $uI(array$4.length);
+        while ((i$4 < len$4)) {
+          var index$6 = i$4;
+          var arg1$8 = array$4[index$6];
+          var x$9$2 = $as_Lscalacss_internal_DslBase$ToStyle(arg1$8).s$1;
+          array$5.push(x$9$2);
+          i$4 = ((1 + i$4) | 0)
+        };
+        var f$2 = (function(this$2$4, c$5) {
+          return (function(x$10$2$2, x$11$2$2) {
+            var x$10$3 = $as_Lscalacss_internal_StyleS(x$10$2$2);
+            var x$11$3 = $as_Lscalacss_internal_StyleS(x$11$2$2);
+            return c$5.apply__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS__Lscalacss_internal_StyleS(x$10$3, x$11$3)
+          })
+        })(this$44, c$4);
+        if (($uI(array$5.length) > 0)) {
+          var start$4 = 1;
+          var end$2 = $uI(array$5.length);
+          var z$4 = array$5[0];
+          var start$5 = start$4;
+          var z$5 = z$4;
+          var jsx$6;
+          _foldl$2: while (true) {
+            if ((start$5 !== end$2)) {
+              var temp$start$2 = ((1 + start$5) | 0);
+              var arg1$9 = z$5;
+              var index$7 = start$5;
+              var arg2$2 = array$5[index$7];
+              var temp$z$2 = f$2(arg1$9, arg2$2);
+              start$5 = temp$start$2;
+              z$5 = temp$z$2;
+              continue _foldl$2
+            };
+            var jsx$6 = z$5;
+            break
+          }
+        } else {
+          if (($uI(array$5.length) === 0)) {
+            throw new $c_jl_UnsupportedOperationException().init___T("empty.reduceLeft")
+          };
+          var elem$1$4 = false;
+          elem$1$4 = true;
+          var elem$1$5 = null;
+          elem$1$5 = 0;
+          var i$5 = 0;
+          var len$5 = $uI(array$5.length);
+          while ((i$5 < len$5)) {
+            var index$8 = i$5;
+            var arg1$10 = array$5[index$8];
+            if (elem$1$4) {
+              elem$1$5 = arg1$10;
+              elem$1$4 = false
+            } else {
+              var arg1$11 = elem$1$5;
+              elem$1$5 = f$2(arg1$11, arg1$10)
+            };
+            i$5 = ((1 + i$5) | 0)
+          };
+          var jsx$6 = elem$1$5
+        };
+        return $as_Lscalacss_internal_StyleS(jsx$6)
+      }
+    })
+  })(this));
+  var x$9$3 = $m_Lscalacss_internal_DslMacros$().defaultStyleFClassNameSuffix$1;
+  var evidence$6$2 = $m_Lscalacss_internal_StyleLookup$().int$1;
+  this.bWidth$3 = qual$3.create__s_Option__Lscalacss_internal_Domain__F1__F2__Lscalacss_internal_StyleLookup__F1($m_s_None$(), x$7, x$8, x$9$3, evidence$6$2);
+  return this
+});
+var $d_Lvangogh500_lolstats_styling_Sizing$ = new $TypeData().initClass({
+  Lvangogh500_lolstats_styling_Sizing$: 0
+}, false, "vangogh500.lolstats.styling.Sizing$", {
+  Lvangogh500_lolstats_styling_Sizing$: 1,
+  Lscalacss_internal_mutable_StyleSheet$Inline: 1,
+  Lscalacss_internal_mutable_StyleSheet$Base: 1,
+  O: 1,
+  Lscalacss_internal_Macros$Dsl$Mixin: 1
+});
+$c_Lvangogh500_lolstats_styling_Sizing$.prototype.$classData = $d_Lvangogh500_lolstats_styling_Sizing$;
+var $n_Lvangogh500_lolstats_styling_Sizing$ = (void 0);
+function $m_Lvangogh500_lolstats_styling_Sizing$() {
+  if ((!$n_Lvangogh500_lolstats_styling_Sizing$)) {
+    $n_Lvangogh500_lolstats_styling_Sizing$ = new $c_Lvangogh500_lolstats_styling_Sizing$().init___()
+  };
+  return $n_Lvangogh500_lolstats_styling_Sizing$
 }
 /** @constructor */
 function $c_Lvangogh500_lolstats_styling_Spacing$() {
@@ -27312,6 +28400,9 @@ $c_Lscalacss_internal_AV.prototype.productPrefix__T = (function() {
 $c_Lscalacss_internal_AV.prototype.productArity__I = (function() {
   return 2
 });
+$c_Lscalacss_internal_AV.prototype.apply__Lscalacss_internal_Env__sci_Vector = (function(env) {
+  return $as_sci_Vector($as_F1(this.attr$1.gen$1.apply__O__O(env)).apply__O__O(this.value$1))
+});
 $c_Lscalacss_internal_AV.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
@@ -27328,9 +28419,6 @@ $c_Lscalacss_internal_AV.prototype.equals__O__Z = (function(x$1) {
     return false
   }
 });
-$c_Lscalacss_internal_AV.prototype.apply__Lscalacss_internal_Env__sci_Vector = (function(env) {
-  return $as_sci_Vector($as_F1(this.attr$1.gen$1.apply__O__O(env)).apply__O__O(this.value$1))
-});
 $c_Lscalacss_internal_AV.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
@@ -27346,13 +28434,13 @@ $c_Lscalacss_internal_AV.prototype.productElement__I__O = (function(x$1) {
     }
   }
 });
+$c_Lscalacss_internal_AV.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
 $c_Lscalacss_internal_AV.prototype.init___Lscalacss_internal_Attr__T = (function(attr, value) {
   this.attr$1 = attr;
   this.value$1 = value;
   return this
-});
-$c_Lscalacss_internal_AV.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
 $c_Lscalacss_internal_AV.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
@@ -27360,6 +28448,15 @@ $c_Lscalacss_internal_AV.prototype.hashCode__I = (function() {
 });
 $c_Lscalacss_internal_AV.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lscalacss_internal_AV.prototype.important__Lscalacss_internal_AV = (function() {
+  if ($m_sjsr_RuntimeString$().endsWith__T__T__Z(this.value$1, $m_Lscalacss_internal_package$().$$undimportant$1)) {
+    return this
+  } else {
+    var x$11 = (("" + this.value$1) + $m_Lscalacss_internal_package$().$$undimportant$1);
+    var x$12 = this.attr$1;
+    return new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(x$12, x$11)
+  }
 });
 function $is_Lscalacss_internal_AV(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalacss_internal_AV)))
@@ -27384,6 +28481,160 @@ var $d_Lscalacss_internal_AV = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lscalacss_internal_AV.prototype.$classData = $d_Lscalacss_internal_AV;
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderColor$() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT4Edges.call(this);
+  this.attr$3 = null
+}
+$c_Lscalacss_internal_Attrs$borderColor$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttrT4Edges();
+$c_Lscalacss_internal_Attrs$borderColor$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderColor$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderColor$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderColor$.prototype = $c_Lscalacss_internal_Attrs$borderColor$.prototype;
+$c_Lscalacss_internal_Attrs$borderColor$.prototype.init___ = (function() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype.init___T.call(this, " ");
+  $n_Lscalacss_internal_Attrs$borderColor$ = this;
+  this.attr$3 = $as_Lscalacss_internal_Attr($m_Lscalacss_internal_Attr$().alias__T__F1("border-color").apply__O__O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$22$2) {
+      $as_Lscalacss_internal_Attr$AliasB$(x$22$2);
+      var t = $m_Lscalacss_internal_Attrs$borderTopColor$();
+      var h = t.attr$4;
+      var t$1 = $m_Lscalacss_internal_Attrs$borderRightColor$();
+      var jsx$2 = t$1.attr$4;
+      var t$2 = $m_Lscalacss_internal_Attrs$borderBottomColor$();
+      var jsx$1 = t$2.attr$4;
+      var t$3 = $m_Lscalacss_internal_Attrs$borderLeftColor$();
+      var t$4 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, t$3.attr$4]);
+      $m_sci_Vector$();
+      var cbf = $m_sc_IndexedSeq$().ReusableCBF$6;
+      var t$5 = $as_sci_Vector($f_sc_TraversableLike__to__scg_CanBuildFrom__O(t$4, cbf));
+      return new $c_Lscalacss_internal_NonEmptyVector().init___O__sci_Vector(h, t$5)
+    })
+  })(this))));
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderColor$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$3
+});
+$c_Lscalacss_internal_Attrs$borderColor$.prototype.mkColor__T__O = (function(s) {
+  return new $c_Lscalacss_internal_AV().init___Lscalacss_internal_Attr__T(this.attr$3, s)
+});
+var $d_Lscalacss_internal_Attrs$borderColor$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderColor$: 0
+}, false, "scalacss.internal.Attrs$borderColor$", {
+  Lscalacss_internal_Attrs$borderColor$: 1,
+  Lscalacss_internal_ValueT$TypedAttrT4Edges: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$borderColor$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderColor$;
+var $n_Lscalacss_internal_Attrs$borderColor$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderColor$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderColor$)) {
+    $n_Lscalacss_internal_Attrs$borderColor$ = new $c_Lscalacss_internal_Attrs$borderColor$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderWidth$() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT4Edges.call(this);
+  this.attr$3 = null
+}
+$c_Lscalacss_internal_Attrs$borderWidth$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttrT4Edges();
+$c_Lscalacss_internal_Attrs$borderWidth$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderWidth$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderWidth$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderWidth$.prototype = $c_Lscalacss_internal_Attrs$borderWidth$.prototype;
+$c_Lscalacss_internal_Attrs$borderWidth$.prototype.init___ = (function() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT4Edges.prototype.init___T.call(this, " ");
+  $n_Lscalacss_internal_Attrs$borderWidth$ = this;
+  this.attr$3 = $as_Lscalacss_internal_Attr($m_Lscalacss_internal_Attr$().alias__T__F1("border-width").apply__O__O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$37$2) {
+      $as_Lscalacss_internal_Attr$AliasB$(x$37$2);
+      var t = $m_Lscalacss_internal_Attrs$borderTopWidth$();
+      var h = t.attr$4;
+      var t$1 = $m_Lscalacss_internal_Attrs$borderRightWidth$();
+      var jsx$2 = t$1.attr$4;
+      var t$2 = $m_Lscalacss_internal_Attrs$borderBottomWidth$();
+      var jsx$1 = t$2.attr$4;
+      var t$3 = $m_Lscalacss_internal_Attrs$borderLeftWidth$();
+      var t$4 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, t$3.attr$4]);
+      $m_sci_Vector$();
+      var cbf = $m_sc_IndexedSeq$().ReusableCBF$6;
+      var t$5 = $as_sci_Vector($f_sc_TraversableLike__to__scg_CanBuildFrom__O(t$4, cbf));
+      return new $c_Lscalacss_internal_NonEmptyVector().init___O__sci_Vector(h, t$5)
+    })
+  })(this))));
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderWidth$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$3
+});
+var $d_Lscalacss_internal_Attrs$borderWidth$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderWidth$: 0
+}, false, "scalacss.internal.Attrs$borderWidth$", {
+  Lscalacss_internal_Attrs$borderWidth$: 1,
+  Lscalacss_internal_ValueT$TypedAttrT4Edges: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$BrWidthOps: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$borderWidth$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderWidth$;
+var $n_Lscalacss_internal_Attrs$borderWidth$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderWidth$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderWidth$)) {
+    $n_Lscalacss_internal_Attrs$borderWidth$ = new $c_Lscalacss_internal_Attrs$borderWidth$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderWidth$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$height$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undLength.call(this)
+}
+$c_Lscalacss_internal_Attrs$height$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undLength();
+$c_Lscalacss_internal_Attrs$height$.prototype.constructor = $c_Lscalacss_internal_Attrs$height$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$height$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$height$.prototype = $c_Lscalacss_internal_Attrs$height$.prototype;
+$c_Lscalacss_internal_Attrs$height$.prototype.init___ = (function() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype.init___.call(this);
+  return this
+});
+$c_Lscalacss_internal_Attrs$height$.prototype.attr2__F1 = (function() {
+  return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$2$2) {
+      var x$2 = $as_Lscalacss_internal_Transform(x$2$2);
+      return $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Transform__Lscalacss_internal_Attr("height", x$2)
+    })
+  })(this))
+});
+var $d_Lscalacss_internal_Attrs$height$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$height$: 0
+}, false, "scalacss.internal.Attrs$height$", {
+  Lscalacss_internal_Attrs$height$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undLength: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$height$.prototype.$classData = $d_Lscalacss_internal_Attrs$height$;
+var $n_Lscalacss_internal_Attrs$height$ = (void 0);
+function $m_Lscalacss_internal_Attrs$height$() {
+  if ((!$n_Lscalacss_internal_Attrs$height$)) {
+    $n_Lscalacss_internal_Attrs$height$ = new $c_Lscalacss_internal_Attrs$height$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$height$
+}
 /** @constructor */
 function $c_Lscalacss_internal_Attrs$marginBottom$() {
   $c_Lscalacss_internal_ValueT$TypedAttr$undLenPctAuto.call(this);
@@ -27497,6 +28748,47 @@ function $m_Lscalacss_internal_Attrs$marginTop$() {
     $n_Lscalacss_internal_Attrs$marginTop$ = new $c_Lscalacss_internal_Attrs$marginTop$().init___()
   };
   return $n_Lscalacss_internal_Attrs$marginTop$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$width$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undLength.call(this)
+}
+$c_Lscalacss_internal_Attrs$width$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undLength();
+$c_Lscalacss_internal_Attrs$width$.prototype.constructor = $c_Lscalacss_internal_Attrs$width$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$width$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$width$.prototype = $c_Lscalacss_internal_Attrs$width$.prototype;
+$c_Lscalacss_internal_Attrs$width$.prototype.init___ = (function() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undLength.prototype.init___.call(this);
+  return this
+});
+$c_Lscalacss_internal_Attrs$width$.prototype.attr2__F1 = (function() {
+  return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x$7$2) {
+      var x$7 = $as_Lscalacss_internal_Transform(x$7$2);
+      return $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Transform__Lscalacss_internal_Attr("width", x$7)
+    })
+  })(this))
+});
+var $d_Lscalacss_internal_Attrs$width$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$width$: 0
+}, false, "scalacss.internal.Attrs$width$", {
+  Lscalacss_internal_Attrs$width$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undLength: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$width$.prototype.$classData = $d_Lscalacss_internal_Attrs$width$;
+var $n_Lscalacss_internal_Attrs$width$ = (void 0);
+function $m_Lscalacss_internal_Attrs$width$() {
+  if ((!$n_Lscalacss_internal_Attrs$width$)) {
+    $n_Lscalacss_internal_Attrs$width$ = new $c_Lscalacss_internal_Attrs$width$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$width$
 }
 /** @constructor */
 function $c_Lscalacss_internal_CanIUse$Agent() {
@@ -29126,6 +30418,17 @@ var $d_Lscalacss_internal_ValueT = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lscalacss_internal_ValueT.prototype.$classData = $d_Lscalacss_internal_ValueT;
+/** @constructor */
+function $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth() {
+  $c_Lscalacss_internal_ValueT$TypedAttrT1.call(this)
+}
+$c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.prototype = new $h_Lscalacss_internal_ValueT$TypedAttrT1();
+$c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.prototype.constructor = $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth;
+/** @constructor */
+function $h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.prototype = $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.prototype;
 /** @constructor */
 function $c_Lscalacss_internal_ValueT$TypedAttr$undColor() {
   $c_Lscalacss_internal_ValueT$TypedAttrT1.call(this)
@@ -33548,6 +34851,318 @@ function $m_Lscalacss_internal_Attrs$backgroundColor$() {
     $n_Lscalacss_internal_Attrs$backgroundColor$ = new $c_Lscalacss_internal_Attrs$backgroundColor$().init___()
   };
   return $n_Lscalacss_internal_Attrs$backgroundColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderBottomColor$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undColor.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderBottomColor$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undColor();
+$c_Lscalacss_internal_Attrs$borderBottomColor$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderBottomColor$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderBottomColor$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderBottomColor$.prototype = $c_Lscalacss_internal_Attrs$borderBottomColor$.prototype;
+$c_Lscalacss_internal_Attrs$borderBottomColor$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderBottomColor$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-bottom-color");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderBottomColor$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderBottomColor$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderBottomColor$: 0
+}, false, "scalacss.internal.Attrs$borderBottomColor$", {
+  Lscalacss_internal_Attrs$borderBottomColor$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undColor: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$borderBottomColor$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderBottomColor$;
+var $n_Lscalacss_internal_Attrs$borderBottomColor$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderBottomColor$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderBottomColor$)) {
+    $n_Lscalacss_internal_Attrs$borderBottomColor$ = new $c_Lscalacss_internal_Attrs$borderBottomColor$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderBottomColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderBottomWidth$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth();
+$c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderBottomWidth$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderBottomWidth$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderBottomWidth$.prototype = $c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype;
+$c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderBottomWidth$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-bottom-width");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderBottomWidth$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderBottomWidth$: 0
+}, false, "scalacss.internal.Attrs$borderBottomWidth$", {
+  Lscalacss_internal_Attrs$borderBottomWidth$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undBrWidth: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$BrWidthOps: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$borderBottomWidth$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderBottomWidth$;
+var $n_Lscalacss_internal_Attrs$borderBottomWidth$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderBottomWidth$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderBottomWidth$)) {
+    $n_Lscalacss_internal_Attrs$borderBottomWidth$ = new $c_Lscalacss_internal_Attrs$borderBottomWidth$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderBottomWidth$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderLeftColor$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undColor.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderLeftColor$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undColor();
+$c_Lscalacss_internal_Attrs$borderLeftColor$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderLeftColor$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderLeftColor$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderLeftColor$.prototype = $c_Lscalacss_internal_Attrs$borderLeftColor$.prototype;
+$c_Lscalacss_internal_Attrs$borderLeftColor$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderLeftColor$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-left-color");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderLeftColor$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderLeftColor$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderLeftColor$: 0
+}, false, "scalacss.internal.Attrs$borderLeftColor$", {
+  Lscalacss_internal_Attrs$borderLeftColor$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undColor: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$borderLeftColor$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderLeftColor$;
+var $n_Lscalacss_internal_Attrs$borderLeftColor$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderLeftColor$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderLeftColor$)) {
+    $n_Lscalacss_internal_Attrs$borderLeftColor$ = new $c_Lscalacss_internal_Attrs$borderLeftColor$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderLeftColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderLeftWidth$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth();
+$c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderLeftWidth$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderLeftWidth$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderLeftWidth$.prototype = $c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype;
+$c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderLeftWidth$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-left-width");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderLeftWidth$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderLeftWidth$: 0
+}, false, "scalacss.internal.Attrs$borderLeftWidth$", {
+  Lscalacss_internal_Attrs$borderLeftWidth$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undBrWidth: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$BrWidthOps: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$borderLeftWidth$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderLeftWidth$;
+var $n_Lscalacss_internal_Attrs$borderLeftWidth$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderLeftWidth$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderLeftWidth$)) {
+    $n_Lscalacss_internal_Attrs$borderLeftWidth$ = new $c_Lscalacss_internal_Attrs$borderLeftWidth$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderLeftWidth$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderRightColor$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undColor.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderRightColor$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undColor();
+$c_Lscalacss_internal_Attrs$borderRightColor$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderRightColor$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderRightColor$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderRightColor$.prototype = $c_Lscalacss_internal_Attrs$borderRightColor$.prototype;
+$c_Lscalacss_internal_Attrs$borderRightColor$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderRightColor$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-right-color");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderRightColor$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderRightColor$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderRightColor$: 0
+}, false, "scalacss.internal.Attrs$borderRightColor$", {
+  Lscalacss_internal_Attrs$borderRightColor$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undColor: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$borderRightColor$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderRightColor$;
+var $n_Lscalacss_internal_Attrs$borderRightColor$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderRightColor$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderRightColor$)) {
+    $n_Lscalacss_internal_Attrs$borderRightColor$ = new $c_Lscalacss_internal_Attrs$borderRightColor$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderRightColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderRightWidth$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderRightWidth$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth();
+$c_Lscalacss_internal_Attrs$borderRightWidth$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderRightWidth$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderRightWidth$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderRightWidth$.prototype = $c_Lscalacss_internal_Attrs$borderRightWidth$.prototype;
+$c_Lscalacss_internal_Attrs$borderRightWidth$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderRightWidth$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-right-width");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderRightWidth$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderRightWidth$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderRightWidth$: 0
+}, false, "scalacss.internal.Attrs$borderRightWidth$", {
+  Lscalacss_internal_Attrs$borderRightWidth$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undBrWidth: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$BrWidthOps: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$borderRightWidth$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderRightWidth$;
+var $n_Lscalacss_internal_Attrs$borderRightWidth$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderRightWidth$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderRightWidth$)) {
+    $n_Lscalacss_internal_Attrs$borderRightWidth$ = new $c_Lscalacss_internal_Attrs$borderRightWidth$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderRightWidth$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderTopColor$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undColor.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderTopColor$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undColor();
+$c_Lscalacss_internal_Attrs$borderTopColor$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderTopColor$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderTopColor$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderTopColor$.prototype = $c_Lscalacss_internal_Attrs$borderTopColor$.prototype;
+$c_Lscalacss_internal_Attrs$borderTopColor$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderTopColor$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-top-color");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderTopColor$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderTopColor$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderTopColor$: 0
+}, false, "scalacss.internal.Attrs$borderTopColor$", {
+  Lscalacss_internal_Attrs$borderTopColor$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undColor: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$ColourOps: 1,
+  Lscalacss_internal_ColorOps: 1
+});
+$c_Lscalacss_internal_Attrs$borderTopColor$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderTopColor$;
+var $n_Lscalacss_internal_Attrs$borderTopColor$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderTopColor$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderTopColor$)) {
+    $n_Lscalacss_internal_Attrs$borderTopColor$ = new $c_Lscalacss_internal_Attrs$borderTopColor$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderTopColor$
+}
+/** @constructor */
+function $c_Lscalacss_internal_Attrs$borderTopWidth$() {
+  $c_Lscalacss_internal_ValueT$TypedAttr$undBrWidth.call(this);
+  this.attr$4 = null
+}
+$c_Lscalacss_internal_Attrs$borderTopWidth$.prototype = new $h_Lscalacss_internal_ValueT$TypedAttr$undBrWidth();
+$c_Lscalacss_internal_Attrs$borderTopWidth$.prototype.constructor = $c_Lscalacss_internal_Attrs$borderTopWidth$;
+/** @constructor */
+function $h_Lscalacss_internal_Attrs$borderTopWidth$() {
+  /*<skip>*/
+}
+$h_Lscalacss_internal_Attrs$borderTopWidth$.prototype = $c_Lscalacss_internal_Attrs$borderTopWidth$.prototype;
+$c_Lscalacss_internal_Attrs$borderTopWidth$.prototype.init___ = (function() {
+  $n_Lscalacss_internal_Attrs$borderTopWidth$ = this;
+  this.attr$4 = $m_Lscalacss_internal_Attr$().real__T__Lscalacss_internal_Attr("border-top-width");
+  return this
+});
+$c_Lscalacss_internal_Attrs$borderTopWidth$.prototype.attr__Lscalacss_internal_Attr = (function() {
+  return this.attr$4
+});
+var $d_Lscalacss_internal_Attrs$borderTopWidth$ = new $TypeData().initClass({
+  Lscalacss_internal_Attrs$borderTopWidth$: 0
+}, false, "scalacss.internal.Attrs$borderTopWidth$", {
+  Lscalacss_internal_Attrs$borderTopWidth$: 1,
+  Lscalacss_internal_ValueT$TypedAttr$undBrWidth: 1,
+  Lscalacss_internal_ValueT$TypedAttrT1: 1,
+  Lscalacss_internal_ValueT$TypedAttrBase: 1,
+  O: 1,
+  Lscalacss_internal_ValueT$BrWidthOps: 1,
+  Lscalacss_internal_ValueT$ZeroLit: 1
+});
+$c_Lscalacss_internal_Attrs$borderTopWidth$.prototype.$classData = $d_Lscalacss_internal_Attrs$borderTopWidth$;
+var $n_Lscalacss_internal_Attrs$borderTopWidth$ = (void 0);
+function $m_Lscalacss_internal_Attrs$borderTopWidth$() {
+  if ((!$n_Lscalacss_internal_Attrs$borderTopWidth$)) {
+    $n_Lscalacss_internal_Attrs$borderTopWidth$ = new $c_Lscalacss_internal_Attrs$borderTopWidth$().init___()
+  };
+  return $n_Lscalacss_internal_Attrs$borderTopWidth$
 }
 /** @constructor */
 function $c_Lscalacss_internal_Attrs$color$() {
@@ -40036,6 +41651,11 @@ $c_sc_AbstractTraversable.prototype.tail__O = (function() {
 });
 $c_sc_AbstractTraversable.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_TraversableOnce__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
+});
+$c_sc_AbstractTraversable.prototype.toSet__sci_Set = (function() {
+  var this$1 = $m_sci_Set$();
+  var cbf = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$1);
+  return $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this, cbf))
 });
 $c_sc_AbstractTraversable.prototype.repr__O = (function() {
   return this
@@ -47851,6 +49471,12 @@ $c_scm_ListBuffer.prototype.isDefinedAt__O__Z = (function(x) {
   var x$1 = $uI(x);
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
   return $f_sc_LinearSeqOptimized__isDefinedAt__I__Z(this$1, x$1)
+});
+$c_scm_ListBuffer.prototype.toSet__sci_Set = (function() {
+  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
+  var this$2 = $m_sci_Set$();
+  var cbf = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$2);
+  return $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(this$1, cbf))
 });
 $c_scm_ListBuffer.prototype.$$div$colon__O__F2__O = (function(z, op) {
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
