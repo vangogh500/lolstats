@@ -7,7 +7,13 @@ import scalacss.ScalaCssReact._
 
 import styling.{Coloring, Spacing, Zindex}
 
+/**
+ * Secondary nav bar
+ */
 object SecondaryNavBar {
+  /**
+   * React component
+   */
   private val component = ScalaComponent.static("SecondaryNavBar")(
     <.div(^.className := "w-vw-100", Coloring.bg("Secondary", 0.5), Spacing.mb(-40), Zindex(5),
       <.div(^.className := "container",
@@ -25,5 +31,9 @@ object SecondaryNavBar {
       )
     )
   )
+
+  /**
+   * Returns instance of react component
+   */
   def apply() = component()
 }

@@ -7,7 +7,13 @@ import scalacss.ScalaCssReact._
 
 import styling.{Coloring, Zindex, Spacing, Typography}
 
+/**
+ * Loading screen
+ */
 object LoadingScreen {
+  /**
+   * React component
+   */
   private val component = ScalaComponent.builder[Boolean]("LoadingScreen")
     .render_P(hidden => {
       val baseClassName = "position-fixed w-100 h-100 d-flex justify-content-center align-items-center flex-column"
@@ -21,5 +27,10 @@ object LoadingScreen {
         )
       )
     }).build
+
+  /**
+   * Returns instance of react component
+   * @param hidden Whether the loading screen should be hidden or not
+   */
   def apply(hidden: Boolean) = component(hidden)
 }

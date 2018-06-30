@@ -1,16 +1,34 @@
 package vangogh500.lolstats.services.lolstats
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import Types._
+import Schema._
 
+/**
+ * API for grabbing data from data server
+ */
 object API {
-  def normalizedSummonerStats(summonerName: String) = MockDB.normalizedSummonerStats.find {
-    case NormalizedSummonerStats(_, _, name, _, _, _) => name == summonerName
+  /**
+   * Summoner profile data by summoner name
+   * @param summonerName Summoner name
+   * @return Summoner profile
+   */
+  def summonerProfile(summonerName: String) = MockDB.summonerProfile.find {
+    case SummonerProfile(_, _, name, _, _, _) => name == summonerName
   }
+  
+  /**
+   * Queues
+   */
   def queues = MockDB.queues
-  def summonerProfile(summonerName: String) = for {
+
+  /**
+   * Summoner profile page data by summoner name
+   * @param summonerName Summoner name
+   * @return Summoner profile page data
+   */
+  def summonerProfilePage(summonerName: String) = for {
     delayed <- Util.delay(3000)
   } yield {
-    SummonerProfile(queues, normalizedSummonerStats(summonerName))
+    SummonerProfilePage(queues, summonerProfile(summonerName))
   }
 }

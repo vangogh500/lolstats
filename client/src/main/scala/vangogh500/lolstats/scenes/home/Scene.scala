@@ -10,11 +10,17 @@ import services.AppRouter.{AppPage, SummonerProfilePage}
 import components._
 import styling.{Layout}
 
+/**
+ * Home page
+ */
 object Scene {
+  /**
+   * React component
+   */
   private val component = ScalaComponent.builder[RouterCtl[AppPage]]("Home Page")
     .render_P(ctl =>
       <.div(
-        Styling.container,
+        VdomStyle("backgroundImage") := "url(\"/img/home_bg.png\")",
         ^.className := "d-flex flex-grow-1 align-items-center justify-content-center flex-column bg-primary",
         Layout.bgCenter, Layout.bgCover,
         <.h1(
@@ -26,5 +32,10 @@ object Scene {
         }
       )
     ).build
+
+  /**
+   * Returns an instance of react component
+   * @param ctl Router controller for redirects and links
+   */
   def apply(ctl: RouterCtl[AppPage]) = component(ctl)
 }

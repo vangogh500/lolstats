@@ -8,10 +8,22 @@ import scalacss.ScalaCssReact._
 import services.riot.api.{Static => RiotStaticAPI}
 import styling.{Spacing, Layout, Sizing, Coloring}
 
+/**
+ * Banner
+ */
 object Banner {
-  case class Props(name: String, profileIconId: String)
+  /**
+   * React props
+   * @param name Summoner name
+   * @param profileIconId Profile icon id as specified in riot api
+   */
+  sealed case class Props(name: String, profileIconId: String)
 
-  class Backend($: BackendScope[Props, Unit]) {
+  /**
+   * React backend
+   * @param $ React backend scope
+   */
+  sealed class Backend($: BackendScope[Props, Unit]) {
     def render(props: Props, propsChildren: PropsChildren) = props match {
       case Props(name, profileIconId) =>
         <.div(Layout.bgCenter, Layout.bgCover, Spacing.pt(40),
@@ -29,9 +41,18 @@ object Banner {
     }
   }
 
+  /**
+   * React component
+   */
   private val component = ScalaComponent.builder[Props]("SummonerProfileBanner")
     .renderBackendWithChildren[Backend]
     .build
 
+  /**
+   * Returns an instance of react component
+   * @param name Summoner name
+   * @param profileIconId Profile icon id as specified in riot api
+   * @param children React children
+   */
   def apply(name: String, profileIconId: String)(children: CtorType.ChildArg*) = component(Props(name, profileIconId))(children: _*)
 }

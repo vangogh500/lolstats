@@ -7,7 +7,13 @@ import scalacss.ScalaCssReact._
 
 import styling.{Coloring, Zindex}
 
+/**
+ * Primary nav bar
+ */
 object PrimaryNavBar {
+  /**
+   * React component
+   */
   private val component = ScalaComponent.static("PrimaryNavBar")(
     <.nav(^.className := "navbar navbar-expand-sm navbar-dark", Coloring.bg("Primary"), Zindex(5),
       <.div(^.className := "container",
@@ -26,5 +32,8 @@ object PrimaryNavBar {
       )
     )
   )
+  /**
+   * Returns instance of react component
+   */
   def apply() = component()
 }

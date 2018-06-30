@@ -7,7 +7,13 @@ import scalacss.ScalaCssReact._
 
 import styling.{Coloring, Zindex, Spacing, Typography}
 
+/**
+ * Not found screen
+ */
 object NotFoundScreen {
+  /**
+   * React component
+   */
   private val component = ScalaComponent.static("404Screen")(
     <.div(^.className := "d-flex flex-grow-1 justify-content-center align-items-center flex-row",
       <.img(^.src := "https://orig00.deviantart.net/8719/f/2013/215/a/4/teemo_pixel_art___league_of_legends_by_deviant_mell-d6gjn2n.png"),
@@ -17,5 +23,8 @@ object NotFoundScreen {
       )
     )
   )
+  /**
+   * Returns an instance of react component
+   */
   def apply() = component()
 }
