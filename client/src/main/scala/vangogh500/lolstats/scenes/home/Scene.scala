@@ -28,7 +28,7 @@ object Scene {
           "Begin the Climb"
         ),
         SummonerSearchBar { summonerName =>
-          ctl.set(SummonerProfilePage(summonerName = summonerName, seasonId = "all", queueId = "all"))
+          ctl.set(SummonerProfilePage(summonerName = summonerName, seasonUrl = "all", queueUrl = "all"))
         }
       )
     ).build

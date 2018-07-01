@@ -7,12 +7,13 @@ import japgolly.scalajs.react.vdom.Attr
 import japgolly.scalajs.react.vdom.html_<^._
 import scalacss.ScalaCssReact._
 
-import services.AppRouter.{AppPage}
+import services.AppRouter
 import containers.{QueryBuilder}
 import vangogh500.lolstats.components.{LoadingScreen}
 import components.{NotFoundScreen, Banner}
 import services.lolstats.{Schema => AppSchema}
 import services.lolstats.{API => AppAPI}
+import styling.Coloring
 
 /**
  * Summoner profile page
@@ -27,14 +28,14 @@ object Scene {
    * @param ctl Router controller for redirects and links.
    * @param summonerName Summoner name
    */
-  sealed case class Props(ctl: RouterCtl[AppPage], summonerName: String)
+  sealed case class Props(ctl: RouterCtl[AppRouter.AppPage], summonerName: String, seasonUrl: String, queueUrl: String)
 
   /**
    * React component
    */
-  private val component = ScalaComponent.builder[Props]("Home Page")
+  private val component = ScalaComponent.builder[Props]("Summoner Profile Page")
     .render_P {
-      case Props(ctl, summonerName) =>
+      case Props(ctl, summonerName, seasonUrl, queueUrl) =>
         pQuery(AppAPI.summonerProfilePage(summonerName), {
           case (true, _, _) =>
             <.div(^.className := "w-100 h-100 d-flex flex-column",
@@ -57,11 +58,19 @@ object Scene {
                 Banner(name, profileIconId)(
                   <.div(^.className := "btn-group btn-group-toggle ml-auto", Attr("dataToggle") := "buttons",
                     queues.map {
+                      case AppSchema.Queue(id, name, url, icon) if url == queueUrl =>
+                        <.a(^.key := "queue-nav-" + id,
+                          ^.className := "btn px-3 py-2 text-white",
+                          Coloring.button("Ternary"),
+                          <.i(^.className := "material-icons align-middle", icon),
+                          <.span(^.className := "align-middle", name))
                       case AppSchema.Queue(id, name, url, icon) =>
-                      <.a(^.key := "queue-nav-" + id,
-                        ^.className := "btn px-3 py-2 text-white",
-                        <.i(^.className := "material-icons align-middle", icon),
-                        <.span(^.className := "align-middle", name))
+                        ctl.link(AppRouter.SummonerProfilePage(summonerName = summonerName, seasonUrl = seasonUrl, queueUrl = url))(
+                          ^.key := "queue-nav-" + id,
+                            ^.className := "btn px-3 py-2 text-white",
+                            Coloring.button("Primary"),
+                            <.i(^.className := "material-icons align-middle", icon),
+                            <.span(^.className := "align-middle", name))
                     }.toTagMod
                   )
                 )
@@ -75,5 +84,6 @@ object Scene {
    * @param ctl Router controller for redirects and links.
    * @param summonerName Summoner name
    */
-  def apply(ctl: RouterCtl[AppPage], summonerName: String) = component(Props(ctl = ctl, summonerName = summonerName))
+  def apply(ctl: RouterCtl[AppRouter.AppPage], summonerName: String, seasonUrl: String, queueUrl: String) = component(
+    Props(ctl = ctl, summonerName = summonerName, seasonUrl = seasonUrl, queueUrl = queueUrl))
 }

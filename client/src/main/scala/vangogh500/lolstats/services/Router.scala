@@ -26,7 +26,7 @@ object AppRouter {
    * @param seasonId Season id
    * @param queueId Queue id
    */
-  case class SummonerProfilePage(summonerName: String, seasonId: String, queueId: String) extends AppPage
+  case class SummonerProfilePage(summonerName: String, seasonUrl: String, queueUrl: String) extends AppPage
 
   /**
    * Determines layout for app
@@ -49,12 +49,12 @@ object AppRouter {
     (emptyRule
     |   staticRoute(root, HomePage) ~> renderR(ctl => home.Scene(ctl))
     |   dynamicRouteCT(("summoner" / string("\\w+") / string("\\w+") / string("\\w+")).caseClass[SummonerProfilePage]) ~> dynRenderR {
-          case (SummonerProfilePage(summonerName, _, _), ctl) => summonerprofile.Scene(ctl, summonerName)
+          case (SummonerProfilePage(summoner, season, queue), ctl) => summonerprofile.Scene(ctl, summonerName = summoner, seasonUrl = season, queueUrl = queue)
         }
     ).notFound(redirectToPage(HomePage)(Redirect.Push))
     .renderWith(layout)
   })
-  
+
   /**
    * Returns instance of react component
    */
